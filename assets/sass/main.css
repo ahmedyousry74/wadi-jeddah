@@ -782,13 +782,14 @@ body.website[dir=ltr] .contact__us__page form .input-group-text {
 }
 
 .services__ {
-  padding: 40px 0;
+  padding: 20px 0 0;
 }
 .services__ h1 {
   color: #333;
   font-weight: 700;
   font-size: 35px;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 @media (max-width: 580px) {
   .services__ h1 {
@@ -805,7 +806,7 @@ body.website[dir=ltr] .contact__us__page form .input-group-text {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 350px;
+  height: 270px;
   width: 100%;
   border-radius: 12px;
   position: relative;
@@ -821,7 +822,7 @@ body.website[dir=ltr] .contact__us__page form .input-group-text {
 .services__ .services__item h2 {
   font-weight: 600;
   color: #fff;
-  font-size: 35px;
+  font-size: 30px;
   position: relative;
   z-index: 9;
 }
@@ -840,7 +841,8 @@ body.website[dir=ltr] .contact__us__page form .input-group-text {
   display: flex;
   justify-content: start;
   align-items: flex-start;
-  gap: 15px;
+  flex-direction: column;
+  gap: 5px;
 }
 .offers .offer_item .img_offer {
   height: 200px;
@@ -907,6 +909,22 @@ body.website[dir=ltr] .contact__us__page form .input-group-text {
 }
 .website .logo {
   width: 200px;
+}
+
+.website nav .logo-main {
+  width: 160px !important;
+}
+.website .mouse-down {
+  top: 60% !important;
+}
+.website .custom-shape-divider-bottom-1710021382 {
+  bottom: -2px !important;
+}
+.website header .carousel-item {
+  height: 650px !important;
+}
+.website .custom-shape-divider-bottom-1710021382 .shape-fill {
+  fill: #fff;
 }
 
 .website .contact__us__page {
@@ -1864,7 +1882,6 @@ body.website[dir=ltr] .contact__us__page form .input-group-text {
   box-shadow: none;
 }
 .website nav .offcanvas.offcanvas-start-lg {
-  border-bottom: 1px solid #DBDBDB !important;
   padding-bottom: 10px !important;
   background: #050505;
   height: 100%;

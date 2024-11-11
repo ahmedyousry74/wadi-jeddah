@@ -1047,5 +1047,193 @@ body.website[dir='ltr'] {
   .custom-shape-divider-bottom-1710021382 .shape-fill {
     fill: #fff;
   }
-
+  .ads {
+    overflow: hidden;
+    .active {
+      background-color: #192C57;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      border-radius: 0;
+      padding: 15px 20px;
+      height: 100%;
+      
+      @media (min-width: 640px) {
+        padding: 25px 50px;
+        height: 350px;
+      }
+  
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+  
+      .header-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        margin-bottom: 15px;
+  
+        @media (min-width: 640px) {
+          margin-top: 30px;
+        }
+  
+        .discount {
+          background-color: $second-color;
+          color: $primary-color;
+          border-radius: 4px;
+          padding: 4px 15px;
+          font-size: 13px;
+          font-weight: 600;
+  
+          @media (min-width: 640px) {
+            font-size: 14px;
+          }
+        }
+  
+        .header-title {
+          color: white;
+          font-weight: bold;
+          font-size: 35px;
+          margin-bottom: 0;
+  
+          @media (min-width: 640px) {
+            font-size: 55px;
+          }
+        }
+  
+        .header-subtitle {
+          color: white;
+          font-size: 16px;
+          font-weight: 500;
+          margin-bottom: 0;
+  
+          @media (min-width: 640px) {
+            font-size: 18px;
+          }
+        }
+  
+        .price {
+          color: rgba(255, 255, 255, 0.78);
+          font-size: 14px;
+          font-weight: 500;
+  
+          @media (min-width: 640px) {
+            font-size: 15px;
+          }
+        }
+  
+        .shop-now {
+          background-color: $primary-color;
+          color: white;
+          font-weight: 500;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 8px 25px;
+          border-radius: 4px;
+          text-decoration: none;
+        }
+      }
+  
+      .ads-image {
+        display: flex !important;
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+        width: 100%;
+        object-fit: contain;
+        text-align: start;
+        img{
+          width: 100%;
+        }
+      }
+    }
+    &.one__{
+      .active {
+        background-color: #6d32cc;
+      }
+    }
+    &.four__{
+      .active {
+        background-color: #9f8621;
+      }
+    }
+    &.three__{
+      .active {
+        background-color: #cc3284;
+      }
+      .ads-image {
+        width: 100%;
+      }
+      .header-info {
+  
+        @media (min-width: 640px) {
+          margin-top: 0px;
+        }
+      }
+    }
+  }
+  .ads__ {
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+  
+    @media (min-width: 1024px) {
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+  
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .ads-item {
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 300px;
+      width: 100%;
+      border-radius: 8px;
+      padding: 8px;
+      margin-bottom: 12px;
+  
+      @media (min-width: 640px) {
+        margin-bottom: 0;
+      }
+  
+      .ads-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        margin-top: 75px;
+  
+        .ads-title {
+          color: white;
+          font-weight: 600;
+          font-size: 35px;
+        }
+  
+        .ads-description {
+          color: white;
+          font-weight: 600;
+          font-size: 18px;
+        }
+  
+        .shop-now {
+          background-color: white;
+          color: $third-color;
+          padding: 9px 25px;
+          border-radius: 25px;
+          font-weight: 600;
+          font-size: 15px;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  
 }

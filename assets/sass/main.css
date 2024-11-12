@@ -1103,6 +1103,10 @@ body.website[dir=ltr] .contact__us__page form .input-group-text {
   text-decoration: none;
 }
 
+.website .title__section {
+  color: #333 !important;
+}
+
 .website .contact__us__page {
   padding: 50px 0;
 }

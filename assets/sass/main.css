@@ -1183,7 +1183,7 @@ body.website[dir=ltr] .contact__us__page form .input-group-text {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 500px;
+  height: 400px;
 }
 .website .page__header:after {
   content: "";
@@ -1805,12 +1805,12 @@ body.website[dir=ltr] .contact__us__page form .input-group-text {
 }
 @media (max-width: 767px) {
   .website header .carousel-item .header_title h2 {
-    font-size: 25px;
+    font-size: 19px;
   }
 }
 @media (max-width: 767px) {
   .website header .carousel-item .header_title {
-    top: 25%;
+    top: 0%;
   }
 }
 .website header .carousel-item .header_title button, .website header .carousel-item .header_title a {

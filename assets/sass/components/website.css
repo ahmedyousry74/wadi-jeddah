@@ -674,12 +674,11 @@
 .website header .carousel-item img {
   -o-object-fit: cover;
      object-fit: cover;
-  height: 100vh;
 }
 .website header .carousel-item .header_title {
   position: absolute;
   transform: translate(50%, 50%);
-  top: 35%;
+  top: -12%;
   right: 50%;
   z-index: 9;
 }
@@ -1280,9 +1279,9 @@
   flex-direction: row;
   padding-bottom: 10px;
   position: relative;
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 600;
-  color: #A38142;
+  color: #A38142 !important;
   margin-bottom: 35px;
 }
 .website .owl-nav button {

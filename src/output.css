@@ -717,12 +717,12 @@ video {
   isolation: auto;
 }
 
-.z-50 {
-  z-index: 50;
-}
-
 .\!z-50 {
   z-index: 50 !important;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .float-start {
@@ -1012,6 +1012,10 @@ video {
   height: 100%;
 }
 
+.h-\[60px\] {
+  height: 60px;
+}
+
 .\!w-\[100px\] {
   width: 100px !important;
 }
@@ -1036,10 +1040,6 @@ video {
   width: 180px;
 }
 
-.w-\[200px\] {
-  width: 200px;
-}
-
 .w-\[20px\] {
   width: 20px;
 }
@@ -1058,6 +1058,10 @@ video {
 
 .w-\[50px\] {
   width: 50px;
+}
+
+.w-\[550px\] {
+  width: 550px;
 }
 
 .w-\[64px\] {
@@ -1092,8 +1096,8 @@ video {
   width: 100%;
 }
 
-.w-\[550px\] {
-  width: 550px;
+.w-\[60px\] {
+  width: 60px;
 }
 
 .max-w-\[144px\] {
@@ -2175,6 +2179,11 @@ video {
   border-color: #cccccc91;
 }
 
+.border-\[\#d4d3d3\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(212 211 211 / var(--tw-border-opacity));
+}
+
 .border-\[\#e3e3e3\] {
   --tw-border-opacity: 1;
   border-color: rgb(227 227 227 / var(--tw-border-opacity));
@@ -2203,16 +2212,6 @@ video {
 .border-primary-color {
   --tw-border-opacity: 1;
   border-color: rgb(163 129 66 / var(--tw-border-opacity));
-}
-
-.border-\[\#505050\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(80 80 80 / var(--tw-border-opacity));
-}
-
-.border-\[\#d4d3d3\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(212 211 211 / var(--tw-border-opacity));
 }
 
 .\!bg-\[\#fff\] {
@@ -2263,6 +2262,11 @@ video {
 .bg-\[\#F2F5DE\] {
   --tw-bg-opacity: 1;
   background-color: rgb(242 245 222 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#F5F5F9\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 249 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#F7F8FA\] {
@@ -2588,6 +2592,11 @@ video {
   padding-bottom: 9px;
 }
 
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
 .pb-5 {
   padding-bottom: 1.25rem;
 }
@@ -2900,6 +2909,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(230 234 239 / var(--tw-text-opacity));
+}
+
+.text-\[\#333\] {
+  --tw-text-opacity: 1;
+  color: rgb(51 51 51 / var(--tw-text-opacity));
 }
 
 .\!underline {

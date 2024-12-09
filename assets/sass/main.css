@@ -2437,6 +2437,11 @@ html[dir=ltr] .website .breadcrumb-item + .breadcrumb-item::before, html[lang=en
   width: auto !important;
 }
 
+.service_item {
+  border-right: 1px solid #F5F5F9;
+  border-bottom: 1px solid #F5F5F9;
+}
+
 .store nav, .store .sec__navbar {
   background-color: transparent;
   width: 100%;

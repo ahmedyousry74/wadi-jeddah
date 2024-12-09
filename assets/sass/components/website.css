@@ -1329,4 +1329,9 @@ html[dir=ltr] .website .breadcrumb-item + .breadcrumb-item::before, html[lang=en
   font-size: 16px;
   font-weight: 500;
   width: auto !important;
+}
+
+.service_item {
+  border-right: 1px solid #F5F5F9;
+  border-bottom: 1px solid #F5F5F9;
 }/*# sourceMappingURL=website.css.map */

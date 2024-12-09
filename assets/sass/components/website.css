@@ -77,7 +77,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 400px;
+  height: 500px;
 }
 .website .page__header:after {
   content: "";
@@ -661,7 +661,7 @@
 }
 .website header:after {
   content: "";
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.1);
   position: absolute;
   top: 0;
   right: 0;
@@ -870,12 +870,12 @@
   }
 }
 .website nav {
-  position: absolute !important;
-  top: 0;
-  right: 0;
-  background-color: transparent;
+  background-color: #fff;
+  height: 80px;
   width: 100%;
-  z-index: 99;
+  z-index: 40;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .website nav .colse_ {
   filter: invert(1);
@@ -889,9 +889,9 @@
   gap: 8px;
 }
 .website nav .offcanvas-body ul .nav-item .nav-link {
-  color: #fff;
+  color: #000;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 15px;
   transition: 0.3s ease-in-out all;
   position: relative;
 }
@@ -915,7 +915,7 @@
 }
 .website nav .offcanvas-body ul .nav-item .nav-link.active {
   color: #A38142;
-  font-weight: 700;
+  font-weight: 800;
 }
 .website nav .offcanvas-body ul .nav-item .nav-link.active::after {
   position: absolute;
@@ -1311,4 +1311,22 @@ html[dir=ltr] .website .input-group > :not(:first-child):not(.dropdown-menu):not
 html[dir=ltr] .website .breadcrumb-item + .breadcrumb-item::before, html[lang=en] .website .breadcrumb-item + .breadcrumb-item::before {
   float: left;
   margin: 0 5px;
+}
+
+.top .search__input input::-moz-placeholder {
+  color: #253D4E;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.top .search__input input::placeholder {
+  color: #253D4E;
+  font-size: 16px;
+  font-weight: 500;
+}
+.top .search__input select {
+  color: #253D4E;
+  font-size: 16px;
+  font-weight: 500;
+  width: auto !important;
 }/*# sourceMappingURL=website.css.map */

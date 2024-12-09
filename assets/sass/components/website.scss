@@ -74,7 +74,7 @@
         background-position: center;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        height: 400px;
+        height: 500px;
 
         &:after {
             content: "";
@@ -670,7 +670,7 @@
         position: relative;
         &:after{
             content: "";
-            background-color: rgba(0,0,0,0.6);
+            background-color: rgba(0,0,0,0.1);
             position: absolute;
             top:0;
             right: 0;
@@ -882,12 +882,15 @@
     }
 
     nav{
-        position: absolute !important;
-        top:0;
-        right: 0;
-        background-color: transparent;
+        // position: absolute !important;
+        // top:0;
+        // right: 0;
+        background-color: #fff;
+        height: 80px;
         width: 100%;
-        z-index: 99;
+        z-index: 40;
+        padding-top: 20px;
+        padding-bottom: 20px;
         .colse_{
             filter: invert(1);
         }
@@ -902,9 +905,9 @@
                 gap: 8px;
                 .nav-item {
                     .nav-link {
-                        color: #fff;
+                        color: #000;
                         font-weight: 400;
-                        font-size: 14px;
+                        font-size: 15px;
                         transition: 0.3s ease-in-out all;
                         position: relative;
                         &::after {
@@ -928,7 +931,7 @@
                         }
                         &.active {
                             color: #A38142;
-                            font-weight: 700;
+                            font-weight: 800;
                             &::after {
                                 position: absolute;
                                 content: "";
@@ -1360,6 +1363,23 @@ html[dir='ltr'],html[lang='en'] {
         .breadcrumb-item+.breadcrumb-item::before {
             float: left;
             margin: 0 5px;
+        }
+    }
+}
+.top{
+    .search__input{
+        input{
+            &::placeholder{
+                color: #253D4E;
+                font-size: 16px;
+                font-weight: 500;
+            }
+        }
+        select{
+            color: #253D4E;
+            font-size: 16px;
+            font-weight: 500;
+            width: auto !important;
         }
     }
 }

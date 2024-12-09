@@ -1983,6 +1983,11 @@ body.website[dir=ltr] .contact__us__page form .input-group-text {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+@media (max-width: 991px) {
+  .website nav {
+    height: 60px;
+  }
+}
 .website nav .colse_ {
   filter: invert(1);
 }
@@ -2000,6 +2005,11 @@ body.website[dir=ltr] .contact__us__page form .input-group-text {
   font-size: 15px;
   transition: 0.3s ease-in-out all;
   position: relative;
+}
+@media (max-width: 991px) {
+  .website nav .offcanvas-body ul .nav-item .nav-link {
+    color: #fff;
+  }
 }
 .website nav .offcanvas-body ul .nav-item .nav-link::after {
   position: absolute;

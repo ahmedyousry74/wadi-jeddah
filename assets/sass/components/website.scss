@@ -891,6 +891,9 @@
         z-index: 40;
         padding-top: 20px;
         padding-bottom: 20px;
+        @media(max-width: 991px){
+            height: 60px;
+        }
         .colse_{
             filter: invert(1);
         }
@@ -910,6 +913,9 @@
                         font-size: 15px;
                         transition: 0.3s ease-in-out all;
                         position: relative;
+                        @media(max-width: 991px){
+                            color: #fff;
+                        }
                         &::after {
                             position: absolute;
                             content: "";

@@ -845,6 +845,10 @@ video {
   margin-top: 35px;
 }
 
+.-mt-\[14px\] {
+  margin-top: -14px;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -3527,6 +3531,14 @@ video {
     margin-top: 0px;
   }
 
+  .md\:block {
+    display: block;
+  }
+
+  .md\:flex {
+    display: flex;
+  }
+
   .md\:hidden {
     display: none;
   }
@@ -3537,6 +3549,10 @@ video {
 
   .md\:w-\[65px\] {
     width: 65px;
+  }
+
+  .md\:w-\[550px\] {
+    width: 550px;
   }
 }
 

@@ -913,7 +913,7 @@ body.website[dir=ltr] .contact__us__page form .input-group-text {
 }
 
 .website nav .logo-main {
-  width: 120px !important;
+  width: 100px !important;
 }
 .website .mouse-down {
   top: 60% !important;
@@ -1993,7 +1993,7 @@ body.website[dir=ltr] .contact__us__page form .input-group-text {
 }
 .website nav {
   background-color: #fff;
-  height: 80px;
+  height: 105px;
   width: 100%;
   z-index: 40;
   padding-top: 20px;
@@ -2008,7 +2008,7 @@ body.website[dir=ltr] .contact__us__page form .input-group-text {
   filter: invert(1);
 }
 .website nav .offcanvas-body .navbar-brand img {
-  width: 200px;
+  width: 100px;
   -o-object-fit: cover;
      object-fit: cover;
 }

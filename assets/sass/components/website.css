@@ -883,7 +883,7 @@
 }
 .website nav {
   background-color: #fff;
-  height: 80px;
+  height: 105px;
   width: 100%;
   z-index: 40;
   padding-top: 20px;
@@ -898,7 +898,7 @@
   filter: invert(1);
 }
 .website nav .offcanvas-body .navbar-brand img {
-  width: 200px;
+  width: 100px;
   -o-object-fit: cover;
      object-fit: cover;
 }

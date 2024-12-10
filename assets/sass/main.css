@@ -1104,13 +1104,19 @@ body.website[dir=ltr] .contact__us__page form .input-group-text {
   text-decoration: none;
 }
 
+.ads.six__ .active {
+  background-color: #111 !important;
+}
+
 .website .contact__us__page {
   padding: 50px 0;
 }
 .website .contact__us__page form {
   padding: 15px;
 }
-.website .contact__us__page form input, .website .contact__us__page form select, .website .contact__us__page form textarea {
+.website .contact__us__page form input,
+.website .contact__us__page form select,
+.website .contact__us__page form textarea {
   border-radius: 4px;
   width: 220px;
   height: 48px;
@@ -1121,11 +1127,15 @@ body.website[dir=ltr] .contact__us__page form .input-group-text {
   color: #050505;
   border-right: 0;
 }
-.website .contact__us__page form input:focus, .website .contact__us__page form select:focus, .website .contact__us__page form textarea:focus {
+.website .contact__us__page form input:focus,
+.website .contact__us__page form select:focus,
+.website .contact__us__page form textarea:focus {
   box-shadow: none;
   border-color: #DBDBDB;
 }
-.website .contact__us__page form input option, .website .contact__us__page form select option, .website .contact__us__page form textarea option {
+.website .contact__us__page form input option,
+.website .contact__us__page form select option,
+.website .contact__us__page form textarea option {
   font-size: 14px;
   margin-bottom: 10px;
   color: #050505;
@@ -1134,7 +1144,9 @@ body.website[dir=ltr] .contact__us__page form .input-group-text {
   font-size: 14px;
   color: #050505;
 }
-.website .contact__us__page form input::placeholder, .website .contact__us__page form select::placeholder, .website .contact__us__page form textarea::placeholder {
+.website .contact__us__page form input::placeholder,
+.website .contact__us__page form select::placeholder,
+.website .contact__us__page form textarea::placeholder {
   font-size: 14px;
   color: #050505;
 }
@@ -1146,7 +1158,8 @@ body.website[dir=ltr] .contact__us__page form .input-group-text {
   font-size: 15px;
   font-weight: 500;
 }
-.website .contact__us__page form button, .website .contact__us__page form a {
+.website .contact__us__page form button,
+.website .contact__us__page form a {
   background: #A38142;
   border: 1px solid #A38142;
   padding: 8px 25px;
@@ -1167,7 +1180,8 @@ body.website[dir=ltr] .contact__us__page form .input-group-text {
     padding: 10px;
   }
 }
-.website .contact__details h5, .website .contact__details a {
+.website .contact__details h5,
+.website .contact__details a {
   color: #050505;
   font-size: 15px;
   font-weight: 500;
@@ -1613,7 +1627,8 @@ body.website[dir=ltr] .contact__us__page form .input-group-text {
     padding: 20px 0;
     height: 100%;
   }
-  .website .contact .custom-shape-divider, .website .contact .custom-shape-divider-two {
+  .website .contact .custom-shape-divider,
+  .website .contact .custom-shape-divider-two {
     display: none !important;
   }
   .website .contact .contact_right {
@@ -1767,7 +1782,6 @@ body.website[dir=ltr] .contact__us__page form .input-group-text {
 }
 .website header:after {
   content: "";
-  background-color: rgba(0, 0, 0, 0.1);
   position: absolute;
   top: 0;
   right: 0;
@@ -1813,7 +1827,8 @@ body.website[dir=ltr] .contact__us__page form .input-group-text {
     top: 0%;
   }
 }
-.website header .carousel-item .header_title button, .website header .carousel-item .header_title a {
+.website header .carousel-item .header_title button,
+.website header .carousel-item .header_title a {
   background-color: transparent;
   color: #DBDBDB;
   border: 1px solid #DBDBDB;
@@ -1821,7 +1836,8 @@ body.website[dir=ltr] .contact__us__page form .input-group-text {
   border-radius: 6px;
   transition: 0.3s all ease-in-out;
 }
-.website header .carousel-item .header_title button:hover, .website header .carousel-item .header_title a:hover {
+.website header .carousel-item .header_title button:hover,
+.website header .carousel-item .header_title a:hover {
   background-color: #A38142;
   color: #fff;
   border-color: #A38142;
@@ -2075,7 +2091,8 @@ body.website[dir=ltr] .contact__us__page form .input-group-text {
   right: 0;
 }
 @media (max-width: 991px) {
-  .website nav .offcanvas.offcanvas-start-lg .offcanvas-body, .website nav .offcanvas.offcanvas-start-lg .navbar__links {
+  .website nav .offcanvas.offcanvas-start-lg .offcanvas-body,
+  .website nav .offcanvas.offcanvas-start-lg .navbar__links {
     justify-content: flex-start !important;
     flex-direction: column !important;
     align-items: flex-start !important;
@@ -2123,7 +2140,8 @@ body.website[dir=ltr] .contact__us__page form .input-group-text {
   font-size: 15px;
   font-weight: 500;
 }
-.website .news .news__item .news__footer button, .website .news .news__item .news__footer a {
+.website .news .news__item .news__footer button,
+.website .news .news__item .news__footer a {
   background-color: #A38142;
   color: #fff;
   border: 1px solid #A38142;
@@ -2198,20 +2216,24 @@ body.website[dir=ltr] .contact__us__page form .input-group-text {
 .website .number__services .number__services__items .number-services-item p::after {
   content: "";
   position: absolute;
-  top: 0; /* Start at the top */
+  top: 0;
+  /* Start at the top */
   left: 0;
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  border: 2px solid #fff; /* White border */
+  border: 2px solid #fff;
+  /* White border */
   animation: circle-fill 2s ease-in-out forwards;
 }
 @keyframes circle-fill {
   from {
-    transform: scaleY(0); /* Start at 0 height (top) */
+    transform: scaleY(0);
+    /* Start at 0 height (top) */
   }
   to {
-    transform: scaleY(1); /* Grow to full height */
+    transform: scaleY(1);
+    /* Grow to full height */
   }
 }
 .website .offers {
@@ -2408,23 +2430,33 @@ body.website[dir=ltr] .contact__us__page form .input-group-text {
   color: #A38142;
 }
 
-html[dir=ltr] .website, html[lang=en] .website {
+html[dir=ltr] .website,
+html[lang=en] .website {
   direction: ltr;
 }
-html[dir=ltr] .website .input-group:not(.has-validation) > .dropdown-toggle:nth-last-child(n+3), html[dir=ltr] .website .input-group:not(.has-validation) > .form-floating:not(:last-child) > .form-control, html[dir=ltr] .website .input-group:not(.has-validation) > .form-floating:not(:last-child) > .form-select, html[dir=ltr] .website .input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating), html[lang=en] .website .input-group:not(.has-validation) > .dropdown-toggle:nth-last-child(n+3), html[lang=en] .website .input-group:not(.has-validation) > .form-floating:not(:last-child) > .form-control, html[lang=en] .website .input-group:not(.has-validation) > .form-floating:not(:last-child) > .form-select, html[lang=en] .website .input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating) {
+html[dir=ltr] .website .input-group:not(.has-validation) > .dropdown-toggle:nth-last-child(n+3),
+html[dir=ltr] .website .input-group:not(.has-validation) > .form-floating:not(:last-child) > .form-control,
+html[dir=ltr] .website .input-group:not(.has-validation) > .form-floating:not(:last-child) > .form-select,
+html[dir=ltr] .website .input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating),
+html[lang=en] .website .input-group:not(.has-validation) > .dropdown-toggle:nth-last-child(n+3),
+html[lang=en] .website .input-group:not(.has-validation) > .form-floating:not(:last-child) > .form-control,
+html[lang=en] .website .input-group:not(.has-validation) > .form-floating:not(:last-child) > .form-select,
+html[lang=en] .website .input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating) {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
-html[dir=ltr] .website .input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback), html[lang=en] .website .input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+html[dir=ltr] .website .input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback),
+html[lang=en] .website .input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   border-right: 1px solid #DBDBDB;
 }
-html[dir=ltr] .website .breadcrumb-item + .breadcrumb-item::before, html[lang=en] .website .breadcrumb-item + .breadcrumb-item::before {
+html[dir=ltr] .website .breadcrumb-item + .breadcrumb-item::before,
+html[lang=en] .website .breadcrumb-item + .breadcrumb-item::before {
   float: left;
   margin: 0 5px;
 }
@@ -2447,9 +2479,41 @@ html[dir=ltr] .website .breadcrumb-item + .breadcrumb-item::before, html[lang=en
   width: auto !important;
 }
 
-.service_item {
-  border-right: 1px solid #F5F5F9;
-  border-bottom: 1px solid #F5F5F9;
+.category__img {
+  position: relative;
+  padding-bottom: 40px;
+  min-height: 260px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.category__img:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 160px;
+  height: 160px;
+  background-color: #F6F6F6;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+
+.category__img img {
+  height: 170px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: scale(1);
+}
+
+.categories__items:hover .category__img::before {
+  background-color: #A38142 !important;
+}
+
+.categories__items:hover img {
+  height: 220px;
+  transform: scale(1);
 }
 
 .store nav, .store .sec__navbar {

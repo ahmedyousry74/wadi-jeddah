@@ -1621,6 +1621,10 @@ html[lang='en'] {
     height: 170px;
     object-fit: cover;
     transform: scale(1);
+    @media(max-width: 767px){
+        height: 200px;
+        object-fit: contain;
+    }
 }
 .categories__items:hover .category__img::before{
     background-color: #A38142 !important;

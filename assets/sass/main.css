@@ -1108,6 +1108,23 @@ body.website[dir=ltr] .contact__us__page form .input-group-text {
   background-color: #111 !important;
 }
 
+.form__print .store__item input[type=radio]:checked + label {
+  background: #a38142;
+  gap: 8px !important;
+  display: flex;
+  border: 1px solid #a38142;
+}
+.form__print .store__item input[type=radio]:checked + label h6 {
+  color: #fff !important;
+}
+.form__print .select__size input[type=radio]:checked + label, .form__print .select__color input[type=radio]:checked + label, .form__print .select__shape input[type=radio]:checked + label, .form__print .select__tgh input[type=radio]:checked + label, .form__print .select__sides input[type=radio]:checked + label {
+  background: #a38142;
+  border: 1px solid #a38142;
+}
+.form__print .select__size input[type=radio]:checked + label h6, .form__print .select__color input[type=radio]:checked + label h6, .form__print .select__shape input[type=radio]:checked + label h6, .form__print .select__tgh input[type=radio]:checked + label h6, .form__print .select__sides input[type=radio]:checked + label h6 {
+  color: #fff !important;
+}
+
 .website .contact__us__page {
   padding: 50px 0;
 }

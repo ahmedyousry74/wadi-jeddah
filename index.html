@@ -26,8 +26,9 @@
       <nav class="navbar navbar-expand-lg border-b border-solid border-[#d4d3d3]">
           <div class="container">
             <div class=" d-lg-none -mt-[14px] flex justify-between items-center flex-row" style="display: flex;justify-content: space-between;align-items: center;width: 100%;;">
-              <a class="navbar-brand d-lg-none" href="index.html">
-                  <img src="./assets/images/logo2.png" alt="logo" loaing="lazy"  class="logo !w-[160px]">
+              <a class="flex flex-row items-center justify-start gap-1 navbar-brand d-lg-none" href="index.html">
+                  <img src="./assets/images/king.png" alt="logo" loaing="lazy"  class="logo !w-[85px]">
+                  <span class="text-primary-color font-semibold text-[14px]"> متجر جامعة الملك عبدالعزيز </span>
               </a>
               <button
                 class="btn navbar-toggler"
@@ -48,16 +49,18 @@
               <div class="offcanvas-header d-flex d-lg-none">
                 <a
                   href="javascript:void(0)"
-                  class="text-reset p-0"
+                  class="flex flex-row items-center justify-start gap-2 p-0 text-reset"
                   data-bs-dismiss="offcanvas"
                   aria-label="close"
                 >
                 <img src="./assets/images/close.svg" class="colse_" alt="close" width="25" height="25" loading="lazy">
               </a>
+              
               </div>
-              <div class="offcanvas-body p-lg-0 d-flex justify-content-between align-items-center flex-row">
-                <a class="navbar-brand mt-[10px] md:block hidden" href="index.html">            
+              <div class="flex-row offcanvas-body p-lg-0 d-flex justify-content-between align-items-center">
+                <a class=" flex-row items-center justify-start gap-1 navbar-brand mt-[10px] md:flex hidden" href="index.html">            
                   <img src="./assets/images/king.png" alt="logo" loaing="lazy" class="object-fit-contain logo-main">
+                  <span class="text-primary-color font-semibold text-[18px]"> متجر جامعة الملك عبدالعزيز </span>
                 </a>
                 <ul class="navbar-nav navbar__links d-flex justify-content-between align-items-center flex-md-row">
                   <li class="nav-item">
@@ -85,9 +88,9 @@
       </nav>
     <!-- end navbar -->
     <!-- start top Navabr -->
-    <div class="top py-4">
+    <div class="py-4 top">
       <div class="container">
-        <div class="flex justify-between items-center flex-row">
+        <div class="flex flex-row items-center justify-between">
           <button id="toggleButton" class="justify-start items-center flex-row gap-2 bg-primary-color text-white rounded-[4px] py-[10px] px-[35px] md:flex hidden">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5 10H7C9 10 10 9 10 7V5C10 3 9 2 7 2H5C3 2 2 3 2 5V7C2 9 3 10 5 10Z" stroke="#E6EAEF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -133,8 +136,8 @@
               </div>
             </div>
           </div>
-          <div class="search__input flex">
-            <form action="" class="relative flex justify-start items-start flex-row gap-0 form__search">
+          <div class="flex search__input">
+            <form action="" class="relative flex flex-row items-start justify-start gap-0 form__search">
               <select class="form-select border border-solid !border-primary-color py-[8px] px-[15px] rounded-0 h-[48px] !md:w-[100px] w-[50px] bg-primary-color">
                 <option selected disabled>الفئات</option>
                 <option value="1">أجهزة</option>
@@ -149,7 +152,7 @@
               </button>
             </form>
           </div>
-          <div class="justify-start items-center flex-row gap-2 lg:flex hidden">
+          <div class="flex-row items-center justify-start hidden gap-2 lg:flex">
             <div class="icon">
               <svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M2.74982 18.65C2.33982 18.65 1.99982 18.31 1.99982 17.9V12.2C1.94982 9.48999 2.95982 6.92999 4.83982 5.00999C6.71982 3.09999 9.23982 2.04999 11.9498 2.04999C17.4898 2.04999 21.9998 6.55999 21.9998 12.1V17.8C21.9998 18.21 21.6598 18.55 21.2498 18.55C20.8398 18.55 20.4998 18.21 20.4998 17.8V12.1C20.4998 7.38999 16.6698 3.54999 11.9498 3.54999C9.63982 3.54999 7.49982 4.43999 5.90982 6.05999C4.30982 7.68999 3.45982 9.85999 3.49982 12.18V17.89C3.49982 18.31 3.16982 18.65 2.74982 18.65Z" fill="#253D4E"/>
@@ -157,7 +160,7 @@
                 <path d="M18.19 12.45H18.06C15.96 12.45 14.25 14.16 14.25 16.26V18.14C14.25 20.24 15.96 21.95 18.06 21.95H18.19C20.29 21.95 22 20.24 22 18.14V16.26C22 14.16 20.29 12.45 18.19 12.45Z" fill="#253D4E"/>
               </svg>
             </div>
-            <div class="flex justify-start items-start flex-col">
+            <div class="flex flex-col items-start justify-start">
               <span class="text-primary-color font-bold text-[18px]"> 5462840210 </span>
               <span class="text-third-color font-normal text-[15px]"> خدمة 24 / 7   </span>
             </div>
@@ -229,13 +232,13 @@
     <!-- header -->
     <div class="bg-[#fff] py-5">
       <div class="container">
-        <div class="flex justify-center items-center mb-4 wow fadeIn" data-wow-duration="0.5s" data-wow-delay="0.5s">
-          <h1 class="text-primary-color font-semibold !text-[24px]"> خدمات طلابية </h1>
+        <div class="flex items-center justify-center mb-4 wow fadeIn" data-wow-duration="0.5s" data-wow-delay="0.5s">
+          <h1 class="text-primary-color font-semibold !text-[24px]"> المتجر </h1>
         </div>
         <div class="services__items ">
           <div class="owl-carousel services__items_carousal owl-theme">
             
-              <a href="./store/index.html" class="categories__items flex justify-center items-center flex-col gap-4">
+              <a href="./store/index.html" class="flex flex-col items-center justify-center gap-4 categories__items">
                 <div class="category__img">
                   <img src="./assets/images/books.png" alt="book" class="object-contain">
                 </div>
@@ -245,7 +248,7 @@
               </a>
             
             
-              <a href="./store/index.html" class="categories__items flex justify-center items-center flex-col gap-4">
+              <a href="./store/index.html" class="flex flex-col items-center justify-center gap-4 categories__items">
                 <div class="category__img">
                   <img src="./assets/images/reader.png" alt="book" class="object-contain">
                 </div>
@@ -255,9 +258,9 @@
               </a>
             
             
-              <a href="./store/index.html" class="categories__items flex justify-center items-center flex-col gap-4">
+              <a href="./store/index.html" class="flex flex-col items-center justify-center gap-4 categories__items">
                 <div class="category__img">
-                  <img src="./assets/images-store/novel4.jpg" alt="book" class="object-contain">
+                  <img src="./assets/images/tst2.png" alt="book" class="object-contain">
                 </div>
                 <div class="category__desc">
                   <h6 class="text-[#333] font-semibold text-[17px]"> روايات </h6>
@@ -265,7 +268,7 @@
               </a>
             
             
-              <a href="./store/index.html" class="categories__items flex justify-center items-center flex-col gap-4">
+              <a href="./store/index.html" class="flex flex-col items-center justify-center gap-4 categories__items">
                 <div class="category__img">
                   <img src="./assets/images/qortasya.png" alt="book" class="object-contain">
                 </div>
@@ -275,7 +278,7 @@
               </a>
             
             
-              <a href="./store/index.html" class="categories__items flex justify-center items-center flex-col gap-4">
+              <a href="./store/index.html" class="flex flex-col items-center justify-center gap-4 categories__items">
                 <div class="category__img">
                   <img src="./assets/images/orint.png" alt="book" class="object-contain">
                 </div>
@@ -285,9 +288,9 @@
               </a>
             
             
-              <a href="./store/index.html" class="categories__items flex justify-center items-center flex-col gap-4">
+              <a href="./store/index.html" class="flex flex-col items-center justify-center gap-4 categories__items">
                 <div class="category__img">
-                  <img src="./assets/images-store/shirt.png" alt="book" class="object-contain">
+                  <img src="./assets/images/tst.png" alt="book" class="object-contain">
                 </div>
                 <div class="category__desc">
                   <h6 class="text-[#333] font-semibold text-[17px]"> دعايا و إعلان </h6>
@@ -295,27 +298,27 @@
               </a>
             
             
-              <a href="./store/index.html" class="categories__items flex justify-center items-center flex-col gap-4">
+              <a href="./store/index.html" class="flex flex-col items-center justify-center gap-4 categories__items">
                 <div class="category__img">
                   <img src="./assets/images-store/translate.png" alt="book" class="object-contain">
                 </div>
                 <div class="category__desc">
-                  <h6 class="text-[#333] font-semibold text-[17px]"> ترجمة متعددة </h6>
+                  <h6 class="text-[#333] font-semibold text-[17px]"> ترجمة معتمدة </h6>
                 </div>
               </a>
             
             
-              <a href="./store/index.html" class="categories__items flex justify-center items-center flex-col gap-4">
+              <a href="./store/index.html" class="flex flex-col items-center justify-center gap-4 categories__items">
                 <div class="category__img">
-                  <img src="./assets/images/gift.avif" alt="book" class="object-contain">
+                  <img src="./assets/images/tst3.png" alt="book" class="object-contain">
                 </div>
                 <div class="category__desc">
-                  <h6 class="text-[#333] font-semibold text-[17px]"> هديتي </h6>
+                  <h6 class="text-[#333] font-semibold text-[17px]"> تذكار  </h6>
                 </div>
               </a>
             
             
-              <a href="./store/index.html" class="categories__items flex justify-center items-center flex-col gap-4">
+              <a href="./store/index.html" class="flex flex-col items-center justify-center gap-4 categories__items">
                 <div class="category__img">
                   <img src="./assets/images/iph.png" alt="book" class="object-contain">
                 </div>
@@ -353,13 +356,13 @@
     <!-- end offers -->
     <div class="bg-[#fff] py-5">
       <div class="container">
-        <div class="flex justify-center items-center mb-4 wow fadeIn" data-wow-duration="0.5s" data-wow-delay="0.5s">
+        <div class="flex items-center justify-center mb-4 wow fadeIn" data-wow-duration="0.5s" data-wow-delay="0.5s">
           <h1 class="text-primary-color font-semibold !text-[24px]"> خدمات متنوعة </h1>
         </div>
         <div class="services__items ">
           <div class="owl-carousel services__items_carousal owl-theme">
             
-              <a href="./store/index.html" class="categories__items flex justify-center items-center flex-col gap-4">
+              <a href="./store/index.html" class="flex flex-col items-center justify-center gap-4 categories__items">
                 <div class="category__img">
                   <img src="./assets/images/tam.png" alt="book" class="object-contain">
                 </div>
@@ -369,7 +372,7 @@
               </a>
             
             
-              <a href="./store/index.html" class="categories__items flex justify-center items-center flex-col gap-4">
+              <a href="./store/index.html" class="flex flex-col items-center justify-center gap-4 categories__items">
                 <div class="category__img">
                   <img src="./assets/images/car.png" alt="book" class="object-contain">
                 </div>
@@ -379,7 +382,7 @@
               </a>
             
             
-              <a href="./store/index.html" class="categories__items flex justify-center items-center flex-col gap-4">
+              <a href="./store/index.html" class="flex flex-col items-center justify-center gap-4 categories__items">
                 <div class="category__img">
                   <img src="./assets/images/clubs.png" alt="book" class="object-contain">
                 </div>
@@ -389,7 +392,7 @@
               </a>
             
             
-              <a href="./store/index.html" class="categories__items flex justify-center items-center flex-col gap-4">
+              <a href="./store/index.html" class="flex flex-col items-center justify-center gap-4 categories__items">
                 <div class="category__img">
                   <img src="./assets/images/gym2.png" alt="book" class="object-contain">
                 </div>
@@ -399,7 +402,7 @@
               </a>
             
             
-              <a href="./store/index.html" class="categories__items flex justify-center items-center flex-col gap-4">
+              <a href="./store/index.html" class="flex flex-col items-center justify-center gap-4 categories__items">
                 <div class="category__img">
                   <img src="./assets/images/medical2.png" alt="book" class="object-contain">
                 </div>
@@ -409,7 +412,7 @@
               </a>
             
             
-              <a href="./store/index.html" class="categories__items flex justify-center items-center flex-col gap-4">
+              <a href="./store/index.html" class="flex flex-col items-center justify-center gap-4 categories__items">
                 <div class="category__img">
                   <img src="./assets/images/tourism1.png" alt="book" class="object-contain">
                 </div>
@@ -419,7 +422,7 @@
               </a>
             
             
-              <a href="./store/index.html" class="categories__items flex justify-center items-center flex-col gap-4">
+              <a href="./store/index.html" class="flex flex-col items-center justify-center gap-4 categories__items">
                 <div class="category__img">
                   <img src="./assets/images/plane.png" alt="book" class="object-contain">
                 </div>
@@ -462,24 +465,24 @@
         <div class="owl-carousel products_carousal owl-theme">
           
             <div class="product__item border border-solid border-[#ececec] rounded-[15px] relative py-2 mb-4">
-              <div class="product__img relative">
+              <div class="relative product__img">
                   <a href="product-details.html">
                     <img src="./assets/images-store/product3.jpg" alt="product" loading="lazy" class="h-[150px] w-100 object-contain">
                   </a>
                 
               </div>
-              <div class="product__info flex justify-start items-start flex-col gap-2 p-2">
-                <a href="product-details.html" class=" flex justify-start items-start flex-col gap-2">
+              <div class="flex flex-col items-start justify-start gap-2 p-2 product__info">
+                <a href="product-details.html" class="flex flex-col items-start justify-start gap-2 ">
                   <span class="text-fourth-color sm:text-[13px] text-[12px] font-normal"> أجهزة </span>
                   <h1 class="text-third-color font-semibold sm:text-[15px] text-[13px] m-0 leading-[1.5]">  موبايل أيفون 15 برو ماكس , 512GB </h1>
-                  <div class="stars flex justify-start items-center flex-row gap-1">
+                  <div class="flex flex-row items-center justify-start gap-1 stars">
                     <i class="fa-solid fa-star text-primary-color sm:text-[12px] text-[10px]"></i>
                     <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
                     <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
                     <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
                     <i class="fa-regular fa-star sm:text-[12px] text-[10px] text-third-color"></i>
                   </div>
-                  <div class="price flex justify-start items-center flex-row gap-3">
+                  <div class="flex flex-row items-center justify-start gap-3 price">
                     <span class="text-third-color font-semibold sm:text-[15px] text-[12px]"> 150 ر.س </span>
                     <span class="text-decoration-line-through text-fourth-color font-medium sm:text-[14px] text-[12px]"> 200 ر.س </span>
                   </div>
@@ -494,24 +497,24 @@
           </div>
           
             <div class="product__item border border-solid border-[#ececec] rounded-[15px] relative py-2 mb-4">
-                <div class="product__img relative">
+                <div class="relative product__img">
                     <a href="product-details.html">
                       <img src="./assets/images-store/product10.jpg" alt="product" loading="lazy" class="h-[150px] w-100 object-contain">
                     </a>
                   
                 </div>
-                <div class="product__info flex justify-start items-start flex-col gap-2 p-2">
-                  <a href="product-details.html" class=" flex justify-start items-start flex-col gap-2">
+                <div class="flex flex-col items-start justify-start gap-2 p-2 product__info">
+                  <a href="product-details.html" class="flex flex-col items-start justify-start gap-2 ">
                     <span class="text-fourth-color sm:text-[13px] text-[12px] font-normal"> أجهزة </span>
                     <h1 class="text-third-color font-semibold sm:text-[15px] text-[13px] m-0 leading-[1.5]">  موبايل أيفون 15 برو ماكس , 512GB </h1>
-                    <div class="stars flex justify-start items-center flex-row gap-1">
+                    <div class="flex flex-row items-center justify-start gap-1 stars">
                       <i class="fa-solid fa-star text-primary-color sm:text-[12px] text-[10px]"></i>
                       <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
                       <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
                       <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
                       <i class="fa-regular fa-star sm:text-[12px] text-[10px] text-third-color"></i>
                     </div>
-                    <div class="price flex justify-start items-center flex-row gap-3">
+                    <div class="flex flex-row items-center justify-start gap-3 price">
                       <span class="text-third-color font-semibold sm:text-[15px] text-[12px]"> 150 ر.س </span>
                       <span class="text-decoration-line-through text-fourth-color font-medium sm:text-[14px] text-[12px]"> 200 ر.س </span>
                     </div>
@@ -526,24 +529,24 @@
             </div>
           
             <div class="product__item border border-solid border-[#ececec] rounded-[15px] relative py-2 mb-4">
-                <div class="product__img relative">
+                <div class="relative product__img">
                     <a href="product-details.html">
                       <img src="./assets/images-store/product4.jpg" alt="product" loading="lazy" class="h-[150px] w-100 object-contain">
                     </a>
                   
                 </div>
-                <div class="product__info flex justify-start items-start flex-col gap-2 p-2">
-                  <a href="product-details.html" class=" flex justify-start items-start flex-col gap-2">
+                <div class="flex flex-col items-start justify-start gap-2 p-2 product__info">
+                  <a href="product-details.html" class="flex flex-col items-start justify-start gap-2 ">
                     <span class="text-fourth-color sm:text-[13px] text-[12px] font-normal"> أجهزة </span>
                     <h1 class="text-third-color font-semibold sm:text-[15px] text-[13px] m-0 leading-[1.5]">  موبايل أيفون 15 برو ماكس , 512GB </h1>
-                    <div class="stars flex justify-start items-center flex-row gap-1">
+                    <div class="flex flex-row items-center justify-start gap-1 stars">
                       <i class="fa-solid fa-star text-primary-color sm:text-[12px] text-[10px]"></i>
                       <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
                       <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
                       <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
                       <i class="fa-regular fa-star sm:text-[12px] text-[10px] text-third-color"></i>
                     </div>
-                    <div class="price flex justify-start items-center flex-row gap-3">
+                    <div class="flex flex-row items-center justify-start gap-3 price">
                       <span class="text-third-color font-semibold sm:text-[15px] text-[12px]"> 150 ر.س </span>
                       <span class="text-decoration-line-through text-fourth-color font-medium sm:text-[14px] text-[12px]"> 200 ر.س </span>
                     </div>
@@ -558,24 +561,24 @@
             </div>
           
             <div class="product__item border border-solid border-[#ececec] rounded-[15px] relative py-2 mb-4">
-                <div class="product__img relative">
+                <div class="relative product__img">
                     <a href="product-details.html">
                       <img src="./assets/images-store/product5.jpg" alt="product" loading="lazy" class="h-[150px] w-100 object-contain">
                     </a>
                   
                 </div>
-                <div class="product__info flex justify-start items-start flex-col gap-2 p-2">
-                  <a href="product-details.html" class=" flex justify-start items-start flex-col gap-2">
+                <div class="flex flex-col items-start justify-start gap-2 p-2 product__info">
+                  <a href="product-details.html" class="flex flex-col items-start justify-start gap-2 ">
                     <span class="text-fourth-color sm:text-[13px] text-[12px] font-normal"> أجهزة </span>
                     <h1 class="text-third-color font-semibold sm:text-[15px] text-[13px] m-0 leading-[1.5]">  موبايل أيفون 15 برو ماكس , 512GB </h1>
-                    <div class="stars flex justify-start items-center flex-row gap-1">
+                    <div class="flex flex-row items-center justify-start gap-1 stars">
                       <i class="fa-solid fa-star text-primary-color sm:text-[12px] text-[10px]"></i>
                       <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
                       <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
                       <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
                       <i class="fa-regular fa-star sm:text-[12px] text-[10px] text-third-color"></i>
                     </div>
-                    <div class="price flex justify-start items-center flex-row gap-3">
+                    <div class="flex flex-row items-center justify-start gap-3 price">
                       <span class="text-third-color font-semibold sm:text-[15px] text-[12px]"> 150 ر.س </span>
                       <span class="text-decoration-line-through text-fourth-color font-medium sm:text-[14px] text-[12px]"> 200 ر.س </span>
                     </div>
@@ -590,24 +593,24 @@
             </div>
           
             <div class="product__item border border-solid border-[#ececec] rounded-[15px] relative py-2 mb-4">
-                <div class="product__img relative">
+                <div class="relative product__img">
                     <a href="product-details.html">
                       <img src="./assets/images-store/product6.jpg" alt="product" loading="lazy" class="h-[150px] w-100 object-contain">
                     </a>
                   
                 </div>
-                <div class="product__info flex justify-start items-start flex-col gap-2 p-2">
-                  <a href="product-details.html" class=" flex justify-start items-start flex-col gap-2">
+                <div class="flex flex-col items-start justify-start gap-2 p-2 product__info">
+                  <a href="product-details.html" class="flex flex-col items-start justify-start gap-2 ">
                     <span class="text-fourth-color sm:text-[13px] text-[12px] font-normal"> أجهزة </span>
                     <h1 class="text-third-color font-semibold sm:text-[15px] text-[13px] m-0 leading-[1.5]">  موبايل أيفون 15 برو ماكس , 512GB </h1>
-                    <div class="stars flex justify-start items-center flex-row gap-1">
+                    <div class="flex flex-row items-center justify-start gap-1 stars">
                       <i class="fa-solid fa-star text-primary-color sm:text-[12px] text-[10px]"></i>
                       <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
                       <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
                       <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
                       <i class="fa-regular fa-star sm:text-[12px] text-[10px] text-third-color"></i>
                     </div>
-                    <div class="price flex justify-start items-center flex-row gap-3">
+                    <div class="flex flex-row items-center justify-start gap-3 price">
                       <span class="text-third-color font-semibold sm:text-[15px] text-[12px]"> 150 ر.س </span>
                       <span class="text-decoration-line-through text-fourth-color font-medium sm:text-[14px] text-[12px]"> 200 ر.س </span>
                     </div>
@@ -622,24 +625,24 @@
             </div>
           
             <div class="product__item border border-solid border-[#ececec] rounded-[15px] relative py-2 mb-4">
-                <div class="product__img relative">
+                <div class="relative product__img">
                     <a href="product-details.html">
                       <img src="./assets/images-store/product7.jpg" alt="product" loading="lazy" class="h-[150px] w-100 object-contain">
                     </a>
                   
                 </div>
-                <div class="product__info flex justify-start items-start flex-col gap-2 p-2">
-                  <a href="product-details.html" class=" flex justify-start items-start flex-col gap-2">
+                <div class="flex flex-col items-start justify-start gap-2 p-2 product__info">
+                  <a href="product-details.html" class="flex flex-col items-start justify-start gap-2 ">
                     <span class="text-fourth-color sm:text-[13px] text-[12px] font-normal"> أجهزة </span>
                     <h1 class="text-third-color font-semibold sm:text-[15px] text-[13px] m-0 leading-[1.5]">  موبايل أيفون 15 برو ماكس , 512GB </h1>
-                    <div class="stars flex justify-start items-center flex-row gap-1">
+                    <div class="flex flex-row items-center justify-start gap-1 stars">
                       <i class="fa-solid fa-star text-primary-color sm:text-[12px] text-[10px]"></i>
                       <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
                       <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
                       <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
                       <i class="fa-regular fa-star sm:text-[12px] text-[10px] text-third-color"></i>
                     </div>
-                    <div class="price flex justify-start items-center flex-row gap-3">
+                    <div class="flex flex-row items-center justify-start gap-3 price">
                       <span class="text-third-color font-semibold sm:text-[15px] text-[12px]"> 150 ر.س </span>
                       <span class="text-decoration-line-through text-fourth-color font-medium sm:text-[14px] text-[12px]"> 200 ر.س </span>
                     </div>
@@ -654,24 +657,24 @@
             </div>
           
             <div class="product__item border border-solid border-[#ececec] rounded-[15px] relative py-2 mb-4">
-                <div class="product__img relative">
+                <div class="relative product__img">
                     <a href="product-details.html">
                       <img src="./assets/images-store/product8.jpg" alt="product" loading="lazy" class="h-[150px] w-100 object-contain">
                     </a>
                   
                 </div>
-                <div class="product__info flex justify-start items-start flex-col gap-2 p-2">
-                  <a href="product-details.html" class=" flex justify-start items-start flex-col gap-2">
+                <div class="flex flex-col items-start justify-start gap-2 p-2 product__info">
+                  <a href="product-details.html" class="flex flex-col items-start justify-start gap-2 ">
                     <span class="text-fourth-color sm:text-[13px] text-[12px] font-normal"> أجهزة </span>
                     <h1 class="text-third-color font-semibold sm:text-[15px] text-[13px] m-0 leading-[1.5]">  موبايل أيفون 15 برو ماكس , 512GB </h1>
-                    <div class="stars flex justify-start items-center flex-row gap-1">
+                    <div class="flex flex-row items-center justify-start gap-1 stars">
                       <i class="fa-solid fa-star text-primary-color sm:text-[12px] text-[10px]"></i>
                       <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
                       <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
                       <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
                       <i class="fa-regular fa-star sm:text-[12px] text-[10px] text-third-color"></i>
                     </div>
-                    <div class="price flex justify-start items-center flex-row gap-3">
+                    <div class="flex flex-row items-center justify-start gap-3 price">
                       <span class="text-third-color font-semibold sm:text-[15px] text-[12px]"> 150 ر.س </span>
                       <span class="text-decoration-line-through text-fourth-color font-medium sm:text-[14px] text-[12px]"> 200 ر.س </span>
                     </div>
@@ -686,24 +689,24 @@
             </div>
           
             <div class="product__item border border-solid border-[#ececec] rounded-[15px] relative py-2 mb-4">
-                <div class="product__img relative">
+                <div class="relative product__img">
                     <a href="product-details.html">
                       <img src="./assets/images-store/product9.jpg" alt="product" loading="lazy" class="h-[150px] w-100 object-contain">
                     </a>
                   
                 </div>
-                <div class="product__info flex justify-start items-start flex-col gap-2 p-2">
-                  <a href="product-details.html" class=" flex justify-start items-start flex-col gap-2">
+                <div class="flex flex-col items-start justify-start gap-2 p-2 product__info">
+                  <a href="product-details.html" class="flex flex-col items-start justify-start gap-2 ">
                     <span class="text-fourth-color sm:text-[13px] text-[12px] font-normal"> أجهزة </span>
                     <h1 class="text-third-color font-semibold sm:text-[15px] text-[13px] m-0 leading-[1.5]">  موبايل أيفون 15 برو ماكس , 512GB </h1>
-                    <div class="stars flex justify-start items-center flex-row gap-1">
+                    <div class="flex flex-row items-center justify-start gap-1 stars">
                       <i class="fa-solid fa-star text-primary-color sm:text-[12px] text-[10px]"></i>
                       <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
                       <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
                       <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
                       <i class="fa-regular fa-star sm:text-[12px] text-[10px] text-third-color"></i>
                     </div>
-                    <div class="price flex justify-start items-center flex-row gap-3">
+                    <div class="flex flex-row items-center justify-start gap-3 price">
                       <span class="text-third-color font-semibold sm:text-[15px] text-[12px]"> 150 ر.س </span>
                       <span class="text-decoration-line-through text-fourth-color font-medium sm:text-[14px] text-[12px]"> 200 ر.س </span>
                     </div>
@@ -723,7 +726,7 @@
     <!-- end offers -->
 
 
-    <div class="ads mt-5">
+    <div class="mt-5 ads">
       <div class="active">
         <div class="row">
           <div class="col-md-6">
@@ -751,24 +754,24 @@
         <div class="owl-carousel products_carousal owl-theme">
           
             <div class="product__item border border-solid border-[#ececec] rounded-[15px] relative py-2 mb-4">
-              <div class="product__img relative">
+              <div class="relative product__img">
                   <a href="product-details.html">
                     <img src="./assets/images-store/product3.jpg" alt="product" loading="lazy" class="h-[150px] w-100 object-contain">
                   </a>
                 
               </div>
-              <div class="product__info flex justify-start items-start flex-col gap-2 p-2">
-                <a href="product-details.html" class=" flex justify-start items-start flex-col gap-2">
+              <div class="flex flex-col items-start justify-start gap-2 p-2 product__info">
+                <a href="product-details.html" class="flex flex-col items-start justify-start gap-2 ">
                   <span class="text-fourth-color sm:text-[13px] text-[12px] font-normal"> أجهزة </span>
                   <h1 class="text-third-color font-semibold sm:text-[15px] text-[13px] m-0 leading-[1.5]">  موبايل أيفون 15 برو ماكس , 512GB </h1>
-                  <div class="stars flex justify-start items-center flex-row gap-1">
+                  <div class="flex flex-row items-center justify-start gap-1 stars">
                     <i class="fa-solid fa-star text-primary-color sm:text-[12px] text-[10px]"></i>
                     <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
                     <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
                     <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
                     <i class="fa-regular fa-star sm:text-[12px] text-[10px] text-third-color"></i>
                   </div>
-                  <div class="price flex justify-start items-center flex-row gap-3">
+                  <div class="flex flex-row items-center justify-start gap-3 price">
                     <span class="text-third-color font-semibold sm:text-[15px] text-[12px]"> 150 ر.س </span>
                     <span class="text-decoration-line-through text-fourth-color font-medium sm:text-[14px] text-[12px]"> 200 ر.س </span>
                   </div>
@@ -783,24 +786,24 @@
           </div>
           
             <div class="product__item border border-solid border-[#ececec] rounded-[15px] relative py-2 mb-4">
-                <div class="product__img relative">
+                <div class="relative product__img">
                     <a href="product-details.html">
                       <img src="./assets/images-store/product10.jpg" alt="product" loading="lazy" class="h-[150px] w-100 object-contain">
                     </a>
                   
                 </div>
-                <div class="product__info flex justify-start items-start flex-col gap-2 p-2">
-                  <a href="product-details.html" class=" flex justify-start items-start flex-col gap-2">
+                <div class="flex flex-col items-start justify-start gap-2 p-2 product__info">
+                  <a href="product-details.html" class="flex flex-col items-start justify-start gap-2 ">
                     <span class="text-fourth-color sm:text-[13px] text-[12px] font-normal"> أجهزة </span>
                     <h1 class="text-third-color font-semibold sm:text-[15px] text-[13px] m-0 leading-[1.5]">  موبايل أيفون 15 برو ماكس , 512GB </h1>
-                    <div class="stars flex justify-start items-center flex-row gap-1">
+                    <div class="flex flex-row items-center justify-start gap-1 stars">
                       <i class="fa-solid fa-star text-primary-color sm:text-[12px] text-[10px]"></i>
                       <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
                       <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
                       <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
                       <i class="fa-regular fa-star sm:text-[12px] text-[10px] text-third-color"></i>
                     </div>
-                    <div class="price flex justify-start items-center flex-row gap-3">
+                    <div class="flex flex-row items-center justify-start gap-3 price">
                       <span class="text-third-color font-semibold sm:text-[15px] text-[12px]"> 150 ر.س </span>
                       <span class="text-decoration-line-through text-fourth-color font-medium sm:text-[14px] text-[12px]"> 200 ر.س </span>
                     </div>
@@ -815,24 +818,24 @@
             </div>
           
             <div class="product__item border border-solid border-[#ececec] rounded-[15px] relative py-2 mb-4">
-                <div class="product__img relative">
+                <div class="relative product__img">
                     <a href="product-details.html">
                       <img src="./assets/images-store/product4.jpg" alt="product" loading="lazy" class="h-[150px] w-100 object-contain">
                     </a>
                   
                 </div>
-                <div class="product__info flex justify-start items-start flex-col gap-2 p-2">
-                  <a href="product-details.html" class=" flex justify-start items-start flex-col gap-2">
+                <div class="flex flex-col items-start justify-start gap-2 p-2 product__info">
+                  <a href="product-details.html" class="flex flex-col items-start justify-start gap-2 ">
                     <span class="text-fourth-color sm:text-[13px] text-[12px] font-normal"> أجهزة </span>
                     <h1 class="text-third-color font-semibold sm:text-[15px] text-[13px] m-0 leading-[1.5]">  موبايل أيفون 15 برو ماكس , 512GB </h1>
-                    <div class="stars flex justify-start items-center flex-row gap-1">
+                    <div class="flex flex-row items-center justify-start gap-1 stars">
                       <i class="fa-solid fa-star text-primary-color sm:text-[12px] text-[10px]"></i>
                       <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
                       <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
                       <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
                       <i class="fa-regular fa-star sm:text-[12px] text-[10px] text-third-color"></i>
                     </div>
-                    <div class="price flex justify-start items-center flex-row gap-3">
+                    <div class="flex flex-row items-center justify-start gap-3 price">
                       <span class="text-third-color font-semibold sm:text-[15px] text-[12px]"> 150 ر.س </span>
                       <span class="text-decoration-line-through text-fourth-color font-medium sm:text-[14px] text-[12px]"> 200 ر.س </span>
                     </div>
@@ -847,24 +850,24 @@
             </div>
           
             <div class="product__item border border-solid border-[#ececec] rounded-[15px] relative py-2 mb-4">
-                <div class="product__img relative">
+                <div class="relative product__img">
                     <a href="product-details.html">
                       <img src="./assets/images-store/product5.jpg" alt="product" loading="lazy" class="h-[150px] w-100 object-contain">
                     </a>
                   
                 </div>
-                <div class="product__info flex justify-start items-start flex-col gap-2 p-2">
-                  <a href="product-details.html" class=" flex justify-start items-start flex-col gap-2">
+                <div class="flex flex-col items-start justify-start gap-2 p-2 product__info">
+                  <a href="product-details.html" class="flex flex-col items-start justify-start gap-2 ">
                     <span class="text-fourth-color sm:text-[13px] text-[12px] font-normal"> أجهزة </span>
                     <h1 class="text-third-color font-semibold sm:text-[15px] text-[13px] m-0 leading-[1.5]">  موبايل أيفون 15 برو ماكس , 512GB </h1>
-                    <div class="stars flex justify-start items-center flex-row gap-1">
+                    <div class="flex flex-row items-center justify-start gap-1 stars">
                       <i class="fa-solid fa-star text-primary-color sm:text-[12px] text-[10px]"></i>
                       <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
                       <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
                       <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
                       <i class="fa-regular fa-star sm:text-[12px] text-[10px] text-third-color"></i>
                     </div>
-                    <div class="price flex justify-start items-center flex-row gap-3">
+                    <div class="flex flex-row items-center justify-start gap-3 price">
                       <span class="text-third-color font-semibold sm:text-[15px] text-[12px]"> 150 ر.س </span>
                       <span class="text-decoration-line-through text-fourth-color font-medium sm:text-[14px] text-[12px]"> 200 ر.س </span>
                     </div>
@@ -879,24 +882,24 @@
             </div>
           
             <div class="product__item border border-solid border-[#ececec] rounded-[15px] relative py-2 mb-4">
-                <div class="product__img relative">
+                <div class="relative product__img">
                     <a href="product-details.html">
                       <img src="./assets/images-store/product6.jpg" alt="product" loading="lazy" class="h-[150px] w-100 object-contain">
                     </a>
                   
                 </div>
-                <div class="product__info flex justify-start items-start flex-col gap-2 p-2">
-                  <a href="product-details.html" class=" flex justify-start items-start flex-col gap-2">
+                <div class="flex flex-col items-start justify-start gap-2 p-2 product__info">
+                  <a href="product-details.html" class="flex flex-col items-start justify-start gap-2 ">
                     <span class="text-fourth-color sm:text-[13px] text-[12px] font-normal"> أجهزة </span>
                     <h1 class="text-third-color font-semibold sm:text-[15px] text-[13px] m-0 leading-[1.5]">  موبايل أيفون 15 برو ماكس , 512GB </h1>
-                    <div class="stars flex justify-start items-center flex-row gap-1">
+                    <div class="flex flex-row items-center justify-start gap-1 stars">
                       <i class="fa-solid fa-star text-primary-color sm:text-[12px] text-[10px]"></i>
                       <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
                       <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
                       <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
                       <i class="fa-regular fa-star sm:text-[12px] text-[10px] text-third-color"></i>
                     </div>
-                    <div class="price flex justify-start items-center flex-row gap-3">
+                    <div class="flex flex-row items-center justify-start gap-3 price">
                       <span class="text-third-color font-semibold sm:text-[15px] text-[12px]"> 150 ر.س </span>
                       <span class="text-decoration-line-through text-fourth-color font-medium sm:text-[14px] text-[12px]"> 200 ر.س </span>
                     </div>
@@ -911,24 +914,24 @@
             </div>
           
             <div class="product__item border border-solid border-[#ececec] rounded-[15px] relative py-2 mb-4">
-                <div class="product__img relative">
+                <div class="relative product__img">
                     <a href="product-details.html">
                       <img src="./assets/images-store/product7.jpg" alt="product" loading="lazy" class="h-[150px] w-100 object-contain">
                     </a>
                   
                 </div>
-                <div class="product__info flex justify-start items-start flex-col gap-2 p-2">
-                  <a href="product-details.html" class=" flex justify-start items-start flex-col gap-2">
+                <div class="flex flex-col items-start justify-start gap-2 p-2 product__info">
+                  <a href="product-details.html" class="flex flex-col items-start justify-start gap-2 ">
                     <span class="text-fourth-color sm:text-[13px] text-[12px] font-normal"> أجهزة </span>
                     <h1 class="text-third-color font-semibold sm:text-[15px] text-[13px] m-0 leading-[1.5]">  موبايل أيفون 15 برو ماكس , 512GB </h1>
-                    <div class="stars flex justify-start items-center flex-row gap-1">
+                    <div class="flex flex-row items-center justify-start gap-1 stars">
                       <i class="fa-solid fa-star text-primary-color sm:text-[12px] text-[10px]"></i>
                       <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
                       <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
                       <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
                       <i class="fa-regular fa-star sm:text-[12px] text-[10px] text-third-color"></i>
                     </div>
-                    <div class="price flex justify-start items-center flex-row gap-3">
+                    <div class="flex flex-row items-center justify-start gap-3 price">
                       <span class="text-third-color font-semibold sm:text-[15px] text-[12px]"> 150 ر.س </span>
                       <span class="text-decoration-line-through text-fourth-color font-medium sm:text-[14px] text-[12px]"> 200 ر.س </span>
                     </div>
@@ -943,24 +946,24 @@
             </div>
           
             <div class="product__item border border-solid border-[#ececec] rounded-[15px] relative py-2 mb-4">
-                <div class="product__img relative">
+                <div class="relative product__img">
                     <a href="product-details.html">
                       <img src="./assets/images-store/product8.jpg" alt="product" loading="lazy" class="h-[150px] w-100 object-contain">
                     </a>
                   
                 </div>
-                <div class="product__info flex justify-start items-start flex-col gap-2 p-2">
-                  <a href="product-details.html" class=" flex justify-start items-start flex-col gap-2">
+                <div class="flex flex-col items-start justify-start gap-2 p-2 product__info">
+                  <a href="product-details.html" class="flex flex-col items-start justify-start gap-2 ">
                     <span class="text-fourth-color sm:text-[13px] text-[12px] font-normal"> أجهزة </span>
                     <h1 class="text-third-color font-semibold sm:text-[15px] text-[13px] m-0 leading-[1.5]">  موبايل أيفون 15 برو ماكس , 512GB </h1>
-                    <div class="stars flex justify-start items-center flex-row gap-1">
+                    <div class="flex flex-row items-center justify-start gap-1 stars">
                       <i class="fa-solid fa-star text-primary-color sm:text-[12px] text-[10px]"></i>
                       <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
                       <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
                       <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
                       <i class="fa-regular fa-star sm:text-[12px] text-[10px] text-third-color"></i>
                     </div>
-                    <div class="price flex justify-start items-center flex-row gap-3">
+                    <div class="flex flex-row items-center justify-start gap-3 price">
                       <span class="text-third-color font-semibold sm:text-[15px] text-[12px]"> 150 ر.س </span>
                       <span class="text-decoration-line-through text-fourth-color font-medium sm:text-[14px] text-[12px]"> 200 ر.س </span>
                     </div>
@@ -975,24 +978,24 @@
             </div>
           
             <div class="product__item border border-solid border-[#ececec] rounded-[15px] relative py-2 mb-4">
-                <div class="product__img relative">
+                <div class="relative product__img">
                     <a href="product-details.html">
                       <img src="./assets/images-store/product9.jpg" alt="product" loading="lazy" class="h-[150px] w-100 object-contain">
                     </a>
                   
                 </div>
-                <div class="product__info flex justify-start items-start flex-col gap-2 p-2">
-                  <a href="product-details.html" class=" flex justify-start items-start flex-col gap-2">
+                <div class="flex flex-col items-start justify-start gap-2 p-2 product__info">
+                  <a href="product-details.html" class="flex flex-col items-start justify-start gap-2 ">
                     <span class="text-fourth-color sm:text-[13px] text-[12px] font-normal"> أجهزة </span>
                     <h1 class="text-third-color font-semibold sm:text-[15px] text-[13px] m-0 leading-[1.5]">  موبايل أيفون 15 برو ماكس , 512GB </h1>
-                    <div class="stars flex justify-start items-center flex-row gap-1">
+                    <div class="flex flex-row items-center justify-start gap-1 stars">
                       <i class="fa-solid fa-star text-primary-color sm:text-[12px] text-[10px]"></i>
                       <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
                       <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
                       <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
                       <i class="fa-regular fa-star sm:text-[12px] text-[10px] text-third-color"></i>
                     </div>
-                    <div class="price flex justify-start items-center flex-row gap-3">
+                    <div class="flex flex-row items-center justify-start gap-3 price">
                       <span class="text-third-color font-semibold sm:text-[15px] text-[12px]"> 150 ر.س </span>
                       <span class="text-decoration-line-through text-fourth-color font-medium sm:text-[14px] text-[12px]"> 200 ر.س </span>
                     </div>
@@ -1014,8 +1017,8 @@
     <!-- start how works -->
     <section class="how__to__work" id="howToWork">
       <h2 class="title__section"> كيف يعمل الموقع </h2>
-        <div class="how__works__items d-flex justify-content-between align-items-center flex-row">
-          <div class="how__work__item d-flex justify-content-start align-items-start flex-column gap-3 wow fadeIn" data-wow-duration="0.5s" data-wow-delay="0.5s">
+        <div class="flex-row how__works__items d-flex justify-content-between align-items-center">
+          <div class="gap-3 how__work__item d-flex justify-content-start align-items-start flex-column wow fadeIn" data-wow-duration="0.5s" data-wow-delay="0.5s">
               <img src="./assets/images/how1.svg" alt="how1" width="50" height="50" loading="lazy">
               <h6>استعرض الخدمات</h6>
               <p class="m-0">بحث عن الخدمة التي تحتاجها باستخدام مربع البحث في الأعلى أو عبر التصنيفات.</p>
@@ -1026,7 +1029,7 @@
                   </svg>                  
               </a>
           </div>
-          <div class="how__work__item d-flex justify-content-start align-items-start flex-column gap-3 wow fadeIn" data-wow-duration="0.6s" data-wow-delay="0.6s">
+          <div class="gap-3 how__work__item d-flex justify-content-start align-items-start flex-column wow fadeIn" data-wow-duration="0.6s" data-wow-delay="0.6s">
             <img src="./assets/images/how2.svg" alt="how1" width="50" height="50" loading="lazy">
             <h6>اطلب الخدمة</h6>
             <p class="m-0">راجع وصف الخدمة وتقييمات المشترين ثم اطلبها لفتح تواصل مع البائع.</p>
@@ -1037,7 +1040,7 @@
                 </svg>                  
             </a>
         </div>
-        <div class="how__work__item d-flex justify-content-start align-items-start flex-column gap-3 wow fadeIn" data-wow-duration="0.7s" data-wow-delay="0.7s">
+        <div class="gap-3 how__work__item d-flex justify-content-start align-items-start flex-column wow fadeIn" data-wow-duration="0.7s" data-wow-delay="0.7s">
           <img src="./assets/images/how3.svg" alt="how1" width="50" height="50" loading="lazy">
           <h6>استلم خدمتك</h6>
           <p class="m-0">تواصل مع البائع مباشرة داخل الموقع حتى استلام طلبك كاملاً.</p>
@@ -1129,12 +1132,12 @@
     <!-- start footer -->
         <footer style="background-image: url('./assets/images/footerBG.png');">
           <div class="">
-            <div class="d-flex justify-content-between align-items-start flex-row flex-wrap">
+            <div class="flex-row flex-wrap d-flex justify-content-between align-items-start">
     
               <div class="footer__info d-flex justify-content-start align-items-start flex-column">
                 <img src="./assets/images/logo.png" alt="logo" loaing="lazy" class="logo">
                 <p> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى حيث يمكنك ن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى الموقع الالكترونى. </p>
-                <div class="social__links d-flex justify-content-start align-items-start flex-row">
+                <div class="flex-row social__links d-flex justify-content-start align-items-start">
                   <a href=""> <img src="./assets/images/intagram.svg" alt="intagram" width="15" height="15" loaing="lazy"> </a>
                   <a href=""> <img src="./assets/images/twitter.svg" alt="twitter" width="15" height="15" loaing="lazy"> </a>
                   <a href=""> <img src="./assets/images/linkedin.svg" alt="linkedin" width="15" height="15" loaing="lazy"> </a>
@@ -1157,7 +1160,7 @@
                   <li> <a href=""> خدمات طلابية و تصوير </a> </li>
                   <li> <a href=""> كتب عامة و روايات </a> </li>
                   <li> <a href=""> أجهزة إلكترونية</a> </li>
-                  <li> <a href=""> ترجمة متعددة </a> </li>
+                  <li> <a href=""> ترجمة معتمدة </a> </li>
                   <li> <a href=""> دعايا و إعلان و رؤية بصرية </a> </li>
                 </ul>
               </div>
@@ -1165,7 +1168,7 @@
               <div class="footer__links d-flex justify-content-start align-items-start flex-column">
                 <h2> تواصل معنا </h2>
                 <ul class="d-flex justify-content-start align-items-start flex-column">
-                  <li> <a href="" class="d-flex justify-content-start align-items-center flex-row"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <li> <a href="" class="flex-row d-flex justify-content-start align-items-center"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path opacity="0.4" d="M12 22C16 18 20 14.4183 20 10C20 5.58172 16.4183 2 12 2C7.58172 2 4 5.58172 4 10C4 14.4183 8 18 12 22Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
@@ -1173,7 +1176,7 @@
                       الرياض حي الملك فيصل، السعودية  
                     </span>
                     </a> </li>
-                  <li> <a href="tel:+966 570 212 216" class="d-flex justify-content-start align-items-center flex-row"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <li> <a href="tel:+966 570 212 216" class="flex-row d-flex justify-content-start align-items-center"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path opacity="0.4" d="M14.05 6C15.0268 6.19057 15.9244 6.66826 16.6281 7.37194C17.3318 8.07561 17.8095 8.97326 18 9.95M14.05 2C16.0793 2.22544 17.9716 3.13417 19.4163 4.57701C20.8609 6.01984 21.7721 7.91101 22 9.94" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M7.38064 9.85323C8.07664 11.3028 9.02543 12.6615 10.227 13.8631C11.4286 15.0646 12.7872 16.0134 14.2368 16.7094C14.3615 16.7693 14.4239 16.7992 14.5028 16.8222C14.7831 16.904 15.1274 16.8453 15.3648 16.6752C15.4316 16.6274 15.4888 16.5702 15.6031 16.4559C15.9527 16.1063 16.1275 15.9315 16.3033 15.8172C16.9662 15.3862 17.8208 15.3862 18.4836 15.8172C18.6594 15.9315 18.8342 16.1063 19.1838 16.4559L19.3787 16.6508C19.9101 17.1822 20.1759 17.448 20.3202 17.7333C20.6073 18.3009 20.6073 18.9712 20.3202 19.5387C20.1759 19.8241 19.9101 20.0898 19.3787 20.6213L19.2211 20.7789C18.6914 21.3085 18.4266 21.5733 18.0666 21.7756C17.6671 22 17.0466 22.1614 16.5884 22.16C16.1754 22.1588 15.8932 22.0787 15.3288 21.9185C12.2954 21.0575 9.43301 19.433 7.04503 17.045C4.65705 14.6571 3.03257 11.7947 2.1716 8.76131C2.01139 8.19687 1.93129 7.91464 1.93006 7.5017C1.9287 7.04347 2.09006 6.42298 2.31448 6.02348C2.51673 5.66345 2.78154 5.39863 3.31116 4.86901L3.4688 4.71138C4.00024 4.17993 4.26596 3.91421 4.55134 3.76987C5.1189 3.4828 5.78917 3.4828 6.35673 3.76987C6.64211 3.91421 6.90783 4.17993 7.43927 4.71138L7.63414 4.90625C7.98375 5.25585 8.15855 5.43065 8.27284 5.60643C8.70383 6.26932 8.70383 7.1239 8.27284 7.78679C8.15855 7.96257 7.98375 8.13738 7.63414 8.48698C7.51983 8.60129 7.46268 8.65845 7.41483 8.72526C7.24482 8.96269 7.18612 9.30695 7.26785 9.5873C7.29084 9.6662 7.32078 9.72854 7.38064 9.85323Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
@@ -1181,7 +1184,7 @@
                       966570212216+  
                     </span>
                     </a> </li>
-                  <li> <a href="mailto:info@soum.tech"  class="d-flex justify-content-start align-items-center flex-row"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <li> <a href="mailto:info@soum.tech"  class="flex-row d-flex justify-content-start align-items-center"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path opacity="0.4" d="M21.5 19L14.8572 13M9.14282 13L2.5 19M13.744 2.63358L21.272 7.52679C21.538 7.69969 21.671 7.78615 21.7674 7.90146C21.8527 8.00354 21.9167 8.12162 21.9558 8.24877C22 8.39241 22 8.55104 22 8.8683V16.2C22 17.8802 22 18.7202 21.673 19.362C21.3854 19.9265 20.9265 20.3854 20.362 20.673C19.7202 21 18.8802 21 17.2 21H6.8C5.11984 21 4.27976 21 3.63803 20.673C3.07354 20.3854 2.6146 19.9265 2.32698 19.362C2 18.7202 2 17.8802 2 16.2V8.8683C2 8.55104 2 8.39241 2.04417 8.24877C2.08327 8.12162 2.14735 8.00354 2.23265 7.90146C2.32901 7.78615 2.46201 7.69969 2.72802 7.52679L10.256 2.63358C10.8873 2.22327 11.2029 2.01812 11.543 1.93829C11.8436 1.86774 12.1564 1.86774 12.457 1.93829C12.7971 2.01812 13.1127 2.22327 13.744 2.63358Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M10.2561 13.3663L3.03196 8.67064C2.68804 8.44709 2.51607 8.33531 2.45652 8.19356C2.40447 8.06969 2.40447 7.93008 2.45652 7.8062C2.51607 7.66445 2.68804 7.55268 3.03196 7.32913L10.2561 2.63346C10.8873 2.22315 11.2029 2.01799 11.543 1.93817C11.8436 1.86761 12.1565 1.86761 12.4571 1.93817C12.7971 2.01799 13.1127 2.22315 13.744 2.63346L20.9681 7.32913C21.312 7.55268 21.484 7.66445 21.5435 7.8062C21.5956 7.93008 21.5956 8.06969 21.5435 8.19356C21.484 8.33531 21.312 8.44709 20.9681 8.67064L13.744 13.3663C13.1128 13.7766 12.7971 13.9818 12.4571 14.0616C12.1565 14.1321 11.8436 14.1321 11.543 14.0616C11.2029 13.9818 10.8873 13.7766 10.2561 13.3663Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>

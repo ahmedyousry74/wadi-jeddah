@@ -27,8 +27,9 @@
     <nav class="navbar navbar-expand-lg border-b border-solid border-[#d4d3d3]">
       <div class="container">
         <div class=" d-lg-none -mt-[14px] flex justify-between items-center flex-row" style="display: flex;justify-content: space-between;align-items: center;width: 100%;;">
-          <a class="navbar-brand d-lg-none" href="index.html">
-              <img src="./assets/images/logo2.png" alt="logo" loaing="lazy"  class="logo !w-[160px]">
+          <a class="flex flex-row items-center justify-start gap-1 navbar-brand d-lg-none" href="index.html">
+              <img src="./assets/images/king.png" alt="logo" loaing="lazy"  class="logo !w-[85px]">
+              <span class="text-primary-color font-semibold text-[14px]"> متجر جامعة الملك عبدالعزيز </span>
           </a>
           <button
             class="btn navbar-toggler"
@@ -49,16 +50,18 @@
           <div class="offcanvas-header d-flex d-lg-none">
             <a
               href="javascript:void(0)"
-              class="text-reset p-0"
+              class="flex flex-row items-center justify-start gap-2 p-0 text-reset"
               data-bs-dismiss="offcanvas"
               aria-label="close"
             >
             <img src="./assets/images/close.svg" class="colse_" alt="close" width="25" height="25" loading="lazy">
           </a>
+          
           </div>
-          <div class="offcanvas-body p-lg-0 d-flex justify-content-between align-items-center flex-row">
-            <a class="navbar-brand mt-[10px] md:block hidden" href="index.html">            
+          <div class="flex-row offcanvas-body p-lg-0 d-flex justify-content-between align-items-center">
+            <a class=" flex-row items-center justify-start gap-1 navbar-brand mt-[10px] md:flex hidden" href="index.html">            
               <img src="./assets/images/king.png" alt="logo" loaing="lazy" class="object-fit-contain logo-main">
+              <span class="text-primary-color font-semibold text-[18px]"> متجر جامعة الملك عبدالعزيز </span>
             </a>
             <ul class="navbar-nav navbar__links d-flex justify-content-between align-items-center flex-md-row">
               <li class="nav-item">
@@ -86,9 +89,9 @@
   </nav>
 <!-- end navbar -->
 <!-- start top Navabr -->
-<div class="top py-4">
+<div class="py-4 top">
   <div class="container">
-    <div class="flex justify-between items-center flex-row">
+    <div class="flex flex-row items-center justify-between">
       <button id="toggleButton" class="justify-start items-center flex-row gap-2 bg-primary-color text-white rounded-[4px] py-[10px] px-[35px] md:flex hidden">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M5 10H7C9 10 10 9 10 7V5C10 3 9 2 7 2H5C3 2 2 3 2 5V7C2 9 3 10 5 10Z" stroke="#E6EAEF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -98,7 +101,7 @@
         </svg>          
         <span> جميع التصنيفات </span>
       </button>
-      <div id="categoriesList" class="categories__items__list bg-[#fff] p-[20px] rounded-[12px] w-[450px] !z-50 absolute top-[60px] right-[35px] ">
+      <div id="categoriesList" class="categories__items__list hidden bg-[#fff] p-[20px] rounded-[12px] w-[450px] !z-50 absolute top-[60px] right-[35px] ">
         <div class="row">
           <div class="col-md-6">
             <a href="./categories.html">
@@ -134,8 +137,8 @@
           </div>
         </div>
       </div>
-      <div class="search__input flex">
-        <form action="" class="relative flex justify-start items-start flex-row gap-0 form__search">
+      <div class="flex search__input">
+        <form action="" class="relative flex flex-row items-start justify-start gap-0 form__search">
           <select class="form-select border border-solid !border-primary-color py-[8px] px-[15px] rounded-0 h-[48px] !md:w-[100px] w-[50px] bg-primary-color">
             <option selected disabled>الفئات</option>
             <option value="1">أجهزة</option>
@@ -150,7 +153,7 @@
           </button>
         </form>
       </div>
-      <div class="justify-start items-center flex-row gap-2 lg:flex hidden">
+      <div class="flex-row items-center justify-start hidden gap-2 lg:flex">
         <div class="icon">
           <svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M2.74982 18.65C2.33982 18.65 1.99982 18.31 1.99982 17.9V12.2C1.94982 9.48999 2.95982 6.92999 4.83982 5.00999C6.71982 3.09999 9.23982 2.04999 11.9498 2.04999C17.4898 2.04999 21.9998 6.55999 21.9998 12.1V17.8C21.9998 18.21 21.6598 18.55 21.2498 18.55C20.8398 18.55 20.4998 18.21 20.4998 17.8V12.1C20.4998 7.38999 16.6698 3.54999 11.9498 3.54999C9.63982 3.54999 7.49982 4.43999 5.90982 6.05999C4.30982 7.68999 3.45982 9.85999 3.49982 12.18V17.89C3.49982 18.31 3.16982 18.65 2.74982 18.65Z" fill="#253D4E"/>
@@ -158,7 +161,7 @@
             <path d="M18.19 12.45H18.06C15.96 12.45 14.25 14.16 14.25 16.26V18.14C14.25 20.24 15.96 21.95 18.06 21.95H18.19C20.29 21.95 22 20.24 22 18.14V16.26C22 14.16 20.29 12.45 18.19 12.45Z" fill="#253D4E"/>
           </svg>
         </div>
-        <div class="flex justify-start items-start flex-col">
+        <div class="flex flex-col items-start justify-start">
           <span class="text-primary-color font-bold text-[18px]"> 5462840210 </span>
           <span class="text-third-color font-normal text-[15px]"> خدمة 24 / 7   </span>
         </div>
@@ -170,7 +173,7 @@
 
         <!-- start page header -->
         <div class="page__header" style="background-image: url('./assets/images/header1.webp');">
-          <div class="page__info d-flex justify-content-center align-items-center flex-column gap-3 h-100">
+          <div class="gap-3 page__info d-flex justify-content-center align-items-center flex-column h-100">
             <h1> تواصل معنا </h1>
             <div style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="breadcrumb">
               <ol class="breadcrumb">
@@ -188,44 +191,44 @@
             <div class="row">
               <div class="col-md-6">
                   <div class="contact__us__form">
-                      <form action="" class="w-100 d-flex justify-content-start align-items-start flex-column gap-3">
-                          <div class="d-flex justify-content-start align-items-start flex-column gap-2 w-100">
+                      <form action="" class="gap-3 w-100 d-flex justify-content-start align-items-start flex-column">
+                          <div class="gap-2 d-flex justify-content-start align-items-start flex-column w-100">
                             <label for=""> البريد الألكتروني </label>
-                            <div class="input-group mb-3">
+                            <div class="mb-3 input-group">
                               <span class="input-group-text" id="basic-addon1"><img src="./assets/images/mail-02.svg" alt="text"></span>
                               <input type="text" class="form-control" placeholder="الإسم">
                             </div>          
                           </div>
-                          <div class="d-flex justify-content-start align-items-start flex-column gap-2 w-100">
+                          <div class="gap-2 d-flex justify-content-start align-items-start flex-column w-100">
                             <label for=""> البريد الألكتروني </label>
-                            <div class="input-group mb-3">
+                            <div class="mb-3 input-group">
                               <span class="input-group-text" id="basic-addon1"><img src="./assets/images/mail-02.svg" alt="text"></span>
                               <input type="text" class="form-control" placeholder="البريد الألكتروني">
                             </div>          
                           </div>
-                          <div class="d-flex justify-content-start align-items-start flex-column gap-2 w-100">
+                          <div class="gap-2 d-flex justify-content-start align-items-start flex-column w-100">
                             <label for=""> كلمة المرور </label>
-                            <div class="input-group mb-3">
+                            <div class="mb-3 input-group">
                               <span class="input-group-text" id="basic-addon1"><img src="./assets/images/lock-01.svg" alt="password"></span>
                               <input type="password" class="form-control" placeholder="كلمة المرور">
                             </div>          
                           </div>
-                          <div class="d-flex justify-content-start align-items-start flex-column gap-2 w-100">
+                          <div class="gap-2 d-flex justify-content-start align-items-start flex-column w-100">
                             <label for=""> الرسالة </label>
-                            <div class="input-group mb-3">
-                              <span class="input-group-text d-flex justify-content-start align-items-start flex-row" id="basic-addon1"><img src="./assets/images/message.svg" alt="password"></span>
+                            <div class="mb-3 input-group">
+                              <span class="flex-row input-group-text d-flex justify-content-start align-items-start" id="basic-addon1"><img src="./assets/images/message.svg" alt="password"></span>
                               <textarea class="form-control" placeholder="الرسالة" style="height: 150px;"></textarea>
                             </div>          
                           </div>
-                          <div class="w-100 d-flex justify-content-start align-items-start flex-column mt-2">
+                          <div class="mt-2 w-100 d-flex justify-content-start align-items-start flex-column">
                             <button class="btn__form"> إرسال </button>
                           </div>
                       </form>
                   </div>
               </div>
               <div class="col-md-6">
-                <div class="contact__details d-flex justify-content-start align-items-start flex-column gap-4 mt-5">
-                  <div class="d-flex justify-content-start align-items-center flex-row gap-2">
+                <div class="gap-4 mt-5 contact__details d-flex justify-content-start align-items-start flex-column">
+                  <div class="flex-row gap-2 d-flex justify-content-start align-items-center">
                     <div>
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path opacity="0.4" d="M12 22C16 18 20 14.4183 20 10C20 5.58172 16.4183 2 12 2C7.58172 2 4 5.58172 4 10C4 14.4183 8 18 12 22Z" stroke="#B9915E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -236,31 +239,31 @@
                       <h5>الرياض حي الملك فيصل، السعودية</h5>
                     </div>
                   </div>
-                  <div class="d-flex justify-content-start align-items-center flex-row gap-2">
+                  <div class="flex-row gap-2 d-flex justify-content-start align-items-center">
                     <div>
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path opacity="0.4" d="M14.05 6C15.0268 6.19057 15.9244 6.66826 16.6281 7.37194C17.3318 8.07561 17.8095 8.97326 18 9.95M14.05 2C16.0793 2.22544 17.9716 3.13417 19.4163 4.57701C20.8609 6.01984 21.7721 7.91101 22 9.94" stroke="#B9915E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M7.38064 9.85323C8.07664 11.3028 9.02543 12.6615 10.227 13.8631C11.4286 15.0646 12.7872 16.0134 14.2368 16.7094C14.3615 16.7693 14.4239 16.7992 14.5028 16.8222C14.7831 16.904 15.1274 16.8453 15.3648 16.6752C15.4316 16.6274 15.4888 16.5702 15.6031 16.4559C15.9527 16.1063 16.1275 15.9315 16.3033 15.8172C16.9662 15.3862 17.8208 15.3862 18.4836 15.8172C18.6594 15.9315 18.8342 16.1063 19.1838 16.4559L19.3787 16.6508C19.9101 17.1822 20.1759 17.448 20.3202 17.7333C20.6073 18.3009 20.6073 18.9712 20.3202 19.5387C20.1759 19.8241 19.9101 20.0898 19.3787 20.6213L19.2211 20.7789C18.6914 21.3085 18.4266 21.5733 18.0666 21.7756C17.6671 22 17.0466 22.1614 16.5884 22.16C16.1754 22.1588 15.8932 22.0787 15.3288 21.9185C12.2954 21.0575 9.43301 19.433 7.04503 17.045C4.65705 14.6571 3.03257 11.7947 2.1716 8.76131C2.01139 8.19687 1.93129 7.91464 1.93006 7.5017C1.9287 7.04347 2.09006 6.42298 2.31448 6.02348C2.51673 5.66345 2.78154 5.39863 3.31116 4.86901L3.4688 4.71138C4.00024 4.17993 4.26596 3.91421 4.55134 3.76987C5.1189 3.4828 5.78917 3.4828 6.35673 3.76987C6.64211 3.91421 6.90783 4.17993 7.43927 4.71138L7.63414 4.90625C7.98375 5.25585 8.15855 5.43065 8.27284 5.60643C8.70383 6.26932 8.70383 7.1239 8.27284 7.78679C8.15855 7.96257 7.98375 8.13738 7.63414 8.48698C7.51983 8.60129 7.46268 8.65845 7.41483 8.72526C7.24482 8.96269 7.18612 9.30695 7.26785 9.5873C7.29084 9.6662 7.32078 9.72854 7.38064 9.85323Z" stroke="#B9915E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <div class="d-flex justify-content-start align-items-start flex-column gap-2">
+                    <div class="gap-2 d-flex justify-content-start align-items-start flex-column">
                       <a href=""> 02165406515 </a>
                       <span> اتصل بنا للإستفسار </span>
                     </div>
                   </div>
-                  <div class="d-flex justify-content-start align-items-center flex-row gap-2">
+                  <div class="flex-row gap-2 d-flex justify-content-start align-items-center">
                     <div>
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path opacity="0.4" d="M21.5 19L14.8572 13M9.14282 13L2.5 19M13.744 2.63358L21.272 7.52679C21.538 7.69969 21.671 7.78615 21.7674 7.90146C21.8527 8.00354 21.9167 8.12162 21.9558 8.24877C22 8.39241 22 8.55104 22 8.8683V16.2C22 17.8802 22 18.7202 21.673 19.362C21.3854 19.9265 20.9265 20.3854 20.362 20.673C19.7202 21 18.8802 21 17.2 21H6.8C5.11984 21 4.27976 21 3.63803 20.673C3.07354 20.3854 2.6146 19.9265 2.32698 19.362C2 18.7202 2 17.8802 2 16.2V8.8683C2 8.55104 2 8.39241 2.04417 8.24877C2.08327 8.12162 2.14735 8.00354 2.23265 7.90146C2.32901 7.78615 2.46201 7.69969 2.72802 7.52679L10.256 2.63358C10.8873 2.22327 11.2029 2.01812 11.543 1.93829C11.8436 1.86774 12.1564 1.86774 12.457 1.93829C12.7971 2.01812 13.1127 2.22327 13.744 2.63358Z" stroke="#B9915E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M10.2561 13.3663L3.03196 8.67064C2.68804 8.44709 2.51607 8.33531 2.45652 8.19356C2.40447 8.06969 2.40447 7.93008 2.45652 7.8062C2.51607 7.66445 2.68804 7.55268 3.03196 7.32913L10.2561 2.63346C10.8873 2.22315 11.2029 2.01799 11.543 1.93817C11.8436 1.86761 12.1565 1.86761 12.4571 1.93817C12.7971 2.01799 13.1127 2.22315 13.744 2.63346L20.9681 7.32913C21.312 7.55268 21.484 7.66445 21.5435 7.8062C21.5956 7.93008 21.5956 8.06969 21.5435 8.19356C21.484 8.33531 21.312 8.44709 20.9681 8.67064L13.744 13.3663C13.1128 13.7766 12.7971 13.9818 12.4571 14.0616C12.1565 14.1321 11.8436 14.1321 11.543 14.0616C11.2029 13.9818 10.8873 13.7766 10.2561 13.3663Z" stroke="#B9915E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <div class="d-flex justify-content-start align-items-start flex-column gap-2">
+                    <div class="gap-2 d-flex justify-content-start align-items-start flex-column">
                       <a href="">email@gmail.com</a>
                       <span> أرسل استفساراتك عبر البريد الإلكتروني </span>
                     </div>
                   </div>
-                  <div class="d-flex justify-content-start align-items-center flex-row gap-2">
+                  <div class="flex-row gap-2 d-flex justify-content-start align-items-center">
                     <div>
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_5_12060)">
@@ -279,7 +282,7 @@
                       <span>إرسل استفساراتك عبر الإنستجرام </span>
                     </div>
                   </div>
-                  <div class="d-flex justify-content-start align-items-center flex-row gap-2">
+                  <div class="flex-row gap-2 d-flex justify-content-start align-items-center">
                     <div>
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M7.55016 21.75C16.6045 21.75 21.5583 14.2467 21.5583 7.74186C21.5583 7.53092 21.5536 7.3153 21.5442 7.10436C22.5079 6.40746 23.3395 5.54425 24 4.5553C23.1025 4.9546 22.1496 5.21538 21.1739 5.32874C22.2013 4.71291 22.9705 3.74547 23.3391 2.60577C22.3726 3.17856 21.3156 3.58261 20.2134 3.80061C19.4708 3.01156 18.489 2.48912 17.4197 2.31405C16.3504 2.13899 15.2532 2.32105 14.2977 2.8321C13.3423 3.34314 12.5818 4.15471 12.1338 5.14131C11.6859 6.12792 11.5754 7.23462 11.8195 8.2903C9.86249 8.19209 7.94794 7.6837 6.19998 6.7981C4.45203 5.91249 2.90969 4.66944 1.67297 3.14952C1.0444 4.23324 0.852057 5.51565 1.13503 6.73609C1.418 7.95654 2.15506 9.02345 3.19641 9.71999C2.41463 9.69517 1.64998 9.48468 0.965625 9.10592V9.16686C0.964925 10.3041 1.3581 11.4066 2.07831 12.2868C2.79852 13.167 3.80132 13.7706 4.91625 13.995C4.19206 14.1931 3.43198 14.222 2.69484 14.0794C3.00945 15.0574 3.62157 15.9129 4.44577 16.5263C5.26997 17.1398 6.26512 17.4806 7.29234 17.5012C5.54842 18.8711 3.39417 19.6141 1.17656 19.6106C0.783287 19.61 0.390399 19.5859 0 19.5384C2.25286 20.9837 4.87353 21.7514 7.55016 21.75Z" fill="#B9915E"/>
@@ -290,7 +293,7 @@
                       <span>إرسل استفساراتك عبر تويتر</span>
                     </div>
                   </div>
-                  <div class="d-flex justify-content-start align-items-center flex-row gap-2">
+                  <div class="flex-row gap-2 d-flex justify-content-start align-items-center">
                     <div>
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_5_12070)">
@@ -308,7 +311,7 @@
                       <span>إرسل استفساراتك عبر لينكد ان</span>
                     </div>
                   </div>
-                  <div class="d-flex justify-content-start align-items-center flex-row gap-2">
+                  <div class="flex-row gap-2 d-flex justify-content-start align-items-center">
                     <div>
                       <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="24" height="24" stroke="#B9915E"><path d="M 25 2 C 12.309534 2 2 12.309534 2 25 C 2 29.079097 3.1186875 32.88588 4.984375 36.208984 L 2.0371094 46.730469 A 1.0001 1.0001 0 0 0 3.2402344 47.970703 L 14.210938 45.251953 C 17.434629 46.972929 21.092591 48 25 48 C 37.690466 48 48 37.690466 48 25 C 48 12.309534 37.690466 2 25 2 z M 25 4 C 36.609534 4 46 13.390466 46 25 C 46 36.609534 36.609534 46 25 46 C 21.278025 46 17.792121 45.029635 14.761719 43.333984 A 1.0001 1.0001 0 0 0 14.033203 43.236328 L 4.4257812 45.617188 L 7.0019531 36.425781 A 1.0001 1.0001 0 0 0 6.9023438 35.646484 C 5.0606869 32.523592 4 28.890107 4 25 C 4 13.390466 13.390466 4 25 4 z M 16.642578 13 C 16.001539 13 15.086045 13.23849 14.333984 14.048828 C 13.882268 14.535548 12 16.369511 12 19.59375 C 12 22.955271 14.331391 25.855848 14.613281 26.228516 L 14.615234 26.228516 L 14.615234 26.230469 C 14.588494 26.195329 14.973031 26.752191 15.486328 27.419922 C 15.999626 28.087653 16.717405 28.96464 17.619141 29.914062 C 19.422612 31.812909 21.958282 34.007419 25.105469 35.349609 C 26.554789 35.966779 27.698179 36.339417 28.564453 36.611328 C 30.169845 37.115426 31.632073 37.038799 32.730469 36.876953 C 33.55263 36.755876 34.456878 36.361114 35.351562 35.794922 C 36.246248 35.22873 37.12309 34.524722 37.509766 33.455078 C 37.786772 32.688244 37.927591 31.979598 37.978516 31.396484 C 38.003976 31.104927 38.007211 30.847602 37.988281 30.609375 C 37.969311 30.371148 37.989581 30.188664 37.767578 29.824219 C 37.302009 29.059804 36.774753 29.039853 36.224609 28.767578 C 35.918939 28.616297 35.048661 28.191329 34.175781 27.775391 C 33.303883 27.35992 32.54892 26.991953 32.083984 26.826172 C 31.790239 26.720488 31.431556 26.568352 30.914062 26.626953 C 30.396569 26.685553 29.88546 27.058933 29.587891 27.5 C 29.305837 27.918069 28.170387 29.258349 27.824219 29.652344 C 27.819619 29.649544 27.849659 29.663383 27.712891 29.595703 C 27.284761 29.383815 26.761157 29.203652 25.986328 28.794922 C 25.2115 28.386192 24.242255 27.782635 23.181641 26.847656 L 23.181641 26.845703 C 21.603029 25.455949 20.497272 23.711106 20.148438 23.125 C 20.171937 23.09704 20.145643 23.130901 20.195312 23.082031 L 20.197266 23.080078 C 20.553781 22.728924 20.869739 22.309521 21.136719 22.001953 C 21.515257 21.565866 21.68231 21.181437 21.863281 20.822266 C 22.223954 20.10644 22.02313 19.318742 21.814453 18.904297 L 21.814453 18.902344 C 21.828863 18.931014 21.701572 18.650157 21.564453 18.326172 C 21.426943 18.001263 21.251663 17.580039 21.064453 17.130859 C 20.690033 16.232501 20.272027 15.224912 20.023438 14.634766 L 20.023438 14.632812 C 19.730591 13.937684 19.334395 13.436908 18.816406 13.195312 C 18.298417 12.953717 17.840778 13.022402 17.822266 13.021484 L 17.820312 13.021484 C 17.450668 13.004432 17.045038 13 16.642578 13 z M 16.642578 15 C 17.028118 15 17.408214 15.004701 17.726562 15.019531 C 18.054056 15.035851 18.033687 15.037192 17.970703 15.007812 C 17.906713 14.977972 17.993533 14.968282 18.179688 15.410156 C 18.423098 15.98801 18.84317 16.999249 19.21875 17.900391 C 19.40654 18.350961 19.582292 18.773816 19.722656 19.105469 C 19.863021 19.437122 19.939077 19.622295 20.027344 19.798828 L 20.027344 19.800781 L 20.029297 19.802734 C 20.115837 19.973483 20.108185 19.864164 20.078125 19.923828 C 19.867096 20.342656 19.838461 20.445493 19.625 20.691406 C 19.29998 21.065838 18.968453 21.483404 18.792969 21.65625 C 18.639439 21.80707 18.36242 22.042032 18.189453 22.501953 C 18.016221 22.962578 18.097073 23.59457 18.375 24.066406 C 18.745032 24.6946 19.964406 26.679307 21.859375 28.347656 C 23.05276 29.399678 24.164563 30.095933 25.052734 30.564453 C 25.940906 31.032973 26.664301 31.306607 26.826172 31.386719 C 27.210549 31.576953 27.630655 31.72467 28.119141 31.666016 C 28.607627 31.607366 29.02878 31.310979 29.296875 31.007812 L 29.298828 31.005859 C 29.655629 30.601347 30.715848 29.390728 31.224609 28.644531 C 31.246169 28.652131 31.239109 28.646231 31.408203 28.707031 L 31.408203 28.708984 L 31.410156 28.708984 C 31.487356 28.736474 32.454286 29.169267 33.316406 29.580078 C 34.178526 29.990889 35.053561 30.417875 35.337891 30.558594 C 35.748225 30.761674 35.942113 30.893881 35.992188 30.894531 C 35.995572 30.982516 35.998992 31.07786 35.986328 31.222656 C 35.951258 31.624292 35.8439 32.180225 35.628906 32.775391 C 35.523582 33.066746 34.975018 33.667661 34.283203 34.105469 C 33.591388 34.543277 32.749338 34.852514 32.4375 34.898438 C 31.499896 35.036591 30.386672 35.087027 29.164062 34.703125 C 28.316336 34.437036 27.259305 34.092596 25.890625 33.509766 C 23.114812 32.325956 20.755591 30.311513 19.070312 28.537109 C 18.227674 27.649908 17.552562 26.824019 17.072266 26.199219 C 16.592866 25.575584 16.383528 25.251054 16.208984 25.021484 L 16.207031 25.019531 C 15.897202 24.609805 14 21.970851 14 19.59375 C 14 17.077989 15.168497 16.091436 15.800781 15.410156 C 16.132721 15.052495 16.495617 15 16.642578 15 z"/></svg>
                         
@@ -327,12 +330,12 @@
     <!-- start footer -->
         <footer>
           <div class="container-fluid">
-            <div class="d-flex justify-content-between align-items-start flex-row flex-wrap">
+            <div class="flex-row flex-wrap d-flex justify-content-between align-items-start">
     
               <div class="footer__info d-flex justify-content-start align-items-start flex-column">
                 <img src="./assets/images/logo.png" alt="logo" loaing="lazy"  class="logo">
                 <p> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى حيث يمكنك ن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى الموقع الالكترونى. </p>
-                <div class="social__links d-flex justify-content-start align-items-start flex-row">
+                <div class="flex-row social__links d-flex justify-content-start align-items-start">
                   <a href=""> <img src="./assets/images/intagram.svg" alt="intagram" width="15" height="15" loaing="lazy"> </a>
                   <a href=""> <img src="./assets/images/twitter.svg" alt="twitter" width="15" height="15" loaing="lazy"> </a>
                   <a href=""> <img src="./assets/images/linkedin.svg" alt="linkedin" width="15" height="15" loaing="lazy"> </a>
@@ -363,7 +366,7 @@
               <div class="footer__links d-flex justify-content-start align-items-start flex-column">
                 <h2> تواصل معنا </h2>
                 <ul class="d-flex justify-content-start align-items-start flex-column">
-                  <li> <a href="" class="d-flex justify-content-start align-items-center flex-row"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <li> <a href="" class="flex-row d-flex justify-content-start align-items-center"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path opacity="0.4" d="M12 22C16 18 20 14.4183 20 10C20 5.58172 16.4183 2 12 2C7.58172 2 4 5.58172 4 10C4 14.4183 8 18 12 22Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
@@ -371,7 +374,7 @@
                       الرياض حي الملك فيصل، السعودية  
                     </span>
                     </a> </li>
-                  <li> <a href="tel:+966 570 212 216" class="d-flex justify-content-start align-items-center flex-row"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <li> <a href="tel:+966 570 212 216" class="flex-row d-flex justify-content-start align-items-center"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path opacity="0.4" d="M14.05 6C15.0268 6.19057 15.9244 6.66826 16.6281 7.37194C17.3318 8.07561 17.8095 8.97326 18 9.95M14.05 2C16.0793 2.22544 17.9716 3.13417 19.4163 4.57701C20.8609 6.01984 21.7721 7.91101 22 9.94" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M7.38064 9.85323C8.07664 11.3028 9.02543 12.6615 10.227 13.8631C11.4286 15.0646 12.7872 16.0134 14.2368 16.7094C14.3615 16.7693 14.4239 16.7992 14.5028 16.8222C14.7831 16.904 15.1274 16.8453 15.3648 16.6752C15.4316 16.6274 15.4888 16.5702 15.6031 16.4559C15.9527 16.1063 16.1275 15.9315 16.3033 15.8172C16.9662 15.3862 17.8208 15.3862 18.4836 15.8172C18.6594 15.9315 18.8342 16.1063 19.1838 16.4559L19.3787 16.6508C19.9101 17.1822 20.1759 17.448 20.3202 17.7333C20.6073 18.3009 20.6073 18.9712 20.3202 19.5387C20.1759 19.8241 19.9101 20.0898 19.3787 20.6213L19.2211 20.7789C18.6914 21.3085 18.4266 21.5733 18.0666 21.7756C17.6671 22 17.0466 22.1614 16.5884 22.16C16.1754 22.1588 15.8932 22.0787 15.3288 21.9185C12.2954 21.0575 9.43301 19.433 7.04503 17.045C4.65705 14.6571 3.03257 11.7947 2.1716 8.76131C2.01139 8.19687 1.93129 7.91464 1.93006 7.5017C1.9287 7.04347 2.09006 6.42298 2.31448 6.02348C2.51673 5.66345 2.78154 5.39863 3.31116 4.86901L3.4688 4.71138C4.00024 4.17993 4.26596 3.91421 4.55134 3.76987C5.1189 3.4828 5.78917 3.4828 6.35673 3.76987C6.64211 3.91421 6.90783 4.17993 7.43927 4.71138L7.63414 4.90625C7.98375 5.25585 8.15855 5.43065 8.27284 5.60643C8.70383 6.26932 8.70383 7.1239 8.27284 7.78679C8.15855 7.96257 7.98375 8.13738 7.63414 8.48698C7.51983 8.60129 7.46268 8.65845 7.41483 8.72526C7.24482 8.96269 7.18612 9.30695 7.26785 9.5873C7.29084 9.6662 7.32078 9.72854 7.38064 9.85323Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
@@ -379,7 +382,7 @@
                       966570212216+  
                     </span>
                     </a> </li>
-                  <li> <a href="mailto:info@soum.tech"  class="d-flex justify-content-start align-items-center flex-row"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <li> <a href="mailto:info@soum.tech"  class="flex-row d-flex justify-content-start align-items-center"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path opacity="0.4" d="M21.5 19L14.8572 13M9.14282 13L2.5 19M13.744 2.63358L21.272 7.52679C21.538 7.69969 21.671 7.78615 21.7674 7.90146C21.8527 8.00354 21.9167 8.12162 21.9558 8.24877C22 8.39241 22 8.55104 22 8.8683V16.2C22 17.8802 22 18.7202 21.673 19.362C21.3854 19.9265 20.9265 20.3854 20.362 20.673C19.7202 21 18.8802 21 17.2 21H6.8C5.11984 21 4.27976 21 3.63803 20.673C3.07354 20.3854 2.6146 19.9265 2.32698 19.362C2 18.7202 2 17.8802 2 16.2V8.8683C2 8.55104 2 8.39241 2.04417 8.24877C2.08327 8.12162 2.14735 8.00354 2.23265 7.90146C2.32901 7.78615 2.46201 7.69969 2.72802 7.52679L10.256 2.63358C10.8873 2.22327 11.2029 2.01812 11.543 1.93829C11.8436 1.86774 12.1564 1.86774 12.457 1.93829C12.7971 2.01812 13.1127 2.22327 13.744 2.63358Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M10.2561 13.3663L3.03196 8.67064C2.68804 8.44709 2.51607 8.33531 2.45652 8.19356C2.40447 8.06969 2.40447 7.93008 2.45652 7.8062C2.51607 7.66445 2.68804 7.55268 3.03196 7.32913L10.2561 2.63346C10.8873 2.22315 11.2029 2.01799 11.543 1.93817C11.8436 1.86761 12.1565 1.86761 12.4571 1.93817C12.7971 2.01799 13.1127 2.22315 13.744 2.63346L20.9681 7.32913C21.312 7.55268 21.484 7.66445 21.5435 7.8062C21.5956 7.93008 21.5956 8.06969 21.5435 8.19356C21.484 8.33531 21.312 8.44709 20.9681 8.67064L13.744 13.3663C13.1128 13.7766 12.7971 13.9818 12.4571 14.0616C12.1565 14.1321 11.8436 14.1321 11.543 14.0616C11.2029 13.9818 10.8873 13.7766 10.2561 13.3663Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>

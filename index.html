@@ -228,7 +228,7 @@
           </div>
         </div>
       </div>
-      </header>
+    </header>
     <!-- header -->
     <div class="bg-[#fff] py-5">
       <div class="container">
@@ -331,23 +331,26 @@
         </div>
       </div>
     </div>
-
     <!-- start offers -->
     <div class="ads six__">
       <div class="active">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="header-info wow fadeIn" data-wow-duration="0.5s" data-wow-delay="0.5s">
-              <span class="discount">خصم</span>
-              <h2 class="header-title">كل الجديد لك لـحياة أفضل</h2>
-              <p class="header-subtitle">خصومات و عروض متاجة لــك</p>
-              <span class="price">سعر يبدأ من 300$</span>
-              <a href="./store/index.html" class="shop-now">تسوق الاّن</a>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="ads-image wow fadeIn" data-wow-duration="0.5s" data-wow-delay="0.5s">
-              <img src="./assets/images-store/slide1-watches.png"  alt="...">
+        <div class="owl-carousel ads1_carousal owl-theme">
+          <div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="header-info wow fadeIn" data-wow-duration="0.5s" data-wow-delay="0.5s">
+                  <span class="discount">خصم</span>
+                  <h2 class="header-title">كل الجديد لك لـحياة أفضل</h2>
+                  <p class="header-subtitle">خصومات و عروض متاجة لــك</p>
+                  <span class="price">سعر يبدأ من 300$</span>
+                  <a href="./store/index.html" class="shop-now">تسوق الاّن</a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="ads-image wow fadeIn" data-wow-duration="0.5s" data-wow-delay="0.5s">
+                  <img src="./assets/images-store/slide1-watches.png"  alt="...">
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -437,25 +440,21 @@
     <!-- start offers -->
          <!-- ads -->
     <div class="ads__">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="ads-item wow fadeIn" data-wow-duration="0.5s" data-wow-delay="0.5s" style="background-image: url('./assets/images-store/h6_banner1.jpg');">
-            <div class="ads-info wow fadeIn" data-wow-duration="0.5s" data-wow-delay="0.5s">
-              <h1 class="ads-title">خصم 20%</h1>
-              <p class="ads-description">كل شئ يمر بـشكل جيد مع كتاب عظيم</p>
-              <a href="" class="shop-now">تسوق الاّن</a>
-            </div>
+      <div class="owl-carousel ads2_carousal owl-theme">
+              <div class="ads-item wow fadeIn" data-wow-duration="0.5s" data-wow-delay="0.5s" style="background-image: url('./assets/images-store/h6_banner1.jpg');">
+                <div class="ads-info wow fadeIn" data-wow-duration="0.5s" data-wow-delay="0.5s">
+                  <h1 class="ads-title">خصم 20%</h1>
+                  <p class="ads-description">كل شئ يمر بـشكل جيد مع كتاب عظيم</p>
+                  <a href="" class="shop-now">تسوق الاّن</a>
+                </div>
+              </div>
+              <div class="ads-item wow fadeIn" data-wow-duration="0.5s" data-wow-delay="0.5s" style="background-image: url('./assets/images-store/h6_banner2.jpg');">
+                <div class="ads-info wow fadeIn" data-wow-duration="0.5s" data-wow-delay="0.5s">
+                  <h1 class="ads-title">خصم 20%</h1>
+                  <p class="ads-description">كل شئ يمر بـشكل جيد مع كتاب عظيم</p>
+                  <a href="" class="shop-now">تسوق الاّن</a>
+                </div>
           </div>
-        </div>
-        <div class="col-md-6">
-          <div class="ads-item wow fadeIn" data-wow-duration="0.5s" data-wow-delay="0.5s" style="background-image: url('./assets/images-store/h6_banner2.jpg');">
-            <div class="ads-info wow fadeIn" data-wow-duration="0.5s" data-wow-delay="0.5s">
-              <h1 class="ads-title">خصم 20%</h1>
-              <p class="ads-description">كل شئ يمر بـشكل جيد مع كتاب عظيم</p>
-              <a href="" class="shop-now">تسوق الاّن</a>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
     <!-- ads -->
@@ -1213,6 +1212,70 @@
         new WOW().init();
         </script>
 
+      <script>
+         $('.owl-carousel.ads1_carousal').owlCarousel({
+            loop: true,
+            autoplay: true,
+            nav: false,
+            dots: false,
+            autoplayTimeout: 5000,
+            margin: 10,
+            responsiveClass: true,
+            ltr: true,
+            rtl: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                350: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 1,
+                    nav: false
+                },
+                1000: {
+                    items: 1,
+                    nav: true,
+                    loop: true
+                }
+            }
+        })
+      </script>
+      <script>
+         $('.owl-carousel.ads2_carousal').owlCarousel({
+            loop: true,
+            autoplay: true,
+            nav: false,
+            dots: false,
+            autoplayTimeout: 5000,
+            margin: 10,
+            responsiveClass: true,
+            ltr: true,
+            rtl: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                350: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 2,
+                    nav: false
+                },
+                1000: {
+                    items: 2,
+                    nav: true,
+                    loop: true
+                }
+            }
+        })
+      </script>
       <script>
          $('.owl-carousel.partenres_carousal').owlCarousel({
             loop: true,

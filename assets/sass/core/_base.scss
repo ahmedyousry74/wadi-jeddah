@@ -1278,3 +1278,56 @@ body.website[dir='ltr'] {
     }
   }
 }
+
+.progress-bar-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.progress-bar-step {
+  width: 80px;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ccc;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  z-index: 1;
+  height: 70px;
+  display: flex
+;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-bar-step.active {
+  color: white;
+  border-color: #3BB77E;
+  background-color: #3BB77E;
+}
+
+.progress-bar-line {
+  flex: 1;
+  height: 2px;
+  background-color: #ccc;
+  margin: 0 10px;
+  position: relative;
+  z-index: 0;
+}
+
+.progress-bar-step.completed {
+  color: white;
+  border-color: #A38142;
+  background-color: #A38142;
+}
+
+.progress-bar-line.completed {
+  background-color: #A38142;
+}
+.hidden {
+  display: none;
+}

@@ -223,7 +223,7 @@
             <div class="col-md-6">
                 <div class="flex flex-col items-start justify-center h-full gap-1 print__info">
                     <h1 class="font-bold text-primary-color md:text-[38px] text-[28px]"> اطـبـع الاّن </h1>
-                    <p class="font-semibold text-third-color md:md:text-[24px] text-[18px] text-[17px]">كل الطابعات تحت خدمتك</p>
+                    <p class="font-semibold text-third-color text-[18px] text-[17px]">كل الطابعات تحت خدمتك</p>
                     <span class="font-medium text-third-color md:text-[17px] text-[17px]">
                         تضم منصة اطبع مقدمي خدمات الطباعة في كافة مدن المملكة لتسهيل عملية الطباعة بجودة عالية وسعر مميز مع خدمة التوصيل لباب المنزل
                     </span>
@@ -234,293 +234,379 @@
     <!-- end print -->
 
     <!-- start form -->
-     <div class="form__print py-[50px] lg:px-[50px] px-[20px] ">
-        <form action="" class="flex flex-col items-start justify-start gap-5">
-            <div class="w-full pb-5 select__store">
-                <h6 class="text-third-color font-semibold md:text-[24px] text-[18px] md:mb-[20px] mb-[10px]"> اختر المتجر </h6>
-                <div class="flex flex-row flex-wrap items-center justify-start md:gap-[20px] gap-[10px]">
-                    <div class="border store__item border-solid border-[#ccc] rounded-[8px]">
-                        <input type="radio" class="btn-check" name="store-name" id="option1" autocomplete="off">
-                        <label class="flex flex-col items-center justify-center gap-1 btn" for="option1">
-                            <img src="../assets/images-store/store1.png" alt="store" class="md:w-[80px] md:h-[80px] w-[50px] h-[50px]">
-                            <h6 class="text-third-color font-semibold text-[18px]"> متجر 1 </h6>
-                        </label>
-                    </div>
-                    <div class="border store__item border-solid border-[#ccc] rounded-[8px]">
-                        <input type="radio" class="btn-check" name="store-name" id="option2" autocomplete="off">
-                        <label class="flex flex-col items-center justify-center gap-1 btn" for="option2">
-                            <img src="../assets/images-store/store2.png" alt="store" class="md:w-[80px] md:h-[80px] w-[50px] h-[50px]">
-                            <h6 class="text-third-color font-semibold text-[18px]"> متجر 2 </h6>
-                        </label>
-                    </div>
-                    <div class="border store__item border-solid border-[#ccc] rounded-[8px]">
-                        <input type="radio" class="btn-check" name="store-name" id="option3" autocomplete="off">
-                        <label class="flex flex-col items-center justify-center gap-1 btn" for="option3">
-                            <img src="../assets/images-store/store3.png" alt="store" class="md:w-[80px] md:h-[80px] w-[50px] h-[50px]">
-                            <h6 class="text-third-color font-semibold text-[18px]"> متجر 3 </h6>
-                        </label>
-                    </div>
-                    <div class="border store__item border-solid border-[#ccc] rounded-[8px]">
-                        <input type="radio" class="btn-check" name="store-name" id="option4" autocomplete="off">
-                        <label class="flex flex-col items-center justify-center gap-1 btn" for="option4">
-                            <img src="../assets/images-store/store4.png" alt="store" class="md:w-[80px] md:h-[80px] w-[50px] h-[50px]">
-                            <h6 class="text-third-color font-semibold text-[18px]"> متجر 4 </h6>
-                        </label>
-                    </div>
-                    <div class="border store__item border-solid border-[#ccc] rounded-[8px]">
-                        <input type="radio" class="btn-check" name="store-name" id="option5" autocomplete="off">
-                        <label class="flex flex-col items-center justify-center gap-1 btn" for="option5">
-                            <img src="../assets/images-store/store5.png" alt="store" class="md:w-[80px] md:h-[80px] w-[50px] h-[50px]">
-                            <h6 class="text-third-color font-semibold text-[18px]"> متجر 5 </h6>
-                        </label>
-                    </div>
-                    <div class="border store__item border-solid border-[#ccc] rounded-[8px]">
-                        <input type="radio" class="btn-check" name="store-name" id="option6" autocomplete="off">
-                        <label class="flex flex-col items-center justify-center gap-1 btn" for="option6">
-                            <img src="../assets/images-store/store6.png" alt="store" class="md:w-[80px] md:h-[80px] w-[50px] h-[50px]">
-                            <h6 class="text-third-color font-semibold text-[18px]"> متجر 6 </h6>
-                        </label>
-                    </div>
-                </div>
-            </div>
-            <div class="w-full select__size">
-                <h6 class="text-third-color font-semibold md:text-[24px] text-[18px] md:mb-[20px] mb-[10px]"> حجم الورق </h6>
-                <div class="flex flex-row flex-wrap items-center justify-start  md:gap-[20px] gap-[10px]">
-                    <div class="border size__item border-solid border-[#ccc] rounded-[4px] flex justify-center items-center !w-[100px]">
-                        <input type="radio" class="btn-check" name="size-name" id="option7" autocomplete="off">
-                        <label class="flex flex-col items-center justify-center gap-1 btn !w-[100px]" for="option7">
-                            <h6 class="text-third-color font-semibold text-[18px] mb-0"> A5 </h6>
-                        </label>
-                    </div>
-                    <div class="border size__item border-solid border-[#ccc] rounded-[4px] flex justify-center items-center !w-[100px]">
-                        <input type="radio" class="btn-check" name="size-name" id="option8" autocomplete="off">
-                        <label class="flex flex-col items-center justify-center gap-1 btn !w-[100px]" for="option8">
-                            <h6 class="text-third-color font-semibold text-[18px] mb-0"> A4 </h6>
-                        </label>
-                    </div>
-                    <div class="border size__item border-solid border-[#ccc] rounded-[4px] flex justify-center items-center !w-[100px]">
-                        <input type="radio" class="btn-check" name="size-name" id="option9" autocomplete="off">
-                        <label class="flex flex-col items-center justify-center gap-1 btn !w-[100px]" for="option9">
-                            <h6 class="text-third-color font-semibold text-[18px] mb-0"> A3 </h6>
-                        </label>
-                    </div>
-                    <div class="border size__item border-solid border-[#ccc] rounded-[4px] flex justify-center items-center !w-[100px]">
-                        <input type="radio" class="btn-check" name="size-name" id="option10" autocomplete="off">
-                        <label class="flex flex-col items-center justify-center gap-1 btn !w-[100px]" for="option10">
-                            <h6 class="text-third-color font-semibold text-[18px] mb-0"> A2 </h6>
-                        </label>
-                    </div>
-                    <div class="border size__item border-solid border-[#ccc] rounded-[4px] flex justify-center items-center !w-[100px]">
-                        <input type="radio" class="btn-check" name="size-name" id="option11" autocomplete="off">
-                        <label class="flex flex-col items-center justify-center gap-1 btn !w-[100px]" for="option11">
-                            <h6 class="text-third-color font-semibold text-[18px] mb-0"> A1 </h6>
-                        </label>
-                    </div>
-                    <div class="border size__item border-solid border-[#ccc] rounded-[4px] flex justify-center items-center !w-[100px]">
-                        <input type="radio" class="btn-check" name="size-name" id="option12" autocomplete="off">
-                        <label class="flex flex-col items-center justify-center gap-1 btn !w-[100px]" for="option12">
-                            <h6 class="text-third-color font-semibold text-[18px] mb-0"> A0 </h6>
-                        </label>
-                    </div>
-                </div>
-            </div>
-            <div class="w-full select__color">
-                <h6 class="text-third-color font-semibold md:text-[24px] text-[18px]  md:mb-[20px] mb-[10px]"> لون الطباعة </h6>
-                <div class="flex flex-row flex-wrap items-center justify-start  md:gap-[20px] gap-[10px]">
-                    <div class="border color__item border-solid border-[#ccc] rounded-[4px] flex justify-center items-center !w-[100px]">
-                        <input type="radio" class="btn-check" name="color-name" id="option13" autocomplete="off">
-                        <label class="flex flex-col items-center justify-center gap-1 btn !w-[100px]" for="option13">
-                            <h6 class="text-third-color font-semibold text-[18px] mb-0"> أسـود </h6>
-                        </label>
-                    </div>
-                    <div class="border color__item border-solid border-[#ccc] rounded-[4px] flex justify-center items-center !w-[100px]">
-                        <input type="radio" class="btn-check" name="color-name" id="option14" autocomplete="off">
-                        <label class="flex flex-col items-center justify-center gap-1 btn !w-[100px]" for="option14">
-                            <h6 class="text-third-color font-semibold text-[18px] mb-0"> مـلـون </h6>
-                        </label>
-                    </div>
-                </div>
-            </div>
-            <div class="w-full select__sides">
-                <h6 class="text-third-color font-semibold md:text-[24px] text-[18px]  md:mb-[20px] mb-[10px]"> جوانب الطباعة </h6>
-                <div class="flex flex-row flex-wrap items-center justify-start  md:gap-[20px] gap-[10px]">
-                    <div class="border sides__item border-solid border-[#ccc] rounded-[4px] flex justify-center items-center !w-[100px]">
-                        <input type="radio" class="btn-check" name="sides-name" id="sides13" autocomplete="off">
-                        <label class="flex flex-col items-center justify-center gap-1 btn !w-[100px]" for="sides13">
-                            <h6 class="text-third-color font-semibold text-[18px] mb-0"> وجة </h6>
-                        </label>
-                    </div>
-                    <div class="border sides__item border-solid border-[#ccc] rounded-[4px] flex justify-center items-center !w-[100px]">
-                        <input type="radio" class="btn-check" name="sides-name" id="sides14" autocomplete="off">
-                        <label class="flex flex-col items-center justify-center gap-1 btn !w-[100px]" for="sides14">
-                            <h6 class="text-third-sides font-semibold text-[18px] mb-0"> وجهين </h6>
-                        </label>
-                    </div>
-                </div>
-            </div>
-            <div class="w-full select__shape">
-                <h6 class="text-third-color font-semibold md:text-[24px] text-[18px]  md:mb-[20px] mb-[10px]"> تخطيط الطباعة </h6>
-                <div class="flex flex-row flex-wrap items-center justify-start  md:gap-[20px] gap-[10px]">
-                    <div class="border shape__item border-solid border-[#ccc] rounded-[4px] flex justify-center items-center !w-[100px]">
-                        <input type="radio" class="btn-check" name="shape-name" id="option14" autocomplete="off">
-                        <label class="flex flex-col items-center justify-center gap-1 btn !w-[100px]" for="option14">
-                            <img src="../assets/images-store/print-shape1.png" alt="store" class="md:w-[80px] md:h-[80px] w-[50px] h-[50px]">
-                        </label>
-                    </div>
-                    <div class="border shape__item border-solid border-[#ccc] rounded-[4px] flex justify-center items-center !w-[100px]">
-                        <input type="radio" class="btn-check" name="shape-name" id="option15" autocomplete="off">
-                        <label class="flex flex-col items-center justify-center gap-1 btn !w-[100px]" for="option15">
-                            <img src="../assets/images-store/print-shape2.png" alt="store" class="md:w-[80px] md:h-[80px] w-[50px] h-[50px]">
-                        </label>
-                    </div>
-                    <div class="border shape__item border-solid border-[#ccc] rounded-[4px] flex justify-center items-center !w-[100px]">
-                        <input type="radio" class="btn-check" name="shape-name" id="option16" autocomplete="off">
-                        <label class="flex flex-col items-center justify-center gap-1 btn !w-[100px]" for="option16">
-                            <img src="../assets/images-store/print-shape3.png" alt="store" class="md:w-[80px] md:h-[80px] w-[50px] h-[50px]">
-                        </label>
-                    </div>
-                    <div class="border shape__item border-solid border-[#ccc] rounded-[4px] flex justify-center items-center !w-[100px]">
-                        <input type="radio" class="btn-check" name="shape-name" id="option17" autocomplete="off">
-                        <label class="flex flex-col items-center justify-center gap-1 btn !w-[100px]" for="option17">
-                            <img src="../assets/images-store/print-shape4.png" alt="store" class="md:w-[80px] md:h-[80px] w-[50px] h-[50px]">
-                        </label>
-                    </div>
-                    <div class="border shape__item border-solid border-[#ccc] rounded-[4px] flex justify-center items-center !w-[100px]">
-                        <input type="radio" class="btn-check" name="shape-name" id="option18" autocomplete="off">
-                        <label class="flex flex-col items-center justify-center gap-1 btn !w-[100px]" for="option18">
-                            <img src="../assets/images-store/print-shape5.png" alt="store" class="md:w-[80px] md:h-[80px] w-[50px] h-[50px]">
-                        </label>
-                    </div>
-                </div>
-            </div>
-            <div class="w-full select__tgh">
-                <h6 class="text-third-color font-semibold md:md:text-[24px] text-[18px] text-[18px]  md:mb-[20px] mb-[10px]"> خيارات التغليف </h6>
-                <div class="flex flex-row flex-wrap items-center justify-start  md:gap-[20px] gap-[10px]">
-                    <div class="border store__item border-solid border-[#ccc] rounded-[8px]">
-                        <input type="radio" class="btn-check" name="tgh-name" id="tgh1" autocomplete="off">
-                        <label class="flex flex-col items-center justify-center gap-1 btn" for="tgh1">
-                            <img src="../assets/images-store/tgh1.png" alt="store" class="w-full object-contain h-[80px]">
-                            <h6 class="text-third-color font-medium text-[15px] mt-3"> بدون تغليف
-                                عدد الأوراق
-                                
-                                غير محدود</h6>
-                        </label>
-                    </div>
-                    <div class="border store__item border-solid border-[#ccc] rounded-[8px]">
-                        <input type="radio" class="btn-check" name="tgh-name" id="tgh2" autocomplete="off">
-                        <label class="flex flex-col items-center justify-center gap-1 btn" for="tgh2">
-                            <img src="../assets/images-store/tgh2.png" alt="store" class="w-full object-contain h-[80px]">
-                            <h6 class="text-third-color font-medium text-[15px] mt-3">كيس شفاف
-                                عدد الأوراق
-                                
-                                1 إلى 50</h6>
-                        </label>
-                    </div>
-                    <div class="border store__item border-solid border-[#ccc] rounded-[8px]">
-                        <input type="radio" class="btn-check" name="tgh-name" id="tgh3" autocomplete="off">
-                        <label class="flex flex-col items-center justify-center gap-1 btn" for="tgh3">
-                            <img src="../assets/images-store/tgh3.png" alt="store" class="w-full object-contain h-[80px]">
-                            <h6 class="text-third-color font-medium text-[15px] mt-3"> تدبيس ركن
-                                عدد الأوراق
-                                
-                                2 إلى 100 </h6>
-                        </label>
-                    </div>
-                    <div class="border store__item border-solid border-[#ccc] rounded-[8px]">
-                        <input type="radio" class="btn-check" name="tgh-name" id="tgh4" autocomplete="off">
-                        <label class="flex flex-col items-center justify-center gap-1 btn" for="tgh4">
-                            <img src="../assets/images-store/tgh4.png" alt="store" class="w-full object-contain h-[80px]">
-                            <h6 class="text-third-color font-medium text-[15px] mt-3">تدبيس جانبي
-                                عدد الأوراق
-                                
-                                2 إلى 100</h6>
-                        </label>
-                    </div>
-                    <div class="border store__item border-solid border-[#ccc] rounded-[8px]">
-                        <input type="radio" class="btn-check" name="tgh-name" id="tgh5" autocomplete="off">
-                        <label class="flex flex-col items-center justify-center gap-1 btn" for="tgh5">
-                            <img src="../assets/images-store/tgh6.png" alt="store" class="w-full object-contain h-[80px]">
-                            <h6 class="text-third-color font-medium text-[15px] mt-3"> سلك
-                                عدد الأوراق
-                                
-                                2 إلى 300 </h6>
-                        </label>
-                    </div>
-                    <div class="border store__item border-solid border-[#ccc] rounded-[8px]">
-                        <input type="radio" class="btn-check" name="tgh-name" id="tgh6" autocomplete="off">
-                        <label class="flex flex-col items-center justify-center gap-1 btn" for="tgh6">
-                            <img src="../assets/images-store/tgh7.png" alt="store" class="w-full object-contain h-[80px]">
-                            <h6 class="text-third-color font-medium text-[15px] mt-3"> بلاستك حلزوني
-                                عدد الأوراق
-                                
-                                10 إلى 200 </h6>
-                        </label>
-                    </div>
-                    <div class="border store__item border-solid border-[#ccc] rounded-[8px]">
-                        <input type="radio" class="btn-check" name="tgh-name" id="tgh7" autocomplete="off">
-                        <label class="flex flex-col items-center justify-center gap-1 btn" for="tgh7">
-                            <img src="../assets/images-store/tgh8.png" alt="store" class="w-full object-contain h-[80px]">
-                            <h6 class="text-third-color font-medium text-[15px] mt-3"> تخييط
-                                عدد الأوراق
-                                
-                                100 إلى 600 </h6>
-                        </label>
-                    </div>
-                    <div class="border store__item border-solid border-[#ccc] rounded-[8px]">
-                        <input type="radio" class="btn-check" name="tgh-name" id="tgh8" autocomplete="off">
-                        <label class="flex flex-col items-center justify-center gap-1 btn" for="tgh8">
-                            <img src="../assets/images-store/tgh9.png" alt="store" class="w-full object-contain h-[80px]">
-                            <h6 class="text-third-color font-medium text-[15px] mt-3"> كعب مسمار
-                                عدد الأوراق
-                                
-                                15 إلى 200 </h6>
-                        </label>
-                    </div>
-                    <div class="border store__item border-solid border-[#ccc] rounded-[8px]">
-                        <input type="radio" class="btn-check" name="tgh-name" id="tgh9" autocomplete="off">
-                        <label class="flex flex-col items-center justify-center gap-1 btn" for="tgh9">
-                            <img src="../assets/images-store/tgh10.png" alt="store" class="w-full object-contain h-[80px]">
-                            <h6 class="text-third-color font-medium text-[15px] mt-3"> كعب حراري
-                                عدد الأوراق
-                                
-                                10 إلى 100 </h6>
-                        </label>
-                    </div>
-                    <div class="border store__item border-solid border-[#ccc] rounded-[8px]">
-                        <input type="radio" class="btn-check" name="tgh-name" id="tgh10" autocomplete="off">
-                        <label class="flex flex-col items-center justify-center gap-2 btn" for="tgh10">
-                            <img src="../assets/images-store/tgh11.png" alt="store" class="w-full object-contain h-[80px]">
-                            <h6 class="text-third-color font-medium text-[15px] mt-3"> ملف خرمين
-                                عدد الأوراق
-                                
-                                1 إلى 500 </h6>
-                        </label>
-                    </div>
-                </div>
-            </div>
-            <div class="w-full select__address">
-              <h6 class="text-third-color font-semibold md:text-[24px] text-[18px]  md:mb-[20px] mb-[10px]"> التوصيل </h6>
-              <div class="flex flex-col items-start justify-start gap-4 item-star">
-                <div class="!flex flex-row items-start justify-start gap-2 form-check form-switch">
-                  <input class="!ml-0 form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
-                  <label class="form-check-label" for="flexSwitchCheckChecked"> هل ترغب بالتوصيل ؟ </label>
-                </div>
-                <div id="deliveryInputs">
-                  <div class="mb-3">
-                    <label for="" class="form-label text-third-color font-semibold text-[14px] mb-2"> العنوان </label>
-                    <textarea type="text" class="form-control md:!w-[650px] h-[120px] w-full" id="" placeholder="العنوان"></textarea>
+     <div class="form__print py-[50px] lg:px-[50px] px-[20px] m-auto !w-[850px]">
+          <div class="progress-bar-container mb-4 w-full flex justify-between items-center">
+            <div class="progress-bar-step active" id="progressStep1">خيارات الطباعة</div>
+            <div class="progress-bar-line"></div>
+            <div class="progress-bar-step" id="progressStep2">التوصيل</div>
+            <div class="progress-bar-line"></div>
+            <div class="progress-bar-step" id="progressStep3">الدفع</div>
+          </div>
+          <form action="" class="">
+            <div class="step flex flex-col items-start justify-start gap-5" id="step1">
+                <div class="flex justify-start items-start flex-col gap-2 w-100">
+                  <span for="" class="form-label text-third-color font-semibold text-[17px]">  إرفاق الملف </span>
+                  <div class="file__zone d-flex justify-content-center align-items-center flex-column mb-3 w-100"
+                          style="gap: 8px">
+                          <input class="form-control formFilePrint" type="file" id="formFile" multiple>
+                          <img src="../assets/images-store/down.svg" alt="download" alt="download"
+                                  loading="lazy" width="40" height="40"/>
+                          <span> اضغط او قم بالسحب </span>
+                          <p>png, jpg, jpeg, pdf (max. 800x400px)</p>
+                          <div id="previewContainerPrint" class="my-2 flex justify-start items-center flex-row gap-2 flex-wrap"></div>
+                      </div>
+                      <p id="fileCountPrint" class="mt-2 font-semibold"></p>
                   </div>
-                  <div class="mb-3">
-                    <label for="" class="form-label text-third-color font-semibold text-[14px] mb-2"> رقم الهاتف </label>
-                    <input type="number" class="form-control md:!w-[650px] w-full h-[40px]" id="" placeholder="رقم الهاتف ">
+                  <div class="w-full pb-5 select__store">
+                      <h6 class="text-third-color font-semibold text-[17px] md:mb-[20px] mb-[10px]"> اختر المتجر </h6>
+                      <div class="flex flex-row flex-wrap items-center justify-start md:gap-[20px] gap-[10px]">
+                          <div class="border store__item border-solid border-[#ccc] rounded-[8px]">
+                              <input type="radio" class="btn-check" name="store-name" id="option1" autocomplete="off">
+                              <label class="flex flex-col items-center justify-center gap-1 btn" for="option1">
+                                  <img src="../assets/images-store/store1.png" alt="store" class="md:w-[80px] md:h-[80px] w-[50px] h-[50px]">
+                                  <h6 class="text-third-color font-semibold text-[17px]"> متجر 1 </h6>
+                              </label>
+                          </div>
+                          <div class="border store__item border-solid border-[#ccc] rounded-[8px]">
+                              <input type="radio" class="btn-check" name="store-name" id="option2" autocomplete="off">
+                              <label class="flex flex-col items-center justify-center gap-1 btn" for="option2">
+                                  <img src="../assets/images-store/store2.png" alt="store" class="md:w-[80px] md:h-[80px] w-[50px] h-[50px]">
+                                  <h6 class="text-third-color font-semibold text-[17px]"> متجر 2 </h6>
+                              </label>
+                          </div>
+                          <div class="border store__item border-solid border-[#ccc] rounded-[8px]">
+                              <input type="radio" class="btn-check" name="store-name" id="option3" autocomplete="off">
+                              <label class="flex flex-col items-center justify-center gap-1 btn" for="option3">
+                                  <img src="../assets/images-store/store3.png" alt="store" class="md:w-[80px] md:h-[80px] w-[50px] h-[50px]">
+                                  <h6 class="text-third-color font-semibold text-[17px]"> متجر 3 </h6>
+                              </label>
+                          </div>
+                          <div class="border store__item border-solid border-[#ccc] rounded-[8px]">
+                              <input type="radio" class="btn-check" name="store-name" id="option4" autocomplete="off">
+                              <label class="flex flex-col items-center justify-center gap-1 btn" for="option4">
+                                  <img src="../assets/images-store/store4.png" alt="store" class="md:w-[80px] md:h-[80px] w-[50px] h-[50px]">
+                                  <h6 class="text-third-color font-semibold text-[17px]"> متجر 4 </h6>
+                              </label>
+                          </div>
+                          <div class="border store__item border-solid border-[#ccc] rounded-[8px]">
+                              <input type="radio" class="btn-check" name="store-name" id="option5" autocomplete="off">
+                              <label class="flex flex-col items-center justify-center gap-1 btn" for="option5">
+                                  <img src="../assets/images-store/store5.png" alt="store" class="md:w-[80px] md:h-[80px] w-[50px] h-[50px]">
+                                  <h6 class="text-third-color font-semibold text-[17px]"> متجر 5 </h6>
+                              </label>
+                          </div>
+                          <div class="border store__item border-solid border-[#ccc] rounded-[8px]">
+                              <input type="radio" class="btn-check" name="store-name" id="option6" autocomplete="off">
+                              <label class="flex flex-col items-center justify-center gap-1 btn" for="option6">
+                                  <img src="../assets/images-store/store6.png" alt="store" class="md:w-[80px] md:h-[80px] w-[50px] h-[50px]">
+                                  <h6 class="text-third-color font-semibold text-[17px]"> متجر 6 </h6>
+                              </label>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="w-full select__size">
+                      <h6 class="text-third-color font-semibold text-[17px] md:mb-[20px] mb-[10px]"> حجم الورق </h6>
+                      <div class="flex flex-row flex-wrap items-center justify-start  md:gap-[20px] gap-[10px]">
+                          <div class="border size__item border-solid border-[#ccc] rounded-[4px] flex justify-center items-center !w-[100px]">
+                              <input type="radio" class="btn-check" name="size-name" id="option7" autocomplete="off">
+                              <label class="flex flex-col items-center justify-center gap-1 btn !w-[100px]" for="option7">
+                                  <h6 class="text-third-color font-semibold text-[17px] mb-0"> A5 </h6>
+                              </label>
+                          </div>
+                          <div class="border size__item border-solid border-[#ccc] rounded-[4px] flex justify-center items-center !w-[100px]">
+                              <input type="radio" class="btn-check" name="size-name" id="option8" autocomplete="off">
+                              <label class="flex flex-col items-center justify-center gap-1 btn !w-[100px]" for="option8">
+                                  <h6 class="text-third-color font-semibold text-[17px] mb-0"> A4 </h6>
+                              </label>
+                          </div>
+                          <div class="border size__item border-solid border-[#ccc] rounded-[4px] flex justify-center items-center !w-[100px]">
+                              <input type="radio" class="btn-check" name="size-name" id="option9" autocomplete="off">
+                              <label class="flex flex-col items-center justify-center gap-1 btn !w-[100px]" for="option9">
+                                  <h6 class="text-third-color font-semibold text-[17px] mb-0"> A3 </h6>
+                              </label>
+                          </div>
+                          <div class="border size__item border-solid border-[#ccc] rounded-[4px] flex justify-center items-center !w-[100px]">
+                              <input type="radio" class="btn-check" name="size-name" id="option10" autocomplete="off">
+                              <label class="flex flex-col items-center justify-center gap-1 btn !w-[100px]" for="option10">
+                                  <h6 class="text-third-color font-semibold text-[17px] mb-0"> A2 </h6>
+                              </label>
+                          </div>
+                          <div class="border size__item border-solid border-[#ccc] rounded-[4px] flex justify-center items-center !w-[100px]">
+                              <input type="radio" class="btn-check" name="size-name" id="option11" autocomplete="off">
+                              <label class="flex flex-col items-center justify-center gap-1 btn !w-[100px]" for="option11">
+                                  <h6 class="text-third-color font-semibold text-[17px] mb-0"> A1 </h6>
+                              </label>
+                          </div>
+                          <div class="border size__item border-solid border-[#ccc] rounded-[4px] flex justify-center items-center !w-[100px]">
+                              <input type="radio" class="btn-check" name="size-name" id="option12" autocomplete="off">
+                              <label class="flex flex-col items-center justify-center gap-1 btn !w-[100px]" for="option12">
+                                  <h6 class="text-third-color font-semibold text-[17px] mb-0"> A0 </h6>
+                              </label>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="w-full select__color">
+                      <h6 class="text-third-color font-semibold text-[17px]  md:mb-[20px] mb-[10px]"> لون الطباعة </h6>
+                      <div class="flex flex-row flex-wrap items-center justify-start  md:gap-[20px] gap-[10px]">
+                          <div class="border color__item border-solid border-[#ccc] rounded-[4px] flex justify-center items-center !w-[100px]">
+                              <input type="radio" class="btn-check" name="color-name" id="option13" autocomplete="off">
+                              <label class="flex flex-col items-center justify-center gap-1 btn !w-[100px]" for="option13">
+                                  <h6 class="text-third-color font-semibold text-[17px] mb-0"> أسـود </h6>
+                              </label>
+                          </div>
+                          <div class="border color__item border-solid border-[#ccc] rounded-[4px] flex justify-center items-center !w-[100px]">
+                              <input type="radio" class="btn-check" name="color-name" id="option14" autocomplete="off">
+                              <label class="flex flex-col items-center justify-center gap-1 btn !w-[100px]" for="option14">
+                                  <h6 class="text-third-color font-semibold text-[17px] mb-0"> مـلـون </h6>
+                              </label>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="w-full select__sides">
+                      <h6 class="text-third-color font-semibold text-[17px]  md:mb-[20px] mb-[10px]"> جوانب الطباعة </h6>
+                      <div class="flex flex-row flex-wrap items-center justify-start  md:gap-[20px] gap-[10px]">
+                          <div class="border sides__item border-solid border-[#ccc] rounded-[4px] flex justify-center items-center !w-[100px]">
+                              <input type="radio" class="btn-check" name="sides-name" id="sides13" autocomplete="off">
+                              <label class="flex flex-col items-center justify-center gap-1 btn !w-[100px]" for="sides13">
+                                  <h6 class="text-third-color font-semibold text-[17px] mb-0"> وجة </h6>
+                              </label>
+                          </div>
+                          <div class="border sides__item border-solid border-[#ccc] rounded-[4px] flex justify-center items-center !w-[100px]">
+                              <input type="radio" class="btn-check" name="sides-name" id="sides14" autocomplete="off">
+                              <label class="flex flex-col items-center justify-center gap-1 btn !w-[100px]" for="sides14">
+                                  <h6 class="text-third-sides font-semibold text-[17px] mb-0"> وجهين </h6>
+                              </label>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="w-full select__shape">
+                      <h6 class="text-third-color font-semibold text-[17px]  md:mb-[20px] mb-[10px]"> تخطيط الطباعة </h6>
+                      <div class="flex flex-row flex-wrap items-center justify-start  md:gap-[20px] gap-[10px]">
+                          <div class="border shape__item border-solid border-[#ccc] rounded-[4px] flex justify-center items-center !w-[100px]">
+                              <input type="radio" class="btn-check" name="shape-name" id="option14_shape" autocomplete="off">
+                              <label class="flex flex-col items-center justify-center gap-1 btn !w-[100px]" for="option14_shape">
+                                  <img src="../assets/images-store/print-shape1.png" alt="store" class="md:w-[80px] md:h-[80px] w-[50px] h-[50px]">
+                              </label>
+                          </div>
+                          <div class="border shape__item border-solid border-[#ccc] rounded-[4px] flex justify-center items-center !w-[100px]">
+                              <input type="radio" class="btn-check" name="shape-name" id="option15_shape" autocomplete="off">
+                              <label class="flex flex-col items-center justify-center gap-1 btn !w-[100px]" for="option15_shape">
+                                  <img src="../assets/images-store/print-shape2.png" alt="store" class="md:w-[80px] md:h-[80px] w-[50px] h-[50px]">
+                              </label>
+                          </div>
+                          <div class="border shape__item border-solid border-[#ccc] rounded-[4px] flex justify-center items-center !w-[100px]">
+                              <input type="radio" class="btn-check" name="shape-name" id="option16_shape" autocomplete="off">
+                              <label class="flex flex-col items-center justify-center gap-1 btn !w-[100px]" for="option16_shape">
+                                  <img src="../assets/images-store/print-shape3.png" alt="store" class="md:w-[80px] md:h-[80px] w-[50px] h-[50px]">
+                              </label>
+                          </div>
+                          <div class="border shape__item border-solid border-[#ccc] rounded-[4px] flex justify-center items-center !w-[100px]">
+                              <input type="radio" class="btn-check" name="shape-name" id="option17_shape" autocomplete="off">
+                              <label class="flex flex-col items-center justify-center gap-1 btn !w-[100px]" for="option17_shape">
+                                  <img src="../assets/images-store/print-shape4.png" alt="store" class="md:w-[80px] md:h-[80px] w-[50px] h-[50px]">
+                              </label>
+                          </div>
+                          <div class="border shape__item border-solid border-[#ccc] rounded-[4px] flex justify-center items-center !w-[100px]">
+                              <input type="radio" class="btn-check" name="shape-name" id="option18_shape" autocomplete="off">
+                              <label class="flex flex-col items-center justify-center gap-1 btn !w-[100px]" for="option18_shape">
+                                  <img src="../assets/images-store/print-shape5.png" alt="store" class="md:w-[80px] md:h-[80px] w-[50px] h-[50px]">
+                              </label>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="w-full select__tgh">
+                      <h6 class="text-third-color font-semibold text-[17px] md:mb-[20px] mb-[10px]"> خيارات التغليف </h6>
+                      <div class="flex flex-row flex-wrap items-center justify-start  md:gap-[20px] gap-[10px]">
+                          <div class="border store__item border-solid border-[#ccc] rounded-[8px]">
+                              <input type="radio" class="btn-check" name="tgh-name" id="tgh1" autocomplete="off">
+                              <label class="flex flex-col items-center justify-center gap-1 btn" for="tgh1">
+                                  <img src="../assets/images-store/tgh1.png" alt="store" class="w-full object-contain h-[80px]">
+                                  <h6 class="text-third-color font-medium text-[15px] mt-3"> بدون تغليف
+                                      عدد الأوراق
+                                      
+                                      غير محدود</h6>
+                              </label>
+                          </div>
+                          <div class="border store__item border-solid border-[#ccc] rounded-[8px]">
+                              <input type="radio" class="btn-check" name="tgh-name" id="tgh2" autocomplete="off">
+                              <label class="flex flex-col items-center justify-center gap-1 btn" for="tgh2">
+                                  <img src="../assets/images-store/tgh2.png" alt="store" class="w-full object-contain h-[80px]">
+                                  <h6 class="text-third-color font-medium text-[15px] mt-3">كيس شفاف
+                                      عدد الأوراق
+                                      
+                                      1 إلى 50</h6>
+                              </label>
+                          </div>
+                          <div class="border store__item border-solid border-[#ccc] rounded-[8px]">
+                              <input type="radio" class="btn-check" name="tgh-name" id="tgh3" autocomplete="off">
+                              <label class="flex flex-col items-center justify-center gap-1 btn" for="tgh3">
+                                  <img src="../assets/images-store/tgh3.png" alt="store" class="w-full object-contain h-[80px]">
+                                  <h6 class="text-third-color font-medium text-[15px] mt-3"> تدبيس ركن
+                                      عدد الأوراق
+                                      
+                                      2 إلى 100 </h6>
+                              </label>
+                          </div>
+                          <div class="border store__item border-solid border-[#ccc] rounded-[8px]">
+                              <input type="radio" class="btn-check" name="tgh-name" id="tgh4" autocomplete="off">
+                              <label class="flex flex-col items-center justify-center gap-1 btn" for="tgh4">
+                                  <img src="../assets/images-store/tgh4.png" alt="store" class="w-full object-contain h-[80px]">
+                                  <h6 class="text-third-color font-medium text-[15px] mt-3">تدبيس جانبي
+                                      عدد الأوراق
+                                      
+                                      2 إلى 100</h6>
+                              </label>
+                          </div>
+                          <div class="border store__item border-solid border-[#ccc] rounded-[8px]">
+                              <input type="radio" class="btn-check" name="tgh-name" id="tgh5" autocomplete="off">
+                              <label class="flex flex-col items-center justify-center gap-1 btn" for="tgh5">
+                                  <img src="../assets/images-store/tgh6.png" alt="store" class="w-full object-contain h-[80px]">
+                                  <h6 class="text-third-color font-medium text-[15px] mt-3"> سلك
+                                      عدد الأوراق
+                                      
+                                      2 إلى 300 </h6>
+                              </label>
+                          </div>
+                          <div class="border store__item border-solid border-[#ccc] rounded-[8px]">
+                              <input type="radio" class="btn-check" name="tgh-name" id="tgh6" autocomplete="off">
+                              <label class="flex flex-col items-center justify-center gap-1 btn" for="tgh6">
+                                  <img src="../assets/images-store/tgh7.png" alt="store" class="w-full object-contain h-[80px]">
+                                  <h6 class="text-third-color font-medium text-[15px] mt-3"> بلاستك حلزوني
+                                      عدد الأوراق
+                                      
+                                      10 إلى 200 </h6>
+                              </label>
+                          </div>
+                          <div class="border store__item border-solid border-[#ccc] rounded-[8px]">
+                              <input type="radio" class="btn-check" name="tgh-name" id="tgh7" autocomplete="off">
+                              <label class="flex flex-col items-center justify-center gap-1 btn" for="tgh7">
+                                  <img src="../assets/images-store/tgh8.png" alt="store" class="w-full object-contain h-[80px]">
+                                  <h6 class="text-third-color font-medium text-[15px] mt-3"> تخييط
+                                      عدد الأوراق
+                                      
+                                      100 إلى 600 </h6>
+                              </label>
+                          </div>
+                          <div class="border store__item border-solid border-[#ccc] rounded-[8px]">
+                              <input type="radio" class="btn-check" name="tgh-name" id="tgh8" autocomplete="off">
+                              <label class="flex flex-col items-center justify-center gap-1 btn" for="tgh8">
+                                  <img src="../assets/images-store/tgh9.png" alt="store" class="w-full object-contain h-[80px]">
+                                  <h6 class="text-third-color font-medium text-[15px] mt-3"> كعب مسمار
+                                      عدد الأوراق
+                                      
+                                      15 إلى 200 </h6>
+                              </label>
+                          </div>
+                          <div class="border store__item border-solid border-[#ccc] rounded-[8px]">
+                              <input type="radio" class="btn-check" name="tgh-name" id="tgh9" autocomplete="off">
+                              <label class="flex flex-col items-center justify-center gap-1 btn" for="tgh9">
+                                  <img src="../assets/images-store/tgh10.png" alt="store" class="w-full object-contain h-[80px]">
+                                  <h6 class="text-third-color font-medium text-[15px] mt-3"> كعب حراري
+                                      عدد الأوراق
+                                      
+                                      10 إلى 100 </h6>
+                              </label>
+                          </div>
+                          <div class="border store__item border-solid border-[#ccc] rounded-[8px]">
+                              <input type="radio" class="btn-check" name="tgh-name" id="tgh10" autocomplete="off">
+                              <label class="flex flex-col items-center justify-center gap-2 btn" for="tgh10">
+                                  <img src="../assets/images-store/tgh11.png" alt="store" class="w-full object-contain h-[80px]">
+                                  <h6 class="text-third-color font-medium text-[15px] mt-3"> ملف خرمين
+                                      عدد الأوراق
+                                      
+                                      1 إلى 500 </h6>
+                              </label>
+                          </div>
+                      </div>
+                  </div>
+            </div>
+
+            <div class="step hidden" id="step2">
+                <div class="w-full select__address">
+                  <div class="flex flex-col items-start justify-start gap-4 item-star">
+                    <div class="!flex flex-row items-start justify-start gap-2 form-check form-switch">
+                      <input class="!ml-0 form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                      <label class="form-check-label" for="flexSwitchCheckChecked"> هل ترغب بالتوصيل ؟ </label>
+                    </div>
+                    <div id="deliveryInputs">
+                      <div class="mb-3">
+                        <label for="" class="form-label text-third-color font-semibold text-[14px] mb-2"> العنوان </label>
+                        <textarea type="text" class="form-control md:!w-[650px] h-[120px] w-full" id="" placeholder="العنوان"></textarea>
+                      </div>
+                      <div class="mb-3">
+                        <label for="" class="form-label text-third-color font-semibold text-[14px] mb-2"> رقم الهاتف </label>
+                        <input type="number" class="form-control md:!w-[650px] w-full h-[40px]" id="" placeholder="رقم الهاتف ">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="step hidden" id="step3">
+                <h5 class="text-third-color font-semibold text-[18px] mb-4 sm:mt-[0px] mt-[12px]"> ملخص الطلب </h5>
+                <div
+                class="order__summary border border-solid border-[#eee] py-[24px] px-[9px] sm:p-[32px] rounded-[12px] w-full flex justify-start items-start flex-col gap-[15px]"
+              >
+                <div class="flex justify-start flex-col gap-[16px] w-100">
+                  <div class="flex justify-between items-center flex-row w-100">
+                    <h3 class="text-third-color font-normal text-[14px] sm:text-[16px]">
+                      المجموع
+                    </h3>
+                    <p class="text-third-color font-bold text-[14px] sm:text-[16px]">
+                      100.99 ر.س
+                    </p>
+                  </div>
+                  <div class="flex justify-between items-center flex-row w-100">
+                    <h3 class="text-third-color font-normal text-[14px] sm:text-[16px]">
+                      رسوم الشحن
+                      </h3>
+                    <p class="text-third-color font-bold text-[14px] sm:text-[16px]">
+                      40.00 ر.س
+                    </p>
+                  </div>
+                </div>
+                <hr class="bg-[#ebebeb] text-[#ebebeb] w-100" />
+                <div class="flex justify-start flex-col gap-[16px] w-100">
+                  <div class="flex justify-between items-center flex-row w-100">
+                    <h3 class="text-third-color font-semibold text-[14px] sm:text-[16px]">
+                      الأجمالي بدون الضريبة
+                    </h3>
+                    <p class="text-third-color font-bold text-[14px] sm:text-[16px]">
+                      100.99 ر.س
+                    </p>
+                  </div>
+                  <div class="flex justify-between items-center flex-row w-100">
+                    <h3 class="text-third-color font-normal text-[14px] sm:text-[16px]">
+                      15% القيمة المضافة
+                    </h3>
+                    <p class="text-third-color font-bold text-[14px] sm:text-[16px] mb-0">
+                      40.00 ر.س
+                    </p>
+                  </div>
+                  <hr class="bg-[#ebebeb] text-[#ebebeb] w-100" />
+                </div>
+                <div class="flex justify-start flex-col gap-[12px] w-100">
+                  <div class="flex justify-between items-center flex-row w-full">
+                    <h3 class="text-third-color font-bold text-[16px] sm:text-[20px]">
+                      الأجمالي شامل الضريبة
+                    </h3>
+                    <p class="text-third-color font-bold text-[16px] sm:text-[20px]">
+                      1100.99 ر.س
+                    </p>
                   </div>
                 </div>
               </div>
+              </div>
             </div>
-            <div class="flex items-center justify-center w-full">
-              <button type="submit" class="bg-primary-color text-white text-[15px] font-semibold !py-[6px] !px-[25px] rounded-[6px]"> إرسال </button>
+            <div class="navigation-buttons flex items-center justify-center w-full my-4 gap-3">
+              <button type="button" class="bg-primary-color text-white font-semibold px-4 py-2 rounded hidden" id="prevButton"> السابق </button>
+              <button type="button" class="bg-primary-color text-white font-semibold px-4 py-2 rounded" id="nextButton"> التالي </button>
+              <button type="submit" class="bg-primary-color text-white font-semibold px-4 py-2 rounded hidden" id="payButton"> الدفع </button>
             </div>
-        </form>
+              <!-- <div class="flex items-center justify-center w-full">
+                <button type="submit" class="bg-primary-color text-white text-[15px] font-semibold !py-[6px] !px-[25px] rounded-[6px]"> إرسال </button>
+              </div> -->
+          </form>
      </div>
     <!-- end form -->
     
@@ -662,6 +748,109 @@
         if (!toggleSwitch.checked) {
           deliveryInputs.style.display = 'none';
         }
+      </script>
+
+      <script>
+        document.querySelector('.formFilePrint').addEventListener('change', function(event) {
+    const previewContainer = document.getElementById('previewContainerPrint');
+    previewContainer.innerHTML = '';
+
+    const files = event.target.files;
+
+    Array.from(files).forEach((file) => {
+        const fileType = file.type;
+        const reader = new FileReader();
+
+        if (fileType.startsWith('image/')) {
+            reader.onload = function(e) {
+                const img = document.createElement('img');
+                img.src = e.target.result;
+                img.style.maxWidth = '100%';
+                img.style.maxHeight = '100px';
+                img.alt = 'Uploaded Preview';
+                img.style.margin = '5px';
+
+                previewContainer.appendChild(img);
+            };
+            reader.readAsDataURL(file);
+        } else if (fileType === 'application/pdf') {
+            const pdfIcon = document.createElement('img');
+            pdfIcon.src = '../../assets/images-store/pdf.jpg';
+            pdfIcon.alt = 'PDF Preview';
+            pdfIcon.style.width = '100px';
+            pdfIcon.style.height = '100px';
+            pdfIcon.style.marginBottom = '10px';
+            pdfIcon.style.margin = '5px';
+
+            const pdfLink = document.createElement('a');
+            reader.onload = function(e) {
+                pdfLink.href = e.target.result;
+                pdfLink.textContent = 'View PDF';
+                pdfLink.target = '_blank';
+                pdfLink.style.display = 'block';
+
+                previewContainer.appendChild(pdfIcon);
+            };
+            reader.readAsDataURL(file);
+        } else {
+            alert('Unsupported file type. Please upload an image or PDF.');
+        }
+    });
+});
+      </script>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+  const steps = document.querySelectorAll(".step");
+  const nextButton = document.getElementById("nextButton");
+  const prevButton = document.getElementById("prevButton");
+  const payButton = document.getElementById("payButton");
+
+  const progressSteps = document.querySelectorAll(".progress-bar-step");
+  const progressLines = document.querySelectorAll(".progress-bar-line");
+
+  let currentStep = 0;
+
+  function updateSteps() {
+    steps.forEach((step, index) => {
+      step.classList.toggle("hidden", index !== currentStep);
+    });
+
+    prevButton.classList.toggle("hidden", currentStep === 0);
+    nextButton.classList.toggle("hidden", currentStep === steps.length - 1);
+    payButton.classList.toggle("hidden", currentStep !== steps.length - 1);
+
+    updateProgressBar();
+  }
+
+  function updateProgressBar() {
+    progressSteps.forEach((step, index) => {
+      step.classList.toggle("active", index === currentStep);
+      step.classList.toggle("completed", index < currentStep);
+    });
+
+    progressLines.forEach((line, index) => {
+      line.classList.toggle("completed", index < currentStep);
+    });
+  }
+
+  nextButton.addEventListener("click", () => {
+    if (currentStep < steps.length - 1) {
+      currentStep++;
+      updateSteps();
+    }
+  });
+
+  prevButton.addEventListener("click", () => {
+    if (currentStep > 0) {
+      currentStep--;
+      updateSteps();
+    }
+  });
+
+  updateSteps(); // Initialize the steps
+});
+
       </script>
     </body>
   </html>

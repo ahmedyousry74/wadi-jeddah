@@ -234,7 +234,7 @@
     <!-- end print -->
 
     <!-- start form -->
-     <div class="form__print py-[50px] lg:px-[50px] px-[20px] m-auto !w-[850px]">
+     <div class="form__print py-[50px] lg:px-[50px] px-[20px] m-auto sm:w-[850px]">
           <div class="progress-bar-container mb-4 w-full flex justify-between items-center">
             <div class="progress-bar-step active" id="progressStep1">خيارات الطباعة</div>
             <div class="progress-bar-line"></div>
@@ -528,7 +528,7 @@
                       <input class="!ml-0 form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
                       <label class="form-check-label" for="flexSwitchCheckChecked"> هل ترغب بالتوصيل ؟ </label>
                     </div>
-                    <div id="deliveryInputs">
+                    <div id="deliveryInputs" class="w-full">
                       <div class="mb-3">
                         <label for="" class="form-label text-third-color font-semibold text-[14px] mb-2"> العنوان </label>
                         <textarea type="text" class="form-control md:!w-[650px] h-[120px] w-full" id="" placeholder="العنوان"></textarea>
@@ -596,6 +596,38 @@
                   </div>
                 </div>
               </div>
+              <div class="payment__form mt-5 border border-solid border-[#EEEEEE] rounded-lg lg:!py-5 lg:!px-5 p-4 gap-3 flex justify-start items-start flex-col">
+                <div class="flex justify-start items-start flex-row gap-3 flex-wrap">
+                    <div>
+                        <input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off" checked>
+                        <label class="btn !flex justify-between items-center flex-row gap-2 w-full" for="success-outlined" style="display: flex !important;">
+                            <img src="../assets/images/masterCard.svg" alt="masterCard" width="45" height="15">
+                            <span class=""> ماستر كارد </span>
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined" autocomplete="off">
+                        <label class="btn flex justify-between items-center flex-row gap-2" for="danger-outlined" style="display: flex !important;">
+                            <img src="../assets/images/apple.png" alt="masterCard" width="45" height="15">
+                            <span class=""> اّبل باي  </span>
+                        </label>
+                    </div>
+                </div>
+                <div class="flex justify-start items-start flex-col w-full gap-3 mt-4">
+                    <div class="w-full">
+                        <input type="text" class="form-control" placeholder="اسم صاحب الكارت" name="Card Holder Name" id="card _holder_name" style="height: 48px !important;">
+                    </div>
+                    <div class="w-full">
+                        <input type="number" class="form-control" placeholder="رقم الكارت" name="Card Holder Name" id="card _holder_name" style="height: 48px !important;">
+                    </div>
+                    <div class="w-full">
+                        <input type="text" class="form-control" placeholder="MM/YY" name="Card Holder Name" id="card _holder_name" style="height: 48px !important;">
+                    </div>
+                    <div class="w-full">
+                        <input type="text" class="form-control" placeholder="CVV" maxlength="3" name="Card Holder Name" id="card _holder_name" style="height: 48px !important;">
+                    </div>
+                </div>
+            </div>
               </div>
             </div>
             <div class="navigation-buttons flex items-center justify-center w-full my-4 gap-3">

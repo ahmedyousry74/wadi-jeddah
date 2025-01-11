@@ -642,6 +642,18 @@
      </div>
     <!-- end form -->
     
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body flex justify-center items-center flex-col gap-4">
+            <h1 class="modal-title fs-5 text-third-color font-medium text-[18px]" id="exampleModalLabel">Modal title</h1>
+            <img src="../assets/images/book.gif" alt="book">
+          </div>
+        </div>
+      </div>
+    </div>
+
     <footer class="bg-[#fff] py-[20px] sm:px-[50px] px-[20px] border-t border-solid border-[#e3e3e3]">
         <div class="row">
           <div class="col-md-3">
@@ -884,5 +896,29 @@
 });
 
       </script>
+
+<script>
+  // Select all radio inputs
+  const radioInputs = document.querySelectorAll('input[name="tgh-name"]');
+  const modalTitle = document.getElementById('exampleModalLabel');
+
+  // Loop through each input and add an event listener
+  radioInputs.forEach(input => {
+    input.addEventListener('change', function () {
+      if (this.checked) {
+        // Find the h6 text of the selected label
+        const selectedLabel = this.nextElementSibling; // Label element
+        const h6Text = selectedLabel.querySelector('h6').innerText;
+
+        // Update the modal title
+        modalTitle.textContent = h6Text;
+
+        // Show the modal
+        const modal = new bootstrap.Modal(document.getElementById('exampleModal'));
+        modal.show();
+      }
+    });
+  });
+</script>
     </body>
   </html>

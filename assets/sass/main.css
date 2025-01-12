@@ -1189,7 +1189,7 @@ body.website[dir=ltr] .contact__us__page form .input-group-text {
 .header__translation::after {
   content: "";
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.5);
   height: 100%;
   width: 100%;
   top: 0;

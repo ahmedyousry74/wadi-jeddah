@@ -212,170 +212,95 @@
     </div>
     <!-- navbar -->
 
-    <!-- start order translate -->
-     <form action="" class="py-[50px] md:px-[80px] px-[25px]">
-        <div class="order__translate  flex justify-start items-start flex-col gap-5 w-full">
-            <div class="choose__lang bg-[#f7f8fa] sm:p-[24px] p-[12px] border border-solid border-[#EBEBEB] rounded-[24px] w-full">
-                <h2 class="text-[20px] font-semibold text-third-color mb-4"> اختيار اللغة </h2>
-                <div class="flex justify-start items-start flex-col gap-4 w-full">
-                    <div class=" w-full">
-                        <h6 class="text-[17px] font-medium text-third-color"> لغة المصدر </h6>
-                        <select class="form-select w-full h-[45px]" aria-label="Default select example">
-                            <option selected disabled>لغة المصدر </option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-                    <div class=" w-full">
-                        <h6 class="text-[17px] font-medium text-third-color"> لغة الترجمة </h6>
-                        <select class="form-select w-full h-[45px]" aria-label="Default select example">
-                            <option selected disabled>لغة الترجمة </option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
+    <!-- start payment translate -->
+     <div action="" class="py-[50px] md:px-[80px] px-[25px]">
+        <div class="row">
+            <div class="col-md-6">
+                <div
+                class="order__summary border border-solid border-[#eee] py-[24px] px-[9px] sm:p-[32px] rounded-[12px] w-full flex justify-start items-start flex-col gap-[15px]"
+              >
+                <div class="flex justify-start flex-col gap-[16px] w-100">
+                  <div class="flex justify-between items-center flex-row w-100">
+                    <h3 class="text-third-color font-normal text-[14px] sm:text-[16px]">
+                      المجموع
+                    </h3>
+                    <p class="text-third-color font-bold text-[14px] sm:text-[16px]">
+                      100.99 ر.س
+                    </p>
+                  </div>
                 </div>
-            </div>
-            <div class="select__down bg-[#f7f8fa] sm:p-[24px] p-[12px] border border-solid border-[#EBEBEB] rounded-[24px] w-full">
-                <h2 class="text-[20px] font-semibold text-third-color mb-4"> حمّل مستنداتك </h2>
-                <div class="flex flex-row flex-wrap items-center justify-start md:gap-[20px] gap-[10px]">
-                    <div class="border down__item border-solid border-[#ccc] rounded-[8px] sm:w-auto w-full">
-                        <input type="radio" class="btn-check" name="down-name" id="down1" autocomplete="off">
-                        <label class="!flex flex-row items-center justify-center gap-2 btn" for="down1">
-                            <img src="../assets/images-store/upload.png" alt="store" class="md:w-[50px] md:h-[50px] w-[50px] h-[50px]">
-                            <h6 class="text-third-color font-semibold text-[17px]"> تحميل ملف </h6>
-                        </label>
-                    </div>
-                    <div class="border down__item border-solid border-[#ccc] rounded-[8px] sm:w-auto w-full">
-                        <input type="radio" class="btn-check" name="down-name" id="down2" autocomplete="off">
-                        <label class="!flex flex-row items-center justify-center gap-2 btn" for="down2">
-                            <img src="../assets/images-store/text.png" alt="store" class="md:w-[50px] md:h-[50px] w-[50px] h-[50px]">
-                            <h6 class="text-third-color font-semibold text-[17px]"> كتابة نص </h6>
-                        </label>
-                    </div>
+                <hr class="bg-[#ebebeb] text-[#ebebeb] w-100" />
+                <div class="flex justify-start flex-col gap-[16px] w-100">
+                  <div class="flex justify-between items-center flex-row w-100">
+                    <h3 class="text-third-color font-semibold text-[14px] sm:text-[16px]">
+                      الأجمالي بدون الضريبة
+                    </h3>
+                    <p class="text-third-color font-bold text-[14px] sm:text-[16px]">
+                      100.99 ر.س
+                    </p>
+                  </div>
+                  <div class="flex justify-between items-center flex-row w-100">
+                    <h3 class="text-third-color font-normal text-[14px] sm:text-[16px]">
+                      15% القيمة المضافة
+                    </h3>
+                    <p class="text-third-color font-bold text-[14px] sm:text-[16px] mb-0">
+                      40.00 ر.س
+                    </p>
+                  </div>
+                  <hr class="bg-[#ebebeb] text-[#ebebeb] w-100" />
                 </div>
-                
-                <div class="upload__file mt-4" id="uploadFileSection" style="display: none;">
-                    <div class="flex justify-start items-start flex-col gap-2 w-100">
-                        <div class="file__zone d-flex justify-content-center align-items-center flex-column my-3 w-100 bg-white"
-                            style="gap: 8px">
-                            <input class="form-control formFileTwo" type="file" id="formFile" multiple>
-                            <img src="../assets/images-store/down.svg" alt="download" loading="lazy" width="40" height="40"/>
-                            <span> اضغط او قم بالسحب </span>
-                            <p>png, jpg, jpeg, pdf (max. 800x400px)</p>
-                        </div>
-                        <div id="previewContainerTwo" class="my-2 flex justify-start items-center flex-row gap-2 flex-wrap"></div>
-                        <p id="fileCount" class="mt-2 font-semibold"></p>
-                    </div>
+                <div class="flex justify-start flex-col gap-[12px] w-100">
+                  <div class="flex justify-between items-center flex-row w-full">
+                    <h3 class="text-third-color font-bold text-[16px] sm:text-[20px]">
+                      الأجمالي شامل الضريبة
+                    </h3>
+                    <p class="text-third-color font-bold text-[16px] sm:text-[20px]">
+                      1100.99 ر.س
+                    </p>
+                  </div>
                 </div>
-                
-                <div class="textarea__text mt-4" id="textAreaSection" style="display: none;">
-                    <textarea class="form-control" placeholder="اكتب النص المراد ترجمته" style="height: 150px;"></textarea>
-                </div>
-            </div>
-            <div class="select__type bg-[#f7f8fa] sm:p-[24px] p-[12px] border border-solid border-[#EBEBEB] rounded-[24px] w-full">
-                <h2 class="text-[20px] font-semibold text-third-color mb-4"> نوع الترجمة </h2>
-                <div class="flex flex-row flex-wrap items-center justify-start md:gap-[20px] gap-[10px]">
-                    <div class="border type__item border-solid border-[#ccc] rounded-[8px] sm:w-auto w-full">
-                        <input type="radio" class="btn-check" name="type-name" id="type1" autocomplete="off">
-                        <label class="!flex flex-row items-center justify-center gap-2 btn" for="type1">
-                            <img src="../assets/images-store/text3.png" alt="store" class="md:w-[50px] md:h-[50px] w-[50px] h-[50px]">
-                            <h6 class="text-third-color font-semibold text-[17px]"> ترجمة متعددة </h6>
-                        </label>
-                    </div>
-                    <div class="border type__item border-solid border-[#ccc] rounded-[8px] sm:w-auto w-full">
-                        <input type="radio" class="btn-check" name="type-name" id="type2" autocomplete="off">
-                        <label class="!flex flex-row items-center justify-center gap-2 btn" for="type2">
-                            <img src="../assets/images-store/text2.png" alt="store" class="md:w-[50px] md:h-[50px] w-[50px] h-[50px]">
-                            <h6 class="text-third-color font-semibold text-[17px]"> ترجمة نص </h6>
-                        </label>
-                    </div>
-                </div>
-            </div>
-            <div class="select__indus bg-[#f7f8fa] sm:p-[24px] p-[12px] border border-solid border-[#EBEBEB] rounded-[24px] w-full">
-                <h2 class="text-[20px] font-semibold text-third-color mb-4"> مجال التخصُّص </h2>
-                <div class="flex flex-row flex-wrap items-center justify-start md:gap-[20px] gap-[10px]">
-                    <div class="border indus__item border-solid border-[#ccc] rounded-[8px] sm:!w-[200px] w-full">
-                        <input type="radio" class="btn-check" name="indus-name" id="indus1" autocomplete="off">
-                        <label class="!flex flex-row items-center justify-center gap-2 btn" for="indus1">
-                            <img src="../assets/images-store/cog.png" alt="store" class="md:w-[50px] md:h-[50px] w-[50px] h-[50px]">
-                            <h6 class="text-third-color font-semibold text-[17px]"> عام </h6>
-                        </label>
-                    </div>
-                    <div class="border indus__item border-solid border-[#ccc] rounded-[8px] sm:!w-[200px] w-full">
-                        <input type="radio" class="btn-check" name="indus-name" id="indus2" autocomplete="off">
-                        <label class="!flex flex-row items-center justify-center gap-2 btn" for="indus2">
-                            <img src="../assets/images-store/law.png" alt="store" class="md:w-[50px] md:h-[50px] w-[50px] h-[50px]">
-                            <h6 class="text-third-color font-semibold text-[17px]"> قانوني</h6>
-                        </label>
-                    </div>
-                    <div class="border indus__item border-solid border-[#ccc] rounded-[8px] sm:!w-[200px] w-full">
-                        <input type="radio" class="btn-check" name="indus-name" id="indus3" autocomplete="off">
-                        <label class="!flex flex-row items-center justify-center gap-2 btn" for="indus3">
-                            <img src="../assets/images-store/medical.png" alt="store" class="md:w-[50px] md:h-[50px] w-[50px] h-[50px]">
-                            <h6 class="text-third-color font-semibold text-[17px]"> طبي </h6>
-                        </label>
-                    </div>
-                    <div class="border indus__item border-solid border-[#ccc] rounded-[8px] sm:!w-[200px] w-full">
-                        <input type="radio" class="btn-check" name="indus-name" id="indus4" autocomplete="off">
-                        <label class="!flex flex-row items-center justify-center gap-2 btn" for="indus4">
-                            <img src="../assets/images-store/engineer-.png" alt="store" class="md:w-[50px] md:h-[50px] w-[50px] h-[50px]">
-                            <h6 class="text-third-color font-semibold text-[17px]"> هندسي </h6>
-                        </label>
-                    </div>
-                    <div class="border indus__item border-solid border-[#ccc] rounded-[8px] sm:!w-[200px] w-full">
-                        <input type="radio" class="btn-check" name="indus-name" id="indus5" autocomplete="off">
-                        <label class="!flex flex-row items-center justify-center gap-2 btn" for="indus5">
-                            <img src="../assets/images-store/education.png" alt="store" class="md:w-[50px] md:h-[50px] w-[50px] h-[50px]">
-                            <h6 class="text-third-color font-semibold text-[17px]"> أكاديمي </h6>
-                        </label>
-                    </div>
-                </div>
-            </div>
-            <div class="select__dura bg-[#f7f8fa] sm:p-[24px] p-[12px] border border-solid border-[#EBEBEB] rounded-[24px] w-full">
-                <h2 class="text-[20px] font-semibold text-third-color mb-4"> مدة الترجمة </h2>
-                <div class="flex flex-row flex-wrap items-center justify-start md:gap-[20px] gap-[10px]">
-                    <div class="border dura__item border-solid border-[#ccc] rounded-[8px] sm:!w-[200px] w-full">
-                        <input type="radio" class="btn-check" name="dura-name" id="dura1" autocomplete="off">
-                        <label class="!flex flex-row items-center justify-center gap-2 btn" for="dura1">
-                            <h6 class="text-third-color font-semibold text-[17px]"> ترجمة سريعة  </h6>
-                        </label>
-                    </div>
-                    <div class="border dura__item border-solid border-[#ccc] rounded-[8px] sm:!w-[200px] w-full">
-                        <input type="radio" class="btn-check" name="dura-name" id="dura2" autocomplete="off">
-                        <label class="!flex flex-row items-center justify-center gap-2 btn" for="dura2">
-                            <h6 class="text-third-color font-semibold text-[17px]"> السرعة الأعتيادية</h6>
-                        </label>
-                    </div>
-                </div>
-            </div>
-            <div class="bg-[#f7f8fa] sm:p-[24px] p-[12px] border border-solid border-[#EBEBEB] rounded-[24px] w-full">
-                <h2 class="text-[20px] font-semibold text-third-color mb-4"> مدة الترجمة </h2>
-                <div class="form-check !flex !justify-start !items-center !flex-row !gap-2">
-                    <input class="form-check-input !ml-0" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                        أحتاج إلى التسليم بنفس شكل التنسيق (خدمة النشر المكتبي).
-                    </label>
-                </div>
-            </div>
-            <div class="flex justify-start flex-col gap-[12px]">
-              <div class="flex justify-between items-center flex-row gap-5 w-full">
-                <h3 class="text-third-color font-bold text-[16px] sm:text-[20px] mb-0">
-                  الأجمالي شامل الضريبة
-                </h3>
-                <p class="text-third-color font-bold text-[16px] sm:text-[20px] mb-0">
-                  1100.99 ر.س
-                </p>
               </div>
+            </div>
+            <div class="col-md-6">
+              <div class="payment__form border border-solid border-[#EEEEEE] rounded-lg lg:!py-5 lg:!px-5 p-4 gap-3 flex justify-start items-start flex-col">
+                <div class="flex justify-start items-start flex-row gap-3 flex-wrap">
+                    <div>
+                        <input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off" checked>
+                        <label class="btn !flex justify-between items-center flex-row gap-2 w-full" for="success-outlined" style="display: flex !important;">
+                            <img src="../assets/images-store/mada.svg" alt="mada" width="45" height="15">
+                            <span class=""> مدى </span>
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined" autocomplete="off">
+                        <label class="btn flex justify-between items-center flex-row gap-2" for="danger-outlined" style="display: flex !important;">
+                            <img src="../assets/images/apple.png" alt="masterCard" width="45" height="15">
+                            <span class=""> اّبل باي  </span>
+                        </label>
+                    </div>
+                </div>
+                <div class="flex justify-start items-start flex-col w-full gap-3 mt-4">
+                    <div class="w-full">
+                        <input type="text" class="form-control" placeholder="اسم صاحب الكارت" name="Card Holder Name" id="card _holder_name" style="height: 48px !important;">
+                    </div>
+                    <div class="w-full">
+                        <input type="number" class="form-control" placeholder="رقم الكارت" name="Card Holder Name" id="card _holder_name" style="height: 48px !important;">
+                    </div>
+                    <div class="w-full">
+                        <input type="text" class="form-control" placeholder="MM/YY" name="Card Holder Name" id="card _holder_name" style="height: 48px !important;">
+                    </div>
+                    <div class="w-full">
+                        <input type="text" class="form-control" placeholder="CVV" maxlength="3" name="Card Holder Name" id="card _holder_name" style="height: 48px !important;">
+                    </div>
+                </div>
+            </div>
             </div>
         </div>
         <div class="flex justify-center items-center flex-row mt-10">
-            <a href="./translate-payment.html" class="bg-primary-color text-white py-[10px] px-[35px] rounded-[8px]"> تقديم طلب </a>
+            <button class="bg-primary-color text-white py-[10px] px-[35px] rounded-[8px]"> تقديم طلب </button>
         </div>
-     </form>
-    <!-- end order translate -->
+     </div>
+    <!-- end payment translate -->
 
 
     <footer class="bg-[#fff] py-[20px] sm:px-[50px] px-[20px] border-t border-solid border-[#e3e3e3]">

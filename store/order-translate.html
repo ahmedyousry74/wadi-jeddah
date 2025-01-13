@@ -215,7 +215,7 @@
     <!-- start order translate -->
      <form action="" class="py-[50px] md:px-[80px] px-[25px]">
         <div class="order__translate  flex justify-start items-start flex-col gap-5 w-full">
-            <div class="choose__lang bg-[#f7f8fa] sm:p-[24px] p-[12px] border border-solid border-[#EBEBEB] rounded-[24px] w-full">
+            <div class="choose__lang lang bg-[#f7f8fa] sm:p-[24px] p-[12px] border border-solid border-[#EBEBEB] rounded-[24px] w-full">
                 <h2 class="text-[20px] font-semibold text-third-color mb-4"> اختيار اللغة </h2>
                 <div class="flex justify-start items-start flex-col gap-4 w-full">
                     <div class=" w-full">
@@ -238,7 +238,7 @@
                     </div>
                 </div>
             </div>
-            <div class="select__down bg-[#f7f8fa] sm:p-[24px] p-[12px] border border-solid border-[#EBEBEB] rounded-[24px] w-full">
+            <div class="select__down upload bg-[#f7f8fa] sm:p-[24px] p-[12px] border border-solid border-[#EBEBEB] rounded-[24px] w-full">
                 <h2 class="text-[20px] font-semibold text-third-color mb-4"> حمّل مستنداتك </h2>
                 <div class="flex flex-row flex-wrap items-center justify-start md:gap-[20px] gap-[10px]">
                     <div class="border down__item border-solid border-[#ccc] rounded-[8px] sm:w-auto w-full">
@@ -275,7 +275,7 @@
                     <textarea class="form-control" placeholder="اكتب النص المراد ترجمته" style="height: 150px;"></textarea>
                 </div>
             </div>
-            <div class="select__type bg-[#f7f8fa] sm:p-[24px] p-[12px] border border-solid border-[#EBEBEB] rounded-[24px] w-full">
+            <div class="select__type type bg-[#f7f8fa] sm:p-[24px] p-[12px] border border-solid border-[#EBEBEB] rounded-[24px] w-full">
                 <h2 class="text-[20px] font-semibold text-third-color mb-4"> نوع الترجمة </h2>
                 <div class="flex flex-row flex-wrap items-center justify-start md:gap-[20px] gap-[10px]">
                     <div class="border type__item border-solid border-[#ccc] rounded-[8px] sm:w-auto w-full">
@@ -294,7 +294,7 @@
                     </div>
                 </div>
             </div>
-            <div class="select__indus bg-[#f7f8fa] sm:p-[24px] p-[12px] border border-solid border-[#EBEBEB] rounded-[24px] w-full">
+            <div class="select__indus industry bg-[#f7f8fa] sm:p-[24px] p-[12px] border border-solid border-[#EBEBEB] rounded-[24px] w-full">
                 <h2 class="text-[20px] font-semibold text-third-color mb-4"> مجال التخصُّص </h2>
                 <div class="flex flex-row flex-wrap items-center justify-start md:gap-[20px] gap-[10px]">
                     <div class="border indus__item border-solid border-[#ccc] rounded-[8px] sm:!w-[200px] w-full">
@@ -334,7 +334,7 @@
                     </div>
                 </div>
             </div>
-            <div class="select__dura bg-[#f7f8fa] sm:p-[24px] p-[12px] border border-solid border-[#EBEBEB] rounded-[24px] w-full">
+            <div class="select__dura duration bg-[#f7f8fa] sm:p-[24px] p-[12px] border border-solid border-[#EBEBEB] rounded-[24px] w-full">
                 <h2 class="text-[20px] font-semibold text-third-color mb-4"> مدة الترجمة </h2>
                 <div class="flex flex-row flex-wrap items-center justify-start md:gap-[20px] gap-[10px]">
                     <div class="border dura__item border-solid border-[#ccc] rounded-[8px] sm:!w-[200px] w-full">
@@ -372,7 +372,7 @@
             </div>
         </div>
         <div class="flex justify-center items-center flex-row mt-10">
-            <a href="./translate-payment.html" class="bg-primary-color text-white py-[10px] px-[35px] rounded-[8px]"> تقديم طلب </a>
+            <button class="bg-primary-color text-white py-[10px] px-[35px] rounded-[8px] save__order"> تقديم طلب </button>
         </div>
      </form>
     <!-- end order translate -->
@@ -608,6 +608,114 @@
         }
     });
 });
+</script>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("form");
+    const submitButton = document.querySelector(".save__order");
+    const errorMessages = {
+        lang: "يرجى اختيار لغة المصدر ولغة الترجمة.",
+        upload: "يرجى اختيار طريقة لتحميل المستندات.",
+        type: "يرجى اختيار نوع الترجمة.",
+        industry: "يرجى اختيار مجال التخصص.",
+        duration: "يرجى اختيار مدة الترجمة.",
+    };
+
+    submitButton.addEventListener("click", function (event) {
+        event.preventDefault(); // منع الانتقال الافتراضي
+        let isValid = true; // للتحقق من صحة جميع الحقول
+
+        // تحقق من لغة المصدر والترجمة
+        const sourceLang = document.querySelector("select[aria-label='Default select example']").value;
+        const targetLang = document.querySelectorAll("select[aria-label='Default select example']")[1].value;
+        if (!sourceLang || !targetLang) {
+            showError("lang", errorMessages);
+            isValid = false;
+        } else {
+            clearError("lang");
+        }
+
+        // تحقق من تحميل المستندات أو إدخال النص
+        const uploadMethod = document.querySelector("input[name='down-name']:checked");
+        if (!uploadMethod) {
+            showError("upload", errorMessages);
+            isValid = false;
+        } else {
+            clearError("upload");
+        }
+
+        // تحقق من نوع الترجمة
+        const translationType = document.querySelector("input[name='type-name']:checked");
+        if (!translationType) {
+            showError("type", errorMessages);
+            isValid = false;
+        } else {
+            clearError("type");
+        }
+
+        // تحقق من مجال التخصص
+        const industry = document.querySelector("input[name='indus-name']:checked");
+        if (!industry) {
+            showError("industry", errorMessages);
+            isValid = false;
+        } else {
+            clearError("industry");
+        }
+
+        // تحقق من مدة الترجمة
+        const duration = document.querySelector("input[name='dura-name']:checked");
+        if (!duration) {
+            showError("duration", errorMessages);
+            isValid = false;
+        } else {
+            clearError("duration");
+        }
+
+        // إذا كان كل شيء صحيحًا، انتقل للصفحة الأخرى
+        if (isValid) {
+            window.location.href = "./translate-payment.html";
+        }
+    });
+
+    function showError(section, errorMessages) {
+        const sectionElement = document.querySelector(`.${section}`);
+        if (!sectionElement.querySelector(".error-message")) {
+            const error = document.createElement("p");
+            error.className = "error__msg";
+            error.textContent = errorMessages[section];
+            sectionElement.appendChild(error);
+        }
+    }
+
+    function clearError(section) {
+        const sectionElement = document.querySelector(`.${section}`);
+        const error = sectionElement.querySelector(".error-message");
+        if (error) {
+            error.remove();
+        }
+    }
+
+    // إزالة رسالة الخطأ عند اختيار خيار صحيح
+    document.querySelectorAll("select, input[type='radio']").forEach((element) => {
+        element.addEventListener("change", function () {
+            const name = element.name || element.closest("select")?.getAttribute("aria-label");
+            const sectionMap = {
+                "Default select example": "lang",
+                "down-name": "upload",
+                "type-name": "type",
+                "indus-name": "industry",
+                "dura-name": "duration",
+            };
+            const section = sectionMap[name];
+            if (section) {
+                clearError(section);
+            }
+        });
+    });
+});
+
 </script>
 
     </body>

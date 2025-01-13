@@ -1229,6 +1229,12 @@ input[type=checkbox]:checked {
   border-color: #A38142;
 }
 
+.error__msg {
+  color: red;
+  font-size: 15px;
+  margin: 15px 0;
+}
+
 .website .contact__us__page {
   padding: 50px 0;
 }

@@ -1235,6 +1235,19 @@ input[type=checkbox]:checked {
   margin: 15px 0;
 }
 
+.login__nav {
+  position: relative;
+}
+.login__nav::before {
+  content: "";
+  position: absolute;
+  height: 60px;
+  width: 1px;
+  background-color: #000;
+  top: -13px;
+  left: 150px;
+}
+
 .website .contact__us__page {
   padding: 50px 0;
 }

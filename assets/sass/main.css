@@ -1240,10 +1240,10 @@ input[type=checkbox]:checked {
 .login__nav::before {
   content: "";
   position: absolute;
-  height: 60px;
+  height: 40px;
   width: 1px;
   background-color: #000;
-  top: -13px;
+  top: -3px;
   left: 150px;
 }
 

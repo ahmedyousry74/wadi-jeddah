@@ -3648,12 +3648,8 @@ video {
   }
 }
 
-@media (max-width: 580px) {
-  .max-\[580px\]\:\!w-\[300px\] {
-    width: 300px !important;
-  }
-
-  .max-\[580px\]\:\!w-\[350px\] {
+@media (max-width: 450px) {
+  .max-\[450px\]\:\!w-\[350px\] {
     width: 350px !important;
   }
 }

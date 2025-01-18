@@ -78,7 +78,7 @@
     </div>
     <div class="search__input relative lg:hidden flex justify-start items-start flex-col gap-4 p-2">
       <form action="" class="relative flex justify-start items-start flex-row gap-0 form__search">
-        <input type="text" placeholder="بحث ..." class="bg-transparent border border-solid !border-primary-color py-[8px] w-[700px] max-[1200px]:!w-[400px] max-[580px]:!w-[350px]  h-[48px] text-third-color font-medium text-[16px] !ps-4 input">
+        <input type="text" placeholder="بحث ..." class="bg-transparent border border-solid !border-primary-color py-[8px] w-[350px]  h-[48px] text-third-color font-medium text-[16px] !ps-4 input">
         <button type="submit" class="absolute top-[0px] left-[0px] h-[48px] p-2 bg-[#DFD4C1] rounded-[4px]">
           <img src="../assets/images-store/search.svg" alt="cart" loading="lazy" width="27" height="27">
         </button>
@@ -1880,29 +1880,33 @@
       }
     })
     </script>
-    <script>
-      // Select elements
-      const input = document.querySelector('.search__input .input');
-      const resultsDiv = document.querySelector('.search__results');
-      const close = document.querySelector('.search__results .colse_');
-    
-      // Show the div when clicking on the input
-      input.addEventListener('focus', () => {
-        resultsDiv.classList.remove('hidden');
-        resultsDiv.classList.add('flex');
-      });
-      close.addEventListener('click', () => {
-        resultsDiv.classList.remove('flex');
+<script>
+  const inputs = document.querySelectorAll('.search__input .input');
+  const resultsDivs = document.querySelectorAll('.search__results');
+  const closeButtons = document.querySelectorAll('.search__results .colse_');
+
+  inputs.forEach((input, index) => {
+    const resultsDiv = resultsDivs[index];
+    const close = closeButtons[index];
+
+    input.addEventListener('focus', () => {
+      resultsDiv.classList.remove('hidden');
+      resultsDiv.classList.add('flex');
+    });
+
+    close.addEventListener('click', () => {
+      resultsDiv.classList.add('hidden');
+      resultsDiv.classList.remove('flex');
+    });
+
+    document.addEventListener('click', (event) => {
+      if (!resultsDiv.contains(event.target) && !input.contains(event.target)) {
         resultsDiv.classList.add('hidden');
-      });
-    
-      // Hide the div when clicking outside
-      document.addEventListener('click', (event) => {
-        if (!resultsDiv.contains(event.target) && !input.contains(event.target)) {
-          resultsDiv.classList.add('hidden');
-          resultsDiv.classList.remove('flex');
-        }
-      });
-    </script>
+        resultsDiv.classList.remove('flex');
+      }
+    });
+  });
+</script>
+
   </body>
 </html>

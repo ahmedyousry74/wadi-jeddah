@@ -38,9 +38,9 @@
   <body class="bg-white store">
     <!-- navbar -->
     <div
-      class="top__navbar flex justify-between items-center flex-row gap-2 sm:py-[10px] py-[8px] md:px-[80px] px-[20px] bg-[#F4F6F8]"
+      class="top__navbar lg:flex hidden justify-between items-center flex-row gap-2 sm:py-[10px] py-[8px] md:px-[80px] px-[20px] bg-[#F4F6F8]"
     >
-      <div class="flex justify-start items-center flex-row gap-6">
+      <div class="flex justify-start items-center flex-row md:gap-[24px] gap-[8px]">
         <div class="flex justify-start items-center flex-row gap-0"> 
           <select class="form-select border-0 w-max ps-0 focus:!shadow-none focus:!border-0 focus:!outline-0 text-[#909EAA] !bg-transparent" aria-label="Default select example">
             <option selected disabled class="!text-[#909EAA] !bg-transparent">  SAR </option>
@@ -48,7 +48,7 @@
             <option value="2">EGP</option>
             <option value="3">Dolla</option>
           </select>
-          <img src="../assets/images-store/currency-dollar.svg" alt="currency" class="w-[20px] h-[20px]">
+          <img src="../assets/images-store/currency-dollar.svg" alt="currency" class="w-[20px] h-[20px] md:block hidden">
         </div>
         <div class="flex justify-start items-center flex-row gap-0"> 
           <select class="form-select border-0 w-max ps-1 focus:!shadow-none focus:!border-0 focus:!outline-0 text-[#909EAA] !bg-transparent" aria-label="Default select example">
@@ -56,152 +56,277 @@
             <option value="1">عربي</option>
             <option value="2">English</option>
           </select>
-          <img src="../assets/images-store/usa.png" alt="currency" class="w-[20px] h-[20px]">
+          <img src="../assets/images-store/usa.png" alt="currency" class="w-[20px] h-[20px] md:block hidden">
         </div>
         <div class="flex justify-start items-center flex-row gap-1"> 
           <a href="./contact-us.html" class="!text-[#909EAA] font-semibold text-[14px]">  
             الدعم
           </a>
-          <img src="../assets/images-store/chat.png" alt="currency" class="w-[20px] h-[20px]">
+          <img src="../assets/images-store/chat.png" alt="currency" class="w-[20px] h-[20px] md:block hidden">
         </div>
         <div class="flex justify-start items-center flex-row gap-1"> 
           <a href="" class="!text-[#909EAA] font-semibold text-[14px]">  
             تتبع طلبك
           </a>
-          <img src="../assets/images-store/delivery.png" alt="currency" class="w-[20px] h-[20px]">
+          <img src="../assets/images-store/delivery.png" alt="currency" class="w-[20px] h-[20px] md:block hidden">
         </div>
       </div>
       <div class="flex justify-start items-center flex-row gap-1">
         <a href="tel:0123456789" class="text-[#909EAA] text-[14px] font-semibold"> 0123456789 </a>
-        <img src="../assets/images-store/phone.png" alt="phone" class="w-[20px] h-[20px]">
+        <img src="../assets/images-store/phone.png" alt="phone" class="w-[20px] h-[20px] md:block hidden">
       </div>
     </div>
-    <div class="bottom__navbar flex justify-between items-start flex-row sm:py-[10px] py-[8px] md:px-[80px] px-[20px] bg-transparent">
-      <a href="./index.html" class="logo__ flex justify-start items-center flex-row gap-1">
+    <div class="search__input relative lg:hidden flex justify-start items-start flex-col gap-4 p-2">
+      <form action="" class="relative flex justify-start items-start flex-row gap-0 form__search">
+        <input type="text" placeholder="بحث ..." class="bg-transparent border border-solid !border-primary-color py-[8px] w-[350px]  h-[48px] text-third-color font-medium text-[16px] !ps-4 input">
+        <button type="submit" class="absolute top-[0px] left-[0px] h-[48px] p-2 bg-[#DFD4C1] rounded-[4px]">
+          <img src="../assets/images-store/search.svg" alt="cart" loading="lazy" width="27" height="27">
+        </button>
+      </form>
+      <div class="search__results bg-[#F3F3F3] p-[20px] rounded-[12px] z-50 absolute top-[70px] right-[0px] w-full justify-start items-startr flex-col gap-4 hidden">
+        <img src="../assets/images-store/close-circle.svg" class="colse_" alt="close" width="25" height="25" loading="lazy">
+        
+        <span class=""> الرجاء كتابة 2 حروف على الأقل </span>
+        <div class="flex justify-between items-center flex-row flex-wrap gap-3">
+          <div class="flex justify-start items-center flex-row flex-wrap gap-2 serach__result__items">
+            <a href="" class="serach__result__item flex justify-start items-start flex-col gap-2 border border-solid border-[#ccc] rounded-[8px] p-2 px-3">
+              <div class="serach__result__item__img">
+                <img src="../assets/images-store/product10.jpg" alt="product" loading="lazy" class="h-[100px] w-100 object-contain">
+              </div>
+              <h2 class="text-[15px] font-medium text-[#222]"> لابتوب </h2>
+            </a>
+            <a href="" class="serach__result__item flex justify-start items-start flex-col gap-2 border border-solid border-[#ccc] rounded-[8px] p-2 px-3">
+              <div class="serach__result__item__img">
+                <img src="../assets/images-store/product10.jpg" alt="product" loading="lazy" class="h-[100px] w-100 object-contain">
+              </div>
+              <h2 class="text-[15px] font-medium text-[#222]"> لابتوب </h2>
+            </a>
+            <a href="" class="serach__result__item flex justify-start items-start flex-col gap-2 border border-solid border-[#ccc] rounded-[8px] p-2 px-3">
+              <div class="serach__result__item__img">
+                <img src="../assets/images-store/product10.jpg" alt="product" loading="lazy" class="h-[100px] w-100 object-contain">
+              </div>
+              <h2 class="text-[15px] font-medium text-[#222]"> لابتوب </h2>
+            </a>
+          </div>
+          <a href="" class="bg-[#D8D8D8] py-1 px-3 rounded-full text-[#222] text-[14px]"> تصفح الكــل </a>
+        </div>
+        <div class="flex justify-start items-start flex-col gap-2">
+          <h2 class="text-[16px] font-medium text-[#222]"> عمليات البحث الشائعة </h2>
+          <div class="flex justify-start items-center flex-row gap-3 flex-wrap">
+            <a href="" class="bg-[#D8D8D8] text-[#222] py-1 px-2 rounded-full text-[14px]"> أدوات مكتبية </a>
+            <a href="" class="bg-[#D8D8D8] text-[#222] py-1 px-2 rounded-full text-[14px]"> هدايا </a>
+            <a href="" class="bg-[#D8D8D8] text-[#222] py-1 px-2 rounded-full text-[14px]"> أدوات مكتبية </a>
+            <a href="" class="bg-[#D8D8D8] text-[#222] py-1 px-2 rounded-full text-[14px]"> أدوات مكتبية </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg relative" id="navbar">
+      <button
+      class="justify-center items-center flex-row gap-1 text-[#7A7A7A] font-medium text-lg md:hidden flex"
+      >
+        
+        <img
+          src="../assets/images-store/en.svg"
+          alt="global"
+          width="40"
+          height="40"
+          loading="lazy"
+        />
+      </button>
+      <a href="./index.html" class="logo__ flex justify-start items-center flex-row gap-1 d-lg-none">
         <img src="../assets/images/king.png" alt="king" class="w-[100px]">
         <h1 class="text-primary-color text-[18px] font-medium"> متجر جامعة <br> المـــــــــــــلك <br> <span class="font-semibold text-[20px]"> عـبد الـعزيز </span> </h1>
       </a>
-      <div class="search__input relative lg:flex hidden justify-start items-start flex-col gap-4">
-        <form action="" class="relative flex justify-start items-start flex-row gap-0 form__search">
-          <!-- <img src="../assets/images-store/search.svg" alt="cart" loading="lazy" width="27" height="27" class="absolute top-[8px] right-[10px]" > -->
-          <input type="text" placeholder="بحث ..." class="bg-transparent border border-solid !border-primary-color py-[8px] w-[700px] max-[1200px]:!w-[400px] h-[48px] text-third-color font-medium text-[16px] !ps-4 input">
-          <button type="submit" class="absolute top-[0px] left-[0px] h-[48px] p-2 bg-[#DFD4C1] rounded-[4px]">
-            <img src="../assets/images-store/search.svg" alt="cart" loading="lazy" width="27" height="27">
-          </button>
-        </form>
-        <div class="search__results bg-[#F3F3F3] p-[20px] rounded-[12px] z-50 absolute top-[115px] right-[0px] w-full justify-start items-startr flex-col gap-4 hidden">
-          <span class=""> الرجاء كتابة 2 حروف على الأقل </span>
-          <div class="flex justify-between items-center flex-row">
-            <div class="flex justify-start items-center flex-row flex-wrap gap-2 serach__result__items">
-              <a href="" class="serach__result__item flex justify-start items-start flex-col gap-2 border border-solid border-[#ccc] rounded-[8px] p-2 px-3">
-                <div class="serach__result__item__img">
-                  <img src="../assets/images-store/product10.jpg" alt="product" loading="lazy" class="h-[100px] w-100 object-contain">
-                </div>
-                <h2 class="text-[15px] font-medium text-[#222]"> لابتوب </h2>
-              </a>
-              <a href="" class="serach__result__item flex justify-start items-start flex-col gap-2 border border-solid border-[#ccc] rounded-[8px] p-2 px-3">
-                <div class="serach__result__item__img">
-                  <img src="../assets/images-store/product10.jpg" alt="product" loading="lazy" class="h-[100px] w-100 object-contain">
-                </div>
-                <h2 class="text-[15px] font-medium text-[#222]"> لابتوب </h2>
-              </a>
-              <a href="" class="serach__result__item flex justify-start items-start flex-col gap-2 border border-solid border-[#ccc] rounded-[8px] p-2 px-3">
-                <div class="serach__result__item__img">
-                  <img src="../assets/images-store/product10.jpg" alt="product" loading="lazy" class="h-[100px] w-100 object-contain">
-                </div>
-                <h2 class="text-[15px] font-medium text-[#222]"> لابتوب </h2>
-              </a>
-            </div>
-            <a href="" class="bg-[#D8D8D8] py-1 px-3 rounded-full text-[#222] text-[14px]"> تصفح الكــل </a>
-          </div>
-          <div class="flex justify-start items-start flex-col gap-2">
-            <h2 class="text-[16px] font-medium text-[#222]"> عمليات البحث الشائعة </h2>
-            <div class="flex justify-start items-center flex-row gap-3">
-              <a href="" class="bg-[#D8D8D8] text-[#222] py-1 px-2 rounded-full text-[14px]"> أدوات مكتبية </a>
-              <a href="" class="bg-[#D8D8D8] text-[#222] py-1 px-2 rounded-full text-[14px]"> هدايا </a>
-              <a href="" class="bg-[#D8D8D8] text-[#222] py-1 px-2 rounded-full text-[14px]"> أدوات مكتبية </a>
-              <a href="" class="bg-[#D8D8D8] text-[#222] py-1 px-2 rounded-full text-[14px]"> أدوات مكتبية </a>
-            </div>
-          </div>
+      <button
+        class="btn navbar-toggler"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasExample"
+        aria-controls="offcanvasExample"
+      >
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 12H21M3 6H21M9 18H21" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>        
+      </button>
+        <div
+        class="offcanvas offcanvas-start-lg"
+        tabindex="-1"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-header d-flex d-lg-none">
+          <a
+            href="javascript:void(0)"
+            class="text-reset p-0"
+            data-bs-dismiss="offcanvas"
+            aria-label="close"
+          >
+          <img src="../assets/images-store/close-circle.svg" class="colse_" alt="close" width="25" height="25" loading="lazy">
+        </a>
         </div>
-        <div class="flex justify-between items-center flex-row relative w-full">
-          <button id="toggleButton" class="flex justify-start items-center flex-row gap-2 text-third-color" >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M5 10H7C9 10 10 9 10 7V5C10 3 9 2 7 2H5C3 2 2 3 2 5V7C2 9 3 10 5 10Z" stroke="#253d4e" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M17 10H19C21 10 22 9 22 7V5C22 3 21 2 19 2H17C15 2 14 3 14 5V7C14 9 15 10 17 10Z" stroke="#253d4e" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M17 22H19C21 22 22 21 22 19V17C22 15 21 14 19 14H17C15 14 14 15 14 17V19C14 21 15 22 17 22Z" stroke="#253d4e" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M5 22H7C9 22 10 21 10 19V17C10 15 9 14 7 14H5C3 14 2 15 2 17V19C2 21 3 22 5 22Z" stroke="#253d4e" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>          
-            <span> جميع التصنيفات </span>
-          </button>
-          <div id="categoriesList" class="categories__items__list bg-[#fff] p-[20px] rounded-[12px] w-[450px] z-50 absolute top-[35px] right-[0] ">
-            <div class="row">
-              <div class="col-md-6">
-                <a href="./categories.html">
-                  <div class="categories_item flex justify-start items-center flex-row gap-2 z-50 mb-3 py-[8px] px-[15px] rounded-[6px] w-100 h-[50px]">
-                    <img src="../assets/images-store/electr1.png" alt="category" width="30" height="30">
-                    <span class="text-third-color font-semibold text-[13px]"> أجهزة و تكنولوجيا</span>
-                  </div>
-                </a>
+        <div class="offcanvas-body bottom__navbar flex justify-between items-start flex-row sm:py-[10px] py-[8px] md:px-[80px] px-[20px] bg-transparent">
+          <a href="./index.html" class="logo__ flex justify-start items-center flex-row gap-1">
+            <img src="../assets/images/king.png" alt="king" class="w-[100px]">
+            <h1 class="text-primary-color text-[18px] font-medium"> متجر جامعة <br> المـــــــــــــلك <br> <span class="font-semibold text-[20px]"> عـبد الـعزيز </span> </h1>
+          </a>
+          <div class="search__input relative lg:flex hidden justify-start items-start flex-col gap-4">
+            <form action="" class="relative flex justify-start items-start flex-row gap-0 form__search">
+              <!-- <img src="../assets/images-store/search.svg" alt="cart" loading="lazy" width="27" height="27" class="absolute top-[8px] right-[10px]" > -->
+              <input type="text" placeholder="بحث ..." class="bg-transparent border border-solid !border-primary-color py-[8px] w-[700px] max-[1200px]:!w-[400px] h-[48px] text-third-color font-medium text-[16px] !ps-4 input">
+              <button type="submit" class="absolute top-[0px] left-[0px] h-[48px] p-2 bg-[#DFD4C1] rounded-[4px]">
+                <img src="../assets/images-store/search.svg" alt="cart" loading="lazy" width="27" height="27">
+              </button>
+            </form>
+            <div class="search__results bg-[#F3F3F3] p-[20px] rounded-[12px] z-50 absolute top-[115px] right-[0px] w-full justify-start items-startr flex-col gap-4 hidden">
+              <span class=""> الرجاء كتابة 2 حروف على الأقل </span>
+              <div class="flex justify-between items-center flex-row">
+                <div class="flex justify-start items-center flex-row flex-wrap gap-2 serach__result__items">
+                  <a href="" class="serach__result__item flex justify-start items-start flex-col gap-2 border border-solid border-[#ccc] rounded-[8px] p-2 px-3">
+                    <div class="serach__result__item__img">
+                      <img src="../assets/images-store/product10.jpg" alt="product" loading="lazy" class="h-[100px] w-100 object-contain">
+                    </div>
+                    <h2 class="text-[15px] font-medium text-[#222]"> لابتوب </h2>
+                  </a>
+                  <a href="" class="serach__result__item flex justify-start items-start flex-col gap-2 border border-solid border-[#ccc] rounded-[8px] p-2 px-3">
+                    <div class="serach__result__item__img">
+                      <img src="../assets/images-store/product10.jpg" alt="product" loading="lazy" class="h-[100px] w-100 object-contain">
+                    </div>
+                    <h2 class="text-[15px] font-medium text-[#222]"> لابتوب </h2>
+                  </a>
+                  <a href="" class="serach__result__item flex justify-start items-start flex-col gap-2 border border-solid border-[#ccc] rounded-[8px] p-2 px-3">
+                    <div class="serach__result__item__img">
+                      <img src="../assets/images-store/product10.jpg" alt="product" loading="lazy" class="h-[100px] w-100 object-contain">
+                    </div>
+                    <h2 class="text-[15px] font-medium text-[#222]"> لابتوب </h2>
+                  </a>
+                </div>
+                <a href="" class="bg-[#D8D8D8] py-1 px-3 rounded-full text-[#222] text-[14px]"> تصفح الكــل </a>
               </div>
-              <div class="col-md-6">
-                <a href="./categories.html">
-                  <div class="categories_item flex justify-start items-center flex-row gap-2 z-50 mb-3 py-[8px] px-[15px] rounded-[6px] w-100 h-[50px]">
-                    <img src="../assets/images-store/book1.png" alt="category" width="30" height="30">
-                    <span class="text-third-color font-semibold text-[13px]"> كتب و مقررات دراسية </span>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-6">
-                <a href="./categories.html">
-                  <div class="categories_item flex justify-start items-center flex-row gap-2 z-50  py-[8px] px-[15px] rounded-[6px] w-100 h-[50px]">
-                    <img src="../assets/images-store/novel10.jpg" alt="category" width="30" height="30">
-                    <span class="text-third-color font-semibold text-[13px]"> كتب عامة و روايات </span>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-6">
-                <a href="./categories.html">
-                  <div class="categories_item flex justify-start items-center flex-row gap-2 z-50  py-[8px] px-[15px] rounded-[6px] w-100 h-[50px]">
-                    <img src="../assets/images-store/shirt2.webp" alt="category" width="30" height="30">
-                    <span class="text-third-color font-semibold text-[13px]"> دعايا و إعلان</span>
-                  </div>
-                </a>
+              <div class="flex justify-start items-start flex-col gap-2">
+                <h2 class="text-[16px] font-medium text-[#222]"> عمليات البحث الشائعة </h2>
+                <div class="flex justify-start items-center flex-row gap-3">
+                  <a href="" class="bg-[#D8D8D8] text-[#222] py-1 px-2 rounded-full text-[14px]"> أدوات مكتبية </a>
+                  <a href="" class="bg-[#D8D8D8] text-[#222] py-1 px-2 rounded-full text-[14px]"> هدايا </a>
+                  <a href="" class="bg-[#D8D8D8] text-[#222] py-1 px-2 rounded-full text-[14px]"> أدوات مكتبية </a>
+                  <a href="" class="bg-[#D8D8D8] text-[#222] py-1 px-2 rounded-full text-[14px]"> أدوات مكتبية </a>
+                </div>
               </div>
             </div>
+            <div class="flex justify-between items-center flex-row relative w-full">
+              <button id="toggleButton" class="flex justify-start items-center flex-row gap-2 text-third-color" >
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 10H7C9 10 10 9 10 7V5C10 3 9 2 7 2H5C3 2 2 3 2 5V7C2 9 3 10 5 10Z" stroke="#253d4e" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M17 10H19C21 10 22 9 22 7V5C22 3 21 2 19 2H17C15 2 14 3 14 5V7C14 9 15 10 17 10Z" stroke="#253d4e" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M17 22H19C21 22 22 21 22 19V17C22 15 21 14 19 14H17C15 14 14 15 14 17V19C14 21 15 22 17 22Z" stroke="#253d4e" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M5 22H7C9 22 10 21 10 19V17C10 15 9 14 7 14H5C3 14 2 15 2 17V19C2 21 3 22 5 22Z" stroke="#253d4e" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>          
+                <span> جميع التصنيفات </span>
+              </button>
+              <div id="categoriesList" class="categories__items__list bg-[#fff] p-[20px] rounded-[12px] w-[450px] z-50 absolute top-[35px] right-[0] ">
+                <div class="row">
+                  <div class="col-md-6">
+                    <a href="./categories.html">
+                      <div class="categories_item flex justify-start items-center flex-row gap-2 z-50 mb-3 py-[8px] px-[15px] rounded-[6px] w-100 h-[50px]">
+                        <img src="../assets/images-store/electr1.png" alt="category" width="30" height="30">
+                        <span class="text-third-color font-semibold text-[13px]"> أجهزة و تكنولوجيا</span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-6">
+                    <a href="./categories.html">
+                      <div class="categories_item flex justify-start items-center flex-row gap-2 z-50 mb-3 py-[8px] px-[15px] rounded-[6px] w-100 h-[50px]">
+                        <img src="../assets/images-store/book1.png" alt="category" width="30" height="30">
+                        <span class="text-third-color font-semibold text-[13px]"> كتب و مقررات دراسية </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-6">
+                    <a href="./categories.html">
+                      <div class="categories_item flex justify-start items-center flex-row gap-2 z-50  py-[8px] px-[15px] rounded-[6px] w-100 h-[50px]">
+                        <img src="../assets/images-store/novel10.jpg" alt="category" width="30" height="30">
+                        <span class="text-third-color font-semibold text-[13px]"> كتب عامة و روايات </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-6">
+                    <a href="./categories.html">
+                      <div class="categories_item flex justify-start items-center flex-row gap-2 z-50  py-[8px] px-[15px] rounded-[6px] w-100 h-[50px]">
+                        <img src="../assets/images-store/shirt2.webp" alt="category" width="30" height="30">
+                        <span class="text-third-color font-semibold text-[13px]"> دعايا و إعلان</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="flex justify-start items-center flex-row gap-3">
+                <span class="bg-[#F3F3F3] text-[#8898A5] py-1 px-2 rounded-full text-[14px]"> أدوات مكتبية </span>
+                <span class="bg-[#F3F3F3] text-[#8898A5] py-1 px-2 rounded-full text-[14px]"> هدايا </span>
+                <span class="bg-[#F3F3F3] text-[#8898A5] py-1 px-2 rounded-full text-[14px]"> أدوات مكتبية </span>
+                <span class="bg-[#F3F3F3] text-[#8898A5] py-1 px-2 rounded-full text-[14px]"> أدوات مكتبية </span>
+              </div>
+            </div>
           </div>
-          <div class="flex justify-start items-center flex-row gap-3">
-            <span class="bg-[#F3F3F3] text-[#8898A5] py-1 px-2 rounded-full text-[14px]"> أدوات مكتبية </span>
-            <span class="bg-[#F3F3F3] text-[#8898A5] py-1 px-2 rounded-full text-[14px]"> هدايا </span>
-            <span class="bg-[#F3F3F3] text-[#8898A5] py-1 px-2 rounded-full text-[14px]"> أدوات مكتبية </span>
-            <span class="bg-[#F3F3F3] text-[#8898A5] py-1 px-2 rounded-full text-[14px]"> أدوات مكتبية </span>
+          <div class="flex justify-start items-center flex-row gap-4 login__nav lg:relative flex-wrap">
+            <a href="./cart.html">
+              <img src="../assets/images-store/cart.png" alt="cart" class="w-[30px] h-[30px]">
+            </a>
+            <a href="">
+              <img src="../assets/images-store/notifications.png" alt="cart" class="w-[30px] h-[30px]">
+            </a>
+            <a href="">
+              <img src="../assets/images-store/message.png" alt="cart" class="w-[25px] h-[25px]">
+            </a>
+            <div class="flex justify-start items-center flex-row gap-2">
+              <a href="">
+                <img src="../assets/images-store/user.svg" alt="">
+              </a>
+              <a href="./login.html" class="text-[#0E75BE] text-[15px] font-medium">
+                دخول
+              </a>
+              <span class="text-[#909EAA] text-[15px] font-medium"> أو </span>
+              <a href="./reactive" class="text-[#000] text-[15px] font-medium">
+                تسجيل
+              </a>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="flex justify-start items-center flex-row gap-4 login__nav relative">
-        <a href="./cart.html">
-          <img src="../assets/images-store/cart.png" alt="cart" class="w-[30px] h-[30px]">
-        </a>
-        <a href="">
-          <img src="../assets/images-store/notifications.png" alt="cart" class="w-[30px] h-[30px]">
-        </a>
-        <a href="">
-          <img src="../assets/images-store/message.png" alt="cart" class="w-[25px] h-[25px]">
-        </a>
-        <div class="flex justify-start items-center flex-row gap-2">
-          <a href="">
-            <img src="../assets/images-store/user.svg" alt="">
-          </a>
-          <a href="./login.html" class="text-[#0E75BE] text-[15px] font-medium">
-            دخول
-          </a>
-          <span class="text-[#909EAA] text-[15px] font-medium"> أو </span>
-          <a href="./reactive" class="text-[#000] text-[15px] font-medium">
-            تسجيل
-          </a>
-        </div>
+          <div class="lg:hidden flex justify-start items-start flex-col gap-3 mb-0">
+            <div class="flex justify-start items-center flex-row gap-0"> 
+              <img src="../assets/images-store/currency-dollar.svg" alt="currency" class="w-[20px] h-[20px]">
+              <select class="form-select border-0 w-max ps-0 focus:!shadow-none focus:!border-0 focus:!outline-0 text-[#909EAA] !bg-transparent" aria-label="Default select example">
+                <option selected disabled class="!text-[#909EAA] !bg-transparent">  SAR </option>
+                <option value="1">SAR</option>
+                <option value="2">EGP</option>
+                <option value="3">Dolla</option>
+              </select>
+            </div>
+            <div class="flex justify-start items-center flex-row gap-0"> 
+              <img src="../assets/images-store/usa.png" alt="currency" class="w-[20px] h-[20px]">
+              <select class="form-select border-0 w-max ps-1 focus:!shadow-none focus:!border-0 focus:!outline-0 text-[#333] !bg-transparent" aria-label="Default select example">
+                <option selected disabled class="!text-[#333] !bg-transparent">  English </option>
+                <option value="1">عربي</option>
+                <option value="2">English</option>
+              </select>
+            </div>
+            <div class="flex justify-start items-center flex-row gap-2"> 
+              <img src="../assets/images-store/chat.png" alt="currency" class="w-[20px] h-[20px]">
+              <a href="./contact-us.html" class="!text-[#333] font-semibold text-[14px]">  
+                الدعم
+              </a>
+            </div>
+            <div class="flex justify-start items-center flex-row gap-2"> 
+              <img src="../assets/images-store/delivery.png" alt="currency" class="w-[20px] h-[20px]">
+              <a href="" class="!text-[#333] font-semibold text-[14px]">  
+                تتبع طلبك
+              </a>
+            </div>
+          </div>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
+    </nav>
     <!-- navbar -->
 
     <!-- product details -->

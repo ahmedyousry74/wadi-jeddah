@@ -1246,6 +1246,11 @@ input[type=checkbox]:checked {
   top: -3px;
   left: 150px;
 }
+@media (max-width: 991px) {
+  .login__nav::before {
+    opacity: 0;
+  }
+}
 
 .website .contact__us__page {
   padding: 50px 0;
@@ -2704,14 +2709,15 @@ html[lang=en] .website .breadcrumb-item + .breadcrumb-item::before {
   box-shadow: none;
 }
 .store nav .offcanvas.offcanvas-start-lg, .store .sec__navbar .offcanvas.offcanvas-start-lg {
-  background: #A38142;
+  background: #fff;
   height: 100%;
   width: 250px;
   right: 0;
+  border-inline-end: 1px solid #ccc;
 }
 @media (max-width: 991px) {
   .store nav .offcanvas.offcanvas-start-lg a, .store .sec__navbar .offcanvas.offcanvas-start-lg a {
-    color: #fff !important;
+    color: #333 !important;
   }
   .store nav .offcanvas.offcanvas-start-lg .offcanvas-body, .store nav .offcanvas.offcanvas-start-lg .navbar__links, .store .sec__navbar .offcanvas.offcanvas-start-lg .offcanvas-body, .store .sec__navbar .offcanvas.offcanvas-start-lg .navbar__links {
     justify-content: flex-start !important;

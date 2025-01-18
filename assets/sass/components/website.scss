@@ -1002,15 +1002,16 @@
         // position: absolute !important;
         // top:0;
         // right: 0;
+        padding: 10px;;
         background-color: #fff;
         height: 105px;
         width: 100%;
         z-index: 40;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        // padding-top: 20px;
+        // padding-bottom: 20px;
 
         @media(max-width: 991px) {
-            height: 100px;
+            // height: 100px;
         }
 
         .colse_ {
@@ -1099,7 +1100,7 @@
         }
 
         .navbar-toggler {
-            filter: invert(1);
+            // filter: invert(1);
             border: 0;
 
             &:active,
@@ -1113,11 +1114,11 @@
         .offcanvas.offcanvas-start-lg {
             // border-bottom: 1px solid #DBDBDB !important;
             padding-bottom: 10px !important;
-            background: #050505;
+            background: #fff;
             height: 100%;
             width: 250px;
             right: 0;
-
+            border-inline-end: 1px solid #333;
             @media(max-width: 991px) {
 
                 .offcanvas-body,

@@ -2136,17 +2136,11 @@ input[type=checkbox]:checked {
   }
 }
 .website nav {
+  padding: 10px;
   background-color: #fff;
   height: 105px;
   width: 100%;
   z-index: 40;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-@media (max-width: 991px) {
-  .website nav {
-    height: 100px;
-  }
 }
 .website nav .colse_ {
   filter: invert(1);
@@ -2219,7 +2213,6 @@ input[type=checkbox]:checked {
   font-weight: 400;
 }
 .website nav .navbar-toggler {
-  filter: invert(1);
   border: 0;
 }
 .website nav .navbar-toggler:active, .website nav .navbar-toggler:focus {
@@ -2229,10 +2222,11 @@ input[type=checkbox]:checked {
 }
 .website nav .offcanvas.offcanvas-start-lg {
   padding-bottom: 10px !important;
-  background: #050505;
+  background: #fff;
   height: 100%;
   width: 250px;
   right: 0;
+  border-inline-end: 1px solid #333;
 }
 @media (max-width: 991px) {
   .website nav .offcanvas.offcanvas-start-lg .offcanvas-body,

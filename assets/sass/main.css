@@ -760,8 +760,7 @@ body.store[dir=ltr] .form__search button {
   left: auto !important;
 }
 body.store[dir=ltr] .categories__items__list {
-  left: 35px !important;
-  right: auto !important;
+  right: 0 !important;
 }
 body.store[dir=ltr] .filter-sidebar .accordion-button::after {
   position: relative;

@@ -920,9 +920,6 @@ body.website[dir=ltr] .contact__us__page form .input-group-text {
 .website .custom-shape-divider-bottom-1710021382 {
   bottom: -2px !important;
 }
-.website header .carousel-item {
-  height: 500px !important;
-}
 .website .custom-shape-divider-bottom-1710021382 .shape-fill {
   fill: #fff;
 }
@@ -930,7 +927,7 @@ body.website[dir=ltr] .contact__us__page form .input-group-text {
   overflow: hidden;
 }
 .website .ads .active {
-  background-color: #192C57;
+  background-color: #fff;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1033,10 +1030,10 @@ body.website[dir=ltr] .contact__us__page form .input-group-text {
   background-color: #6d32cc;
 }
 .website .ads.four__ .active {
-  background-color: #9f8621;
+  background-color: #fff;
 }
 .website .ads.three__ .active {
-  background-color: #cc3284;
+  background-color: #fff;
 }
 .website .ads.three__ .ads-image {
   width: 100%;
@@ -1104,7 +1101,7 @@ body.website[dir=ltr] .contact__us__page form .input-group-text {
 }
 
 .ads.six__ .active {
-  background-color: #111 !important;
+  background-color: #fff !important;
 }
 
 .form__print .store__item input[type=radio]:checked + label {
@@ -1931,9 +1928,6 @@ input[type=checkbox]:checked {
   right: 0;
   height: 100%;
   width: 100%;
-}
-.website header .carousel-item {
-  height: 100vh;
 }
 .website header .carousel-item img {
   -o-object-fit: cover;

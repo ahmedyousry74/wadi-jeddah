@@ -1041,7 +1041,7 @@ body.website[dir='ltr'] {
   }
 
   header .carousel-item {
-    height: 500px !important;
+    // height: 500px !important;
   }
 
   .custom-shape-divider-bottom-1710021382 .shape-fill {
@@ -1052,7 +1052,7 @@ body.website[dir='ltr'] {
     overflow: hidden;
 
     .active {
-      background-color: #192C57;
+      background-color: #fff;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -1162,13 +1162,13 @@ body.website[dir='ltr'] {
 
     &.four__ {
       .active {
-        background-color: #9f8621;
+        background-color: #fff;
       }
     }
 
     &.three__ {
       .active {
-        background-color: #cc3284;
+        background-color: #fff;
       }
 
       .ads-image {
@@ -1249,7 +1249,7 @@ body.website[dir='ltr'] {
 
 .ads.six__ {
   .active {
-    background-color: #111 !important;
+    background-color: #fff !important;
   }
 }
 

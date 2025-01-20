@@ -1182,6 +1182,10 @@ video {
   width: max-content;
 }
 
+.w-\[50\%\] {
+  width: 50%;
+}
+
 .max-w-\[144px\] {
   max-width: 144px;
 }
@@ -3949,6 +3953,14 @@ video {
 
   .lg\:hidden {
     display: none;
+  }
+
+  .lg\:w-\[50\%\] {
+    width: 50%;
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
   }
 
   .lg\:\!px-5 {

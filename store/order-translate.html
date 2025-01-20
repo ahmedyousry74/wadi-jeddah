@@ -77,69 +77,10 @@
         <img src="../assets/images-store/phone.png" alt="phone" class="w-[20px] h-[20px] md:block hidden">
       </div>
     </div>
-    <div class="search__input relative lg:hidden flex justify-start items-start flex-col gap-4 p-2">
-      <form action="" class="relative flex justify-start items-start flex-row gap-0 form__search">
-        <input type="text" placeholder="بحث ..." class="bg-transparent border border-solid !border-primary-color py-[8px] w-[350px]  h-[48px] text-third-color font-medium text-[16px] !ps-4 input">
-        <button type="submit" class="absolute top-[0px] left-[0px] h-[48px] p-2 bg-[#DFD4C1] rounded-[4px]">
-          <img src="../assets/images-store/search.svg" alt="cart" loading="lazy" width="27" height="27">
-        </button>
-      </form>
-      <div class="search__results bg-[#F3F3F3] p-[20px] rounded-[12px] z-50 absolute top-[70px] right-[0px] w-full justify-start items-startr flex-col gap-4 hidden">
-        <img src="../assets/images-store/close-circle.svg" class="colse_" alt="close" width="25" height="25" loading="lazy">
-        
-
-        
-        <span class=""> الرجاء كتابة 2 حروف على الأقل </span>
-        <div class="flex justify-between items-center flex-row flex-wrap gap-3">
-          <div class="flex justify-start items-center flex-row flex-wrap gap-2 serach__result__items">
-            <a href="" class="serach__result__item flex justify-start items-start flex-col gap-2 border border-solid border-[#ccc] rounded-[8px] p-2 px-3">
-              <div class="serach__result__item__img">
-                <img src="../assets/images-store/product10.jpg" alt="product" loading="lazy" class="h-[100px] w-100 object-contain">
-              </div>
-              <h2 class="text-[15px] font-medium text-[#222]"> لابتوب </h2>
-            </a>
-            <a href="" class="serach__result__item flex justify-start items-start flex-col gap-2 border border-solid border-[#ccc] rounded-[8px] p-2 px-3">
-              <div class="serach__result__item__img">
-                <img src="../assets/images-store/product10.jpg" alt="product" loading="lazy" class="h-[100px] w-100 object-contain">
-              </div>
-              <h2 class="text-[15px] font-medium text-[#222]"> لابتوب </h2>
-            </a>
-            <a href="" class="serach__result__item flex justify-start items-start flex-col gap-2 border border-solid border-[#ccc] rounded-[8px] p-2 px-3">
-              <div class="serach__result__item__img">
-                <img src="../assets/images-store/product10.jpg" alt="product" loading="lazy" class="h-[100px] w-100 object-contain">
-              </div>
-              <h2 class="text-[15px] font-medium text-[#222]"> لابتوب </h2>
-            </a>
-          </div>
-          <a href="" class="bg-[#D8D8D8] py-1 px-3 rounded-full text-[#222] text-[14px]"> تصفح الكــل </a>
-        </div>
-        <div class="flex justify-start items-start flex-col gap-2">
-          <h2 class="text-[16px] font-medium text-[#222]"> عمليات البحث الشائعة </h2>
-          <div class="flex justify-start items-center flex-row gap-3 flex-wrap">
-            <a href="" class="bg-[#D8D8D8] text-[#222] py-1 px-2 rounded-full text-[14px]"> أدوات مكتبية </a>
-            <a href="" class="bg-[#D8D8D8] text-[#222] py-1 px-2 rounded-full text-[14px]"> هدايا </a>
-            <a href="" class="bg-[#D8D8D8] text-[#222] py-1 px-2 rounded-full text-[14px]"> أدوات مكتبية </a>
-            <a href="" class="bg-[#D8D8D8] text-[#222] py-1 px-2 rounded-full text-[14px]"> أدوات مكتبية </a>
-          </div>
-        </div>
-      </div>
-    </div>
     <nav class="navbar navbar-expand-lg relative" id="navbar">
-      <button
-      class="justify-center items-center flex-row gap-1 text-[#7A7A7A] font-medium text-lg md:hidden flex"
-      >
-        
-        <img
-          src="../assets/images-store/en.svg"
-          alt="global"
-          width="40"
-          height="40"
-          loading="lazy"
-        />
-      </button>
       <a href="./index.html" class="logo__ flex justify-start items-center flex-row gap-1 d-lg-none">
-        <img src="../assets/images/king.png" alt="king" class="w-[100px]">
-        <h1 class="text-primary-color text-[18px] font-medium"> متجر جامعة <br> المـــــــــــــلك <br> <span class="font-semibold text-[20px]"> عـبد الـعزيز </span> </h1>
+        <img src="../assets/images/king.png" alt="king" class="sm:w-[100px] w-[80px]">
+        <h1 class="text-primary-color sm:text-[18px] text-[16px] font-medium"> متجر جامعة <br> المـــــــــــــلك <br> <span class="font-semibold sm:text-[20px] text-[18px]"> عـبد الـعزيز </span> </h1>
       </a>
       <button
         class="btn navbar-toggler"
@@ -168,10 +109,10 @@
           <img src="../assets/images-store/close-circle.svg" class="colse_" alt="close" width="25" height="25" loading="lazy">
         </a>
         </div>
-        <div class="offcanvas-body bottom__navbar flex justify-between items-start flex-row sm:py-[10px] py-[8px] md:px-[80px] px-[20px] bg-transparent">
+        <div class="offcanvas-body bottom__navbar flex justify-between items-start flex-row relative !top-[25px] sm:!pt-[0px] sm:!pb-[20px] py-[8px] md:!px-[80px] !px-[20px] bg-transparent">
           <a href="./index.html" class="logo__ flex justify-start items-center flex-row gap-1">
-            <img src="../assets/images/king.png" alt="king" class="w-[100px]">
-            <h1 class="text-primary-color text-[18px] font-medium"> متجر جامعة <br> المـــــــــــــلك <br> <span class="font-semibold text-[20px]"> عـبد الـعزيز </span> </h1>
+            <img src="../assets/images/king.png" alt="king" class="sm:w-[100px] w-[80px]">
+            <h1 class="text-primary-color sm:text-[18px] text-[16px] font-medium"> متجر جامعة <br> المـــــــــــــلك <br> <span class="font-semibold sm:text-[20px] text-[18px]"> عـبد الـعزيز </span> </h1>
           </a>
           <div class="search__input relative lg:flex hidden justify-start items-start flex-col gap-4">
             <form action="" class="relative flex justify-start items-start flex-row gap-0 form__search">
@@ -206,15 +147,15 @@
                     <h2 class="text-[15px] font-medium text-[#222]"> لابتوب </h2>
                   </a>
                 </div>
-                <a href="" class="bg-[#D8D8D8] py-1 px-3 rounded-full text-[#222] text-[14px]"> تصفح الكــل </a>
+                <a href="./index.html" class="bg-[#D8D8D8] py-1 px-3 rounded-full text-[#222] text-[14px]"> تصفح الكــل </a>
               </div>
               <div class="flex justify-start items-start flex-col gap-2">
                 <h2 class="text-[16px] font-medium text-[#222]"> عمليات البحث الشائعة </h2>
                 <div class="flex justify-start items-center flex-row gap-3">
-                  <a href="" class="bg-[#D8D8D8] text-[#222] py-1 px-2 rounded-full text-[14px]"> أدوات مكتبية </a>
-                  <a href="" class="bg-[#D8D8D8] text-[#222] py-1 px-2 rounded-full text-[14px]"> هدايا </a>
-                  <a href="" class="bg-[#D8D8D8] text-[#222] py-1 px-2 rounded-full text-[14px]"> أدوات مكتبية </a>
-                  <a href="" class="bg-[#D8D8D8] text-[#222] py-1 px-2 rounded-full text-[14px]"> أدوات مكتبية </a>
+                  <a href="./index.html" class="bg-[#D8D8D8] text-[#222] py-1 px-2 rounded-full text-[14px]"> أدوات مكتبية </a>
+                  <a href="./index.html" class="bg-[#D8D8D8] text-[#222] py-1 px-2 rounded-full text-[14px]"> هدايا </a>
+                  <a href="./index.html" class="bg-[#D8D8D8] text-[#222] py-1 px-2 rounded-full text-[14px]"> أدوات مكتبية </a>
+                  <a href="./index.html" class="bg-[#D8D8D8] text-[#222] py-1 px-2 rounded-full text-[14px]"> أدوات مكتبية </a>
                 </div>
               </div>
             </div>
@@ -265,15 +206,15 @@
                 </div>
               </div>
               <div class="flex justify-start items-center flex-row gap-3">
-                <span class="bg-[#F3F3F3] text-[#8898A5] py-1 px-2 rounded-full text-[14px]"> أدوات مكتبية </span>
-                <span class="bg-[#F3F3F3] text-[#8898A5] py-1 px-2 rounded-full text-[14px]"> هدايا </span>
-                <span class="bg-[#F3F3F3] text-[#8898A5] py-1 px-2 rounded-full text-[14px]"> أدوات مكتبية </span>
-                <span class="bg-[#F3F3F3] text-[#8898A5] py-1 px-2 rounded-full text-[14px]"> أدوات مكتبية </span>
+                <a class="bg-[#F3F3F3] text-[#8898A5] py-1 px-2 rounded-full text-[14px]"> أدوات مكتبية </a>
+                <a href="./index.html" class="bg-[#F3F3F3] text-[#8898A5] py-1 px-2 rounded-full text-[14px]"> هدايا </a>
+                <a href="./index.html" class="bg-[#F3F3F3] text-[#8898A5] py-1 px-2 rounded-full text-[14px]"> أدوات مكتبية </a>
+                <a href="./index.html" class="bg-[#F3F3F3] text-[#8898A5] py-1 px-2 rounded-full text-[14px]"> أدوات مكتبية </a>
               </div>
             </div>
           </div>
           <div class="flex justify-start items-center flex-row gap-4 login__nav lg:relative flex-wrap">
-            <a href="./cart.html">
+            <a href="./store/cart.html">
               <img src="../assets/images-store/cart.png" alt="cart" class="w-[30px] h-[30px]">
             </a>
             <a href="">
@@ -286,11 +227,11 @@
               <a href="">
                 <img src="../assets/images-store/user.svg" alt="">
               </a>
-              <a href="./login.html" class="text-[#0E75BE] text-[15px] font-medium">
+              <a href="./store/login.html" class="text-[#0E75BE] text-[15px] font-medium">
                 دخول
               </a>
               <span class="text-[#909EAA] text-[15px] font-medium"> أو </span>
-              <a href="./signup.html" class="text-[#000] text-[15px] font-medium">
+              <a href="./store/signup.html" class="text-[#000] text-[15px] font-medium">
                 تسجيل
               </a>
             </div>
@@ -332,6 +273,52 @@
       </div>
     </div>
     </nav>
+    <div class="search__input relative lg:hidden flex justify-start items-start flex-col gap-4 p-2 mt-2 w-full">
+      <form action="" class="relative flex justify-start items-start flex-row gap-0 form__search w-full">
+        <input type="text" placeholder="بحث ..." class=" w-full bg-transparent border border-solid !border-primary-color py-[8px]  h-[48px] text-third-color font-medium text-[16px] !ps-4 input">
+        <button type="submit" class="absolute top-[0px] left-[0px] h-[48px] p-2 bg-[#DFD4C1] rounded-[4px]">
+          <img src="../assets/images-store/search.svg" alt="cart" loading="lazy" width="27" height="27">
+        </button>
+      </form>
+      <div class="search__results bg-[#F3F3F3] p-[20px] rounded-[12px] z-50 absolute top-[70px] right-[0px] w-full justify-start items-startr flex-col gap-4 hidden">
+        <img src="../assets/images-store/close-circle.svg" class="colse_" alt="close" width="25" height="25" loading="lazy">
+        
+        
+        <span class=""> الرجاء كتابة 2 حروف على الأقل </span>
+        <div class="flex justify-between items-center flex-row flex-wrap gap-3">
+          <div class="flex justify-start items-center flex-row flex-wrap gap-2 serach__result__items">
+            <a href="" class="serach__result__item flex justify-start items-start flex-col gap-2 border border-solid border-[#ccc] rounded-[8px] p-2 px-3">
+              <div class="serach__result__item__img">
+                <img src="../assets/images-store/product10.jpg" alt="product" loading="lazy" class="h-[100px] w-100 object-contain">
+              </div>
+              <h2 class="text-[15px] font-medium text-[#222]"> لابتوب </h2>
+            </a>
+            <a href="" class="serach__result__item flex justify-start items-start flex-col gap-2 border border-solid border-[#ccc] rounded-[8px] p-2 px-3">
+              <div class="serach__result__item__img">
+                <img src="../assets/images-store/product10.jpg" alt="product" loading="lazy" class="h-[100px] w-100 object-contain">
+              </div>
+              <h2 class="text-[15px] font-medium text-[#222]"> لابتوب </h2>
+            </a>
+            <a href="" class="serach__result__item flex justify-start items-start flex-col gap-2 border border-solid border-[#ccc] rounded-[8px] p-2 px-3">
+              <div class="serach__result__item__img">
+                <img src="../assets/images-store/product10.jpg" alt="product" loading="lazy" class="h-[100px] w-100 object-contain">
+              </div>
+              <h2 class="text-[15px] font-medium text-[#222]"> لابتوب </h2>
+            </a>
+          </div>
+          <a href="" class="bg-[#D8D8D8] py-1 px-3 rounded-full text-[#222] text-[14px]"> تصفح الكــل </a>
+        </div>
+        <div class="flex justify-start items-start flex-col gap-2">
+          <h2 class="text-[16px] font-medium text-[#222]"> عمليات البحث الشائعة </h2>
+          <div class="flex justify-start items-center flex-row gap-3 flex-wrap">
+            <a href="" class="bg-[#D8D8D8] text-[#222] py-1 px-2 rounded-full text-[14px]"> أدوات مكتبية </a>
+            <a href="" class="bg-[#D8D8D8] text-[#222] py-1 px-2 rounded-full text-[14px]"> هدايا </a>
+            <a href="" class="bg-[#D8D8D8] text-[#222] py-1 px-2 rounded-full text-[14px]"> أدوات مكتبية </a>
+            <a href="" class="bg-[#D8D8D8] text-[#222] py-1 px-2 rounded-full text-[14px]"> أدوات مكتبية </a>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- navbar -->
 
     <!-- start order translate -->

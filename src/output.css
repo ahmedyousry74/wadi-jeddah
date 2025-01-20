@@ -873,6 +873,14 @@ video {
   margin-top: 35px;
 }
 
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.mt-\[15px\] {
+  margin-top: 15px;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -3685,6 +3693,10 @@ video {
 
   .sm\:mt-\[75px\] {
     margin-top: 75px;
+  }
+
+  .sm\:mt-\[35px\] {
+    margin-top: 35px;
   }
 
   .sm\:h-\[100px\] {

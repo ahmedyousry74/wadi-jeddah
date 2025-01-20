@@ -1005,6 +1005,10 @@ video {
   height: 150px;
 }
 
+.h-\[200px\] {
+  height: 200px;
+}
+
 .h-\[20px\] {
   height: 20px;
 }
@@ -1067,10 +1071,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-\[200px\] {
-  height: 200px;
 }
 
 .\!h-\[200px\] {
@@ -2629,6 +2629,11 @@ video {
   padding: 8px;
 }
 
+.\!px-\[12px\] {
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+}
+
 .\!px-\[20px\] {
   padding-left: 20px !important;
   padding-right: 20px !important;
@@ -2637,6 +2642,11 @@ video {
 .\!px-\[25px\] {
   padding-left: 25px !important;
   padding-right: 25px !important;
+}
+
+.\!py-\[25px\] {
+  padding-top: 25px !important;
+  padding-bottom: 25px !important;
 }
 
 .\!py-\[6px\] {
@@ -2754,6 +2764,11 @@ video {
   padding-bottom: 25px;
 }
 
+.py-\[35px\] {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
 .py-\[40px\] {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -2789,29 +2804,19 @@ video {
   padding-bottom: 9px;
 }
 
-.py-\[35px\] {
-  padding-top: 35px;
-  padding-bottom: 35px;
-}
-
-.\!py-\[35px\] {
-  padding-top: 35px !important;
-  padding-bottom: 35px !important;
-}
-
-.\!py-\[25px\] {
-  padding-top: 25px !important;
-  padding-bottom: 25px !important;
-}
-
-.\!px-\[12px\] {
-  padding-left: 12px !important;
-  padding-right: 12px !important;
-}
-
 .\!py-\[0px\] {
   padding-top: 0px !important;
   padding-bottom: 0px !important;
+}
+
+.px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.\!px-0 {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
 }
 
 .\!ps-4 {
@@ -2840,14 +2845,6 @@ video {
 
 .pt-\[40px\] {
   padding-top: 40px;
-}
-
-.pt-5 {
-  padding-top: 1.25rem;
-}
-
-.\!pt-\[20px\] {
-  padding-top: 20px !important;
 }
 
 .pt-\[35px\] {
@@ -3820,10 +3817,6 @@ video {
     padding-top: 50px !important;
   }
 
-  .sm\:pt-\[20px\] {
-    padding-top: 20px;
-  }
-
   .sm\:text-\[12px\] {
     font-size: 12px;
   }
@@ -3912,10 +3905,6 @@ video {
 
   .md\:h-\[50px\] {
     height: 50px;
-  }
-
-  .md\:h-\[550px\] {
-    height: 550px;
   }
 
   .md\:h-\[80px\] {

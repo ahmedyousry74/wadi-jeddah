@@ -1929,6 +1929,16 @@ input[type=checkbox]:checked {
   height: 100%;
   width: 100%;
 }
+@media (max-width: 991px) {
+  .website header .carousel-item {
+    height: 180px;
+  }
+  .website header .carousel-item img {
+    height: 100%;
+    -o-object-fit: fill !important;
+       object-fit: fill !important;
+  }
+}
 .website header .carousel-item img {
   -o-object-fit: cover;
      object-fit: cover;

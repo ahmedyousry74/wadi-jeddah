@@ -401,6 +401,51 @@
         </div>
     </div>
 
+    <!-- stores -->
+    <div class="stores py-[40px] lg:px-[100px] px-[20px]">
+      <h2 class="text-third-color font-semibold text-[25px] mb-4"> المتاجر المشتركة </h2>
+      <div class="owl-carousel stores__carousal owl-theme">
+        
+          <div class="store__img flex justify-center items-center">
+            <img src="../assets/images-store/store1.png" alt="store" class="object-contain max-w-[144px]">
+          </div>
+      
+        
+          <div class="store__img flex justify-center items-center">
+            <img src="../assets/images-store/store2.png" alt="store" class="object-contain max-w-[144px]">
+          </div>
+      
+        
+          <div class="store__img flex justify-center items-center">
+            <img src="../assets/images-store/store3.png" alt="store" class="object-contain max-w-[144px]">
+          </div>
+      
+        
+          <div class="store__img flex justify-center items-center">
+            <img src="../assets/images-store/store4.png" alt="store" class="object-contain max-w-[144px]">
+          </div>
+      
+        
+          <div class="store__img flex justify-center items-center">
+            <img src="../assets/images-store/store5.png" alt="store" class="object-contain max-w-[144px]">
+          </div>
+      
+        
+          <div class="store__img flex justify-center items-center">
+            <img src="../assets/images-store/store6.png" alt="store" class="object-contain max-w-[144px]">
+          </div>
+      
+      </div>
+    </div>
+    <!-- stores -->
+
+    <!-- be store -->
+    <div class="be__store bg-second-color p-5 flex justify-center items-center flex-col gap-3">
+      <h2 class="text-primary-color sm:text-[35px] text-[25px] font-semibold text-center"> كن متجر مشارك معنا </h2>
+      <p class="text-primary-color sm:text-[20px] text-[18px] font-medium text-center"> يمكنك مشاهدة منتجاتك وجذب شريحة جديدة من المستخدمين </p>
+      <a href="./be-store.html" class="text-white sm:text-[20px] text-[16px] font-semibold bg-primary-color  flex justify-center items-center sm:py-[10px] py-[6px] sm:px-[30px] px-[15px] rounded-[8px]"> سـجـل كـمـتـجـر </a>
+    </div>
+    <!-- be store -->
 
     <div class="features_website py-[50px] lg:px-[100px] px-[20px]">
       <div class="row">
@@ -590,6 +635,39 @@
       }
     });
   });
+</script>
+
+<script>
+  $('.owl-carousel.stores__carousal').owlCarousel({
+  loop: true,
+  autoplay: true,
+  nav: false,
+  dots: false,
+  autoplayTimeout: 2000,
+  margin: 20,
+  responsiveClass: true,
+  ltr: true,
+  rtl: true,
+  responsive: {
+      0: {
+          items: 2,
+          nav: false
+      },
+      350: {
+          items: 2,
+          nav: false
+      },
+      600: {
+          items: 3,
+          nav: false
+      },
+      1000: {
+          items: 6,
+          nav: false,
+          loop: false
+      }
+  }
+})
 </script>
 
 </body>

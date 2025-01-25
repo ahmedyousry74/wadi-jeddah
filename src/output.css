@@ -988,6 +988,10 @@ video {
   height: 150px !important;
 }
 
+.\!h-\[450px\] {
+  height: 450px !important;
+}
+
 .\!h-max {
   height: -moz-max-content !important;
   height: max-content !important;
@@ -1083,10 +1087,6 @@ video {
 
 .\!w-\[100px\] {
   width: 100px !important;
-}
-
-.\!w-\[150px\] {
-  width: 150px !important;
 }
 
 .w-\[100px\] {

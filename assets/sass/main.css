@@ -1935,12 +1935,12 @@ footer .logo {
 }
 @media (max-width: 991px) {
   .website header .carousel-item {
-    height: 180px;
+    height: 450px;
   }
   .website header .carousel-item img {
     height: 100%;
-    -o-object-fit: fill !important;
-       object-fit: fill !important;
+    -o-object-fit: cover !important;
+       object-fit: cover !important;
   }
 }
 .website header .carousel-item img {

@@ -659,10 +659,10 @@
         .carousel-item {
             // height: 100vh;
             @media(max-width: 991px){
-                height: 180px;
+                height: 450px;
                 img{
                     height: 100%;
-                    object-fit: fill !important;
+                    object-fit: cover !important;
                 }
             }
 

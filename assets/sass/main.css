@@ -1249,6 +1249,106 @@ input[type=checkbox]:checked {
   }
 }
 
+footer {
+  background-color: #050505;
+  padding: 50px 80px !important;
+  box-shadow: 0px -15px 25px 0px rgba(0, 0, 0, 0.02);
+}
+@media (max-width: 767px) {
+  footer {
+    padding: 15px 5px !important;
+  }
+}
+footer p {
+  color: #F9FAFB;
+  line-height: 2;
+  max-width: 350px;
+}
+footer .footer__info {
+  gap: 15px;
+}
+@media (max-width: 991px) {
+  footer .footer__info {
+    margin-bottom: 35px;
+  }
+}
+footer .footer__info .social__links {
+  gap: 10px;
+}
+footer .footer__info .social__links a {
+  border: 1px solid #636363;
+  border-radius: 5px;
+  padding: 10px !important;
+  width: 35px;
+  height: 35px;
+  line-height: 10px;
+}
+footer .footer__links {
+  gap: 50px;
+}
+@media (max-width: 991px) {
+  footer .footer__links {
+    margin-bottom: 35px;
+  }
+}
+@media (max-width: 767px) {
+  footer .footer__links {
+    gap: 25px;
+  }
+}
+footer .footer__links h2 {
+  color: #F9FAFB;
+  font-weight: 700;
+  position: relative;
+  font-size: 18px;
+}
+footer .footer__links h2::after {
+  position: absolute;
+  content: "";
+  background-color: #A38142;
+  width: 28px;
+  height: 3px;
+  top: 30px;
+  right: 0;
+  transition: 0.3s ease-in-out all;
+  border-radius: 25px;
+}
+footer .footer__links ul {
+  gap: 20px;
+  padding: 0;
+}
+footer .footer__links ul a {
+  color: #F9FAFB;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+}
+footer .footer__links ul li {
+  transition: 0.4s ease-in-out all;
+}
+footer .footer__links ul li:hover a {
+  color: #A38142;
+}
+footer .footer__links ul li a {
+  gap: 5px;
+  display: flex;
+}
+footer .copyright__ {
+  margin-top: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .copyright__ p {
+  margin-top: 27px;
+  color: #F9FAFB;
+  font-size: 16px;
+  font-weight: 400;
+}
+footer .logo {
+  width: 200px;
+}
+
 .website .contact__us__page {
   padding: 50px 0;
 }
@@ -1821,102 +1921,6 @@ input[type=checkbox]:checked {
 }
 .website .custom-shape-divider-top-1710088665 .shape-fill {
   fill: #F9FAFB;
-}
-.website footer {
-  background-color: #050505;
-  padding: 50px 80px !important;
-  box-shadow: 0px -15px 25px 0px rgba(0, 0, 0, 0.02);
-}
-@media (max-width: 767px) {
-  .website footer {
-    padding: 15px 5px !important;
-  }
-}
-.website footer p {
-  color: #F9FAFB;
-  line-height: 2;
-  max-width: 350px;
-}
-.website footer .footer__info {
-  gap: 15px;
-}
-@media (max-width: 991px) {
-  .website footer .footer__info {
-    margin-bottom: 35px;
-  }
-}
-.website footer .footer__info .social__links {
-  gap: 10px;
-}
-.website footer .footer__info .social__links a {
-  border: 1px solid #636363;
-  border-radius: 5px;
-  padding: 10px !important;
-  width: 35px;
-  height: 35px;
-  line-height: 10px;
-}
-.website footer .footer__links {
-  gap: 50px;
-}
-@media (max-width: 991px) {
-  .website footer .footer__links {
-    margin-bottom: 35px;
-  }
-}
-@media (max-width: 767px) {
-  .website footer .footer__links {
-    gap: 25px;
-  }
-}
-.website footer .footer__links h2 {
-  color: #F9FAFB;
-  font-weight: 700;
-  position: relative;
-  font-size: 18px;
-}
-.website footer .footer__links h2::after {
-  position: absolute;
-  content: "";
-  background-color: #A38142;
-  width: 28px;
-  height: 3px;
-  top: 30px;
-  right: 0;
-  transition: 0.3s ease-in-out all;
-  border-radius: 25px;
-}
-.website footer .footer__links ul {
-  gap: 20px;
-  padding: 0;
-}
-.website footer .footer__links ul a {
-  color: #F9FAFB;
-  font-size: 16px;
-  font-weight: 400;
-  text-decoration: none;
-}
-.website footer .footer__links ul li {
-  transition: 0.4s ease-in-out all;
-}
-.website footer .footer__links ul li:hover a {
-  color: #A38142;
-}
-.website footer .footer__links ul li a {
-  gap: 5px;
-  display: flex;
-}
-.website footer .copyright__ {
-  margin-top: 36px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.website footer .copyright__ p {
-  margin-top: 27px;
-  color: #F9FAFB;
-  font-size: 16px;
-  font-weight: 400;
 }
 .website header {
   position: relative;

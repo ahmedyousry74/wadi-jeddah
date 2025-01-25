@@ -2627,30 +2627,14 @@ html[lang=en] .website .breadcrumb-item + .breadcrumb-item::before {
 
 .category__img {
   position: relative;
-  padding-bottom: 40px;
-  min-height: 260px;
   display: flex;
   align-items: flex-end;
-}
-
-.category__img:before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 160px;
-  height: 160px;
-  background-color: #F6F6F6;
-  border-radius: 50%;
-  transition: all 0.5s ease;
 }
 
 .category__img img {
   height: 170px;
   -o-object-fit: cover;
      object-fit: cover;
-  transform: scale(1);
 }
 @media (max-width: 767px) {
   .category__img img {
@@ -2662,11 +2646,6 @@ html[lang=en] .website .breadcrumb-item + .breadcrumb-item::before {
 
 .categories__items:hover .category__img::before {
   background-color: #A38142 !important;
-}
-
-.categories__items:hover img {
-  height: 220px;
-  transform: scale(1);
 }
 
 .store nav, .store .sec__navbar {

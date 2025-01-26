@@ -1241,7 +1241,7 @@ input[type=checkbox]:checked {
   width: 1px;
   background-color: #000;
   top: -3px;
-  left: 150px;
+  left: 170px;
 }
 @media (max-width: 991px) {
   .login__nav::before {

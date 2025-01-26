@@ -1117,6 +1117,10 @@ video {
   width: 30px;
 }
 
+.w-\[40px\] {
+  width: 40px;
+}
+
 .w-\[450px\] {
   width: 450px;
 }
@@ -2326,6 +2330,11 @@ video {
   background-color: #ffffff36 !important;
 }
 
+.\!bg-primary-color {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(163 129 66 / var(--tw-bg-opacity)) !important;
+}
+
 .\!bg-transparent {
   background-color: transparent !important;
 }
@@ -2835,6 +2844,10 @@ video {
 
 .text-justify {
   text-align: justify;
+}
+
+.\!text-start {
+  text-align: start !important;
 }
 
 .text-start {
@@ -3868,6 +3881,11 @@ video {
 
   .md\:gap-\[24px\] {
     gap: 24px;
+  }
+
+  .md\:\!px-\[60px\] {
+    padding-left: 60px !important;
+    padding-right: 60px !important;
   }
 
   .md\:\!px-\[80px\] {

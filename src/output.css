@@ -3777,6 +3777,10 @@ video {
     padding-top: 0px !important;
   }
 
+  .sm\:\!pb-\[35px\] {
+    padding-bottom: 35px !important;
+  }
+
   .sm\:text-\[12px\] {
     font-size: 12px;
   }

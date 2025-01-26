@@ -1523,3 +1523,29 @@ footer {
     width: 200px;
 }
 }
+
+.bottom__navbar{
+  background-color: #fff;
+  border-radius: 0;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  display: none;
+  padding: 20px 15px;
+  border-top: 1px solid #ccc;
+  z-index: 9999;
+  a{
+    span{
+      color: #000;
+      font-weight: 500;
+      font-size: 16px;
+    }
+    svg,path{
+      color: #000;
+    }
+  }
+  @media(max-width: 991px){
+    display: block;
+  }
+}

@@ -1349,6 +1349,32 @@ footer .logo {
   width: 200px;
 }
 
+.bottom__navbar {
+  background-color: #fff;
+  border-radius: 0;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  display: none;
+  padding: 20px 15px;
+  border-top: 1px solid #ccc;
+  z-index: 9999;
+}
+.bottom__navbar a span {
+  color: #000;
+  font-weight: 500;
+  font-size: 16px;
+}
+.bottom__navbar a svg, .bottom__navbar a path {
+  color: #000;
+}
+@media (max-width: 991px) {
+  .bottom__navbar {
+    display: block;
+  }
+}
+
 .website .contact__us__page {
   padding: 50px 0;
 }

@@ -3769,16 +3769,12 @@ video {
     padding-bottom: 8px;
   }
 
-  .sm\:\!pb-\[20px\] {
-    padding-bottom: 20px !important;
+  .sm\:\!pb-\[35px\] {
+    padding-bottom: 35px !important;
   }
 
   .sm\:\!pt-\[0px\] {
     padding-top: 0px !important;
-  }
-
-  .sm\:\!pb-\[35px\] {
-    padding-bottom: 35px !important;
   }
 
   .sm\:text-\[12px\] {
@@ -3890,11 +3886,6 @@ video {
   .md\:\!px-\[60px\] {
     padding-left: 60px !important;
     padding-right: 60px !important;
-  }
-
-  .md\:\!px-\[80px\] {
-    padding-left: 80px !important;
-    padding-right: 80px !important;
   }
 
   .md\:px-\[80px\] {

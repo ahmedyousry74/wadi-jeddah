@@ -1375,6 +1375,25 @@ footer .logo {
   }
 }
 
+.accordion-body, .accordion-item {
+  border: 0 !important;
+  padding-inline: 0 !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: rgba(163, 129, 66, 0.337254902) !important;
+  color: #fff;
+}
+
+.accordion-body a {
+  color: #333;
+  font-weight: 500;
+}
+
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+
 .website .contact__us__page {
   padding: 50px 0;
 }

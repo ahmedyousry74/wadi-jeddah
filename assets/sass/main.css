@@ -1349,29 +1349,29 @@ footer .logo {
   width: 200px;
 }
 
-.bottom__navbar {
+.bottom__navbar__mobile {
   background-color: #fff;
   border-radius: 0;
   position: fixed;
   bottom: 0;
   right: 0;
   width: 100%;
-  display: none;
   padding: 20px 15px;
   border-top: 1px solid #ccc;
   z-index: 9999;
+  display: none !important;
 }
-.bottom__navbar a span {
+.bottom__navbar__mobile a span {
   color: #000;
   font-weight: 500;
   font-size: 16px;
 }
-.bottom__navbar a svg, .bottom__navbar a path {
+.bottom__navbar__mobile a svg, .bottom__navbar__mobile a path {
   color: #000;
 }
 @media (max-width: 991px) {
-  .bottom__navbar {
-    display: block;
+  .bottom__navbar__mobile {
+    display: flex !important;
   }
 }
 

@@ -1524,18 +1524,17 @@ footer {
 }
 }
 
-.bottom__navbar{
+.bottom__navbar__mobile{
   background-color: #fff;
   border-radius: 0;
   position: fixed;
   bottom: 0;
   right: 0;
   width: 100%;
-  display: none;
   padding: 20px 15px;
   border-top: 1px solid #ccc;
   z-index: 9999;
-  display: none;
+  display: none !important;
   a{
     span{
       color: #000;
@@ -1547,6 +1546,6 @@ footer {
     }
   }
   @media(max-width: 991px){
-    display: block;
+    display: flex !important;
   }
 }

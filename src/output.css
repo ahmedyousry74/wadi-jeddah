@@ -3651,6 +3651,10 @@ video {
     margin-top: 75px;
   }
 
+  .sm\:hidden {
+    display: none;
+  }
+
   .sm\:h-\[100px\] {
     height: 100px;
   }

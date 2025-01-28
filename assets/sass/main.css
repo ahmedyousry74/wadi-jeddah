@@ -1395,6 +1395,11 @@ footer .logo {
   box-shadow: none !important;
 }
 
+.accordion-button::after, .btn-close {
+  margin-left: inherit !important;
+  margin-right: auto !important;
+}
+
 .website .contact__us__page {
   padding: 50px 0;
 }

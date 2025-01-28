@@ -1568,3 +1568,7 @@ footer {
 .accordion-button:focus {
   box-shadow: none !important;
 }
+.accordion-button::after,.btn-close{
+  margin-left: inherit !important;
+  margin-right: auto !important;
+}

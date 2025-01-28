@@ -733,16 +733,12 @@ video {
   isolation: auto;
 }
 
-.z-50 {
-  z-index: 50;
-}
-
-.z-\[99999999999999\] {
-  z-index: 99999999999999;
-}
-
 .\!z-\[99999999999999\] {
   z-index: 99999999999999 !important;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .float-start {
@@ -817,6 +813,14 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.\!mb-0 {
+  margin-bottom: 0px !important;
+}
+
+.\!mb-4 {
+  margin-bottom: 1rem !important;
+}
+
 .\!ml-0 {
   margin-left: 0px !important;
 }
@@ -887,18 +891,6 @@ video {
 
 .mt-\[35px\] {
   margin-top: 35px;
-}
-
-.\!mb-0 {
-  margin-bottom: 0px !important;
-}
-
-.\!mb-4 {
-  margin-bottom: 1rem !important;
-}
-
-.mt-3 {
-  margin-top: 0.75rem;
 }
 
 .box-border {
@@ -1105,6 +1097,10 @@ video {
   height: 100%;
 }
 
+.\!h-\[100px\] {
+  height: 100px !important;
+}
+
 .\!w-\[100px\] {
   width: 100px !important;
 }
@@ -1163,6 +1159,10 @@ video {
 
 .w-\[700px\] {
   width: 700px;
+}
+
+.w-\[70px\] {
+  width: 70px;
 }
 
 .w-\[75px\] {
@@ -2819,6 +2819,16 @@ video {
   padding-bottom: 9px;
 }
 
+.py-\[2px\] {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.px-\[6px\] {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
 .\!ps-4 {
   padding-inline-start: 1rem !important;
 }
@@ -2849,6 +2859,10 @@ video {
 
 .ps-1 {
   padding-inline-start: 0.25rem;
+}
+
+.ps-4 {
+  padding-inline-start: 1rem;
 }
 
 .pt-\[20px\] {
@@ -3716,8 +3730,8 @@ video {
     width: 135px;
   }
 
-  .sm\:w-\[250px\] {
-    width: 250px;
+  .sm\:w-\[150px\] {
+    width: 150px;
   }
 
   .sm\:w-\[850px\] {
@@ -3726,6 +3740,11 @@ video {
 
   .sm\:w-auto {
     width: auto;
+  }
+
+  .sm\:w-max {
+    width: -moz-max-content;
+    width: max-content;
   }
 
   .sm\:items-end {
@@ -3800,6 +3819,31 @@ video {
   .sm\:py-\[8px\] {
     padding-top: 8px;
     padding-bottom: 8px;
+  }
+
+  .sm\:py-\[5px\] {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .sm\:px-\[10px\] {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .sm\:px-\[6px\] {
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+
+  .sm\:py-\[1px\] {
+    padding-top: 1px;
+    padding-bottom: 1px;
+  }
+
+  .sm\:px-\[4px\] {
+    padding-left: 4px;
+    padding-right: 4px;
   }
 
   .sm\:\!pb-\[35px\] {
